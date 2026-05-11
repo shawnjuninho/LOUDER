@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" data-language="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LOUDER Creative helps brands enter global markets and build overseas operation systems."
+    />
+    <title>LOUDER Creative | Global Market Operations</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="ambient-canvas" id="ambientCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" data-header>
+      <a class="brand-mark" href="#top" aria-label="LOUDER Creative home">
+        <img src="assets/logo_small.PNG" alt="" />
+        <span>LOUDER</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#method" data-i18n="nav.method">Method</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" data-language-menu>
+          <button
+            class="language-trigger"
+            type="button"
+            data-language-trigger
+            aria-haspopup="listbox"
+            aria-expanded="false"
+          >
+            <span class="flag flag-us" aria-hidden="true"></span>
+            <span data-current-language>English</span>
+          </button>
+          <div class="language-menu" data-language-options role="listbox" hidden>
+            <button type="button" role="option" data-lang-option="en">
+              <span class="flag flag-us" aria-hidden="true"></span>
+              <span>English</span>
+            </button>
+            <button type="button" role="option" data-lang-option="ms">
+              <span class="flag flag-my" aria-hidden="true"></span>
+              <span>Bahasa Melayu</span>
+            </button>
+            <button type="button" role="option" data-lang-option="th">
+              <span class="flag flag-th" aria-hidden="true"></span>
+              <span>ไทย</span>
+            </button>
+            <button type="button" role="option" data-lang-option="zh">
+              <span class="flag flag-cn" aria-hidden="true"></span>
+              <span>中文</span>
+            </button>
+          </div>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#method" data-i18n="nav.method">Method</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <img class="hero-logo" src="assets/logo.PNG" alt="LOUDER Creative" />
+          <p class="eyebrow" data-i18n="hero.eyebrow">Global Market Operations</p>
+          <h1 data-i18n="hero.title">Make your brand visible, understood, and scalable overseas.</h1>
+          <p class="hero-copy" data-i18n="hero.copy">
+            LOUDER Creative helps ambitious brands enter overseas markets with localized strategy, content operations,
+            channel growth, and long-term operating rhythm.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <button class="button primary" type="button" data-joke-trigger data-i18n="hero.primary">
+              Start global expansion
+            </button>
+            <a class="button secondary" href="#services" data-i18n="hero.secondary">Explore services</a>
+          </div>
+        </div>
+        <div class="signal-panel" aria-label="LOUDER service focus">
+          <button class="signal-line" type="button" data-joke-trigger>
+            <span>Market Entry</span>
+            <strong>01</strong>
+          </button>
+          <button class="signal-line" type="button" data-joke-trigger>
+            <span>Content Ops</span>
+            <strong>02</strong>
+          </button>
+          <button class="signal-line" type="button" data-joke-trigger>
+            <span>Growth System</span>
+            <strong>03</strong>
+          </button>
+        </div>
+      </section>
+
+      <section class="section intro" aria-label="Brand introduction">
+        <p data-i18n="intro.copy">
+          We turn “going global” into an operating system. From positioning and messaging to social content, creator
+          partnerships, and performance reviews, LOUDER helps overseas growth become a repeatable practice.
+        </p>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="services.eyebrow">Services</p>
+          <h2 data-i18n="services.title">From market entry to long-term operations</h2>
+        </div>
+        <div class="service-grid">
+          <button class="glass-card" type="button" data-joke-trigger>
+            <span>01</span>
+            <h3 data-i18n="services.card1.title">Market Positioning</h3>
+            <p data-i18n="services.card1.copy">
+              Define the audience, competitive landscape, brand narrative, and differentiated angle before launch.
+            </p>
+          </button>
+          <button class="glass-card" type="button" data-joke-trigger>
+            <span>02</span>
+            <h3 data-i18n="services.card2.title">Content & Social Ops</h3>
+            <p data-i18n="services.card2.copy">
+              Build overseas platform rhythm, visual language, and communication systems that feel native.
+            </p>
+          </button>
+          <button class="glass-card" type="button" data-joke-trigger>
+            <span>03</span>
+            <h3 data-i18n="services.card3.title">Localized Growth</h3>
+            <p data-i18n="services.card3.copy">
+              Connect channels, creators, communities, and campaign moments into a growth loop.
+            </p>
+          </button>
+          <button class="glass-card" type="button" data-joke-trigger>
+            <span>04</span>
+            <h3 data-i18n="services.card4.title">Data Review</h3>
+            <p data-i18n="services.card4.copy">
+              Use operating data to refine content, channels, budget direction, and the next growth move.
+            </p>
+          </button>
+        </div>
+      </section>
+
+      <section class="section method" id="method">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="method.eyebrow">Method</p>
+          <h2 data-i18n="method.title">Start light, iterate continuously</h2>
+        </div>
+        <div class="timeline">
+          <button type="button" data-joke-trigger>
+            <span>Discover</span>
+            <p data-i18n="method.step1">Understand the brand, product, audience, and target market.</p>
+          </button>
+          <button type="button" data-joke-trigger>
+            <span>Design</span>
+            <p data-i18n="method.step2">Shape the overseas message, content strategy, and operating rhythm.</p>
+          </button>
+          <button type="button" data-joke-trigger>
+            <span>Operate</span>
+            <p data-i18n="method.step3">Run content, channel, campaign, and growth actions.</p>
+          </button>
+          <button type="button" data-joke-trigger>
+            <span>Refine</span>
+            <p data-i18n="method.step4">Optimize the system with data, feedback, and market response.</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Ready to build your overseas market system?</h2>
+        </div>
+        <button class="button primary" type="button" data-joke-trigger>hello@loudercreative.com</button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>LOUDER Creative</span>
+      <span data-i18n="footer.copy">Global market operations for ambitious brands.</span>
+    </footer>
+
+    <div class="modal" data-modal hidden>
+      <div class="modal-backdrop" data-modal-close></div>
+      <section
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="overtime-title"
+        aria-describedby="overtime-copy"
+      >
+        <button class="modal-close" type="button" data-modal-close aria-label="Close">×</button>
+        <div class="modal-status">
+          <span class="status-dot"></span>
+          <span>
+            <span data-i18n="modal.statusPrefix">Current time</span>
+            <time data-current-time datetime="">--:--</time>
+            <span>|</span>
+            <span data-i18n="modal.statusSuffix">Past working hours</span>
+          </span>
+        </div>
+        <div class="modal-avatar">
+          <img src="assets/fake_shawn.png" alt="Shawn" />
+        </div>
+        <p class="modal-overline" data-i18n="modal.overline">Shawn has clocked out</p>
+        <h2 id="overtime-title" data-i18n="modal.title">Pay overtime to keep Shawn building</h2>
+        <p id="overtime-copy" data-i18n="modal.copy">
+          Please choose an extension package. Features will continue after the developer receives adequate snacks,
+          caffeine, and emotional support.
+        </p>
+        <div class="overtime-options" aria-label="Overtime packages">
+          <label>
+            <input type="radio" name="overtime" />
+            <span>
+              <strong data-i18n="modal.option1.title">Continue work for 2 hours</strong>
+              <small>
+                <span data-i18n="modal.endTimeLabel">Estimated finish time:</span>
+                <time data-extension-hours="2" datetime="">--:--</time>
+              </small>
+            </span>
+            <b>$199</b>
+          </label>
+          <label>
+            <input type="radio" name="overtime" />
+            <span>
+              <strong data-i18n="modal.option2.title">Continue work for 4 hours</strong>
+              <small>
+                <span data-i18n="modal.endTimeLabel">Estimated finish time:</span>
+                <time data-extension-hours="4" datetime="">--:--</time>
+              </small>
+            </span>
+            <b>$499</b>
+          </label>
+          <label class="is-selected">
+            <input type="radio" name="overtime" checked />
+            <span>
+              <strong data-i18n="modal.option3.title">Work until dawn</strong>
+              <small>
+                <span data-i18n="modal.endTimeLabel">Estimated finish time:</span>
+                <time data-extension-hours="6" datetime="">--:--</time>
+                <span> · </span>
+                <span data-i18n="modal.option3.note">recommended</span>
+              </small>
+            </span>
+            <b>$1199</b>
+          </label>
+        </div>
+        <button class="button primary modal-pay" type="button" data-modal-close data-i18n="modal.pay">
+          Pretend to pay and continue
+        </button>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
