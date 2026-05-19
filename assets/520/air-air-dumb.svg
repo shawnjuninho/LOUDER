@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" role="img" aria-labelledby="title desc">
+  <title id="title">Blue hood mascot</title>
+  <desc id="desc">A cute white plush character wearing a pale blue hood with little goggles.</desc>
+  <defs>
+    <linearGradient id="hood" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e8fbff"/>
+      <stop offset="1" stop-color="#bfeaf4"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f2f7f4"/>
+    </linearGradient>
+    <filter id="shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#27353a" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M54 181 C24 158 13 120 35 88 C61 50 106 38 145 53 C167 61 192 62 216 54 C263 39 312 57 334 98 C352 132 341 169 308 189 C296 119 247 74 179 74 C110 74 66 119 54 181Z" fill="url(#hood)"/>
+    <path d="M85 72 C80 39 100 18 129 16 C149 31 150 57 132 84Z" fill="#dff7ff"/>
+    <path d="M275 76 C282 42 262 19 233 16 C213 30 211 58 229 86Z" fill="#dff7ff"/>
+    <path d="M107 71 C123 57 143 53 161 62 L142 90 C128 85 115 79 107 71Z" fill="#f7e6ba"/>
+    <path d="M115 67 C129 58 144 58 155 65 L140 84 C130 80 121 74 115 67Z" fill="#11879b"/>
+    <path d="M204 62 C223 53 244 57 260 72 C250 81 236 86 221 90Z" fill="#f7e6ba"/>
+    <path d="M211 65 C224 58 240 59 252 68 C244 75 234 81 222 84Z" fill="#11879b"/>
+    <path d="M59 166 C65 98 113 56 180 56 C247 56 299 101 303 168 C307 239 258 295 181 296 C106 297 54 241 59 166Z" fill="url(#hood)"/>
+    <path d="M83 170 C86 116 126 88 180 88 C235 88 276 118 278 170 C282 226 240 266 181 266 C121 266 80 225 83 170Z" fill="url(#shade)"/>
+    <circle cx="132" cy="166" r="13" fill="#111"/>
+    <circle cx="228" cy="166" r="13" fill="#111"/>
+    <path d="M158 202 C166 189 194 189 202 202 C203 215 190 222 180 222 C170 222 157 215 158 202Z" fill="#111"/>
+    <path d="M212 234 C224 229 236 231 247 239" fill="none" stroke="#21343a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M137 271 C108 288 91 312 96 334" fill="none" stroke="#dff7ff" stroke-width="16" stroke-linecap="round"/>
+    <path d="M224 271 C250 291 265 313 262 334" fill="none" stroke="#dff7ff" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="96" cy="334" r="18" fill="#f6ffff"/>
+    <circle cx="262" cy="334" r="18" fill="#f6ffff"/>
+    <path d="M166 273 C159 296 166 315 181 328 C196 315 203 296 196 273Z" fill="#cceff8"/>
+  </g>
+</svg>

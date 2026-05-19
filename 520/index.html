@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex" />
+    <title>Happy 520</title>
+    <style>
+      :root {
+        --paper: #fff7f8;
+        --ink: #3a0a18;
+        --rose: #ff4f80;
+        --rose-deep: #b20f42;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Microsoft YaHei", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 50% 24%, rgba(255, 123, 157, 0.26), transparent 28rem),
+          linear-gradient(180deg, #fffafd 0%, #ffe8ee 100%);
+        overflow: hidden;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      main {
+        position: relative;
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        padding:
+          max(22px, env(safe-area-inset-top))
+          max(22px, env(safe-area-inset-right))
+          max(22px, env(safe-area-inset-bottom))
+          max(22px, env(safe-area-inset-left));
+      }
+
+      .scene {
+        display: grid;
+        width: min(520px, 100%);
+        place-items: center;
+        gap: 26px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(3.4rem, 13vw, 7.5rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .rose-button {
+        width: min(250px, 58vw);
+        border: 0;
+        background: transparent;
+        padding: 0;
+        cursor: pointer;
+        touch-action: manipulation;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+
+      .rose-button img {
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 24px 34px rgba(178, 15, 66, 0.23));
+        transform: translateZ(0);
+        transition: transform 180ms ease;
+        -webkit-user-drag: none;
+      }
+
+      .rose-button:active img {
+        transform: scale(0.96);
+      }
+
+      .petal-drop {
+        position: fixed;
+        top: -42px;
+        left: 50%;
+        z-index: 4;
+        width: 17px;
+        height: 25px;
+        border-radius: 70% 70% 70% 0;
+        background: linear-gradient(135deg, #ffa1b8, var(--rose-deep));
+        opacity: 0.9;
+        pointer-events: none;
+        will-change: transform, opacity;
+        -webkit-animation: fall var(--duration, 5s) linear forwards;
+        animation: fall var(--duration, 5s) linear forwards;
+      }
+
+      @-webkit-keyframes fall {
+        to {
+          -webkit-transform: translate3d(var(--drift, 40px), 112vh, 0) rotate(330deg);
+          opacity: 0;
+        }
+      }
+
+      @keyframes fall {
+        to {
+          transform: translate3d(var(--drift, 40px), 112vh, 0) rotate(330deg);
+          opacity: 0;
+        }
+      }
+
+      .mascot {
+        position: fixed;
+        right: -190px;
+        bottom: 8vh;
+        z-index: 5;
+        width: min(190px, 42vw);
+        opacity: 0;
+        pointer-events: none;
+        will-change: transform, opacity;
+        -webkit-user-drag: none;
+      }
+
+      .mascot.is-flying {
+        -webkit-animation: fly 1.8s cubic-bezier(0.16, 0.84, 0.32, 1) forwards;
+        animation: fly 1.8s cubic-bezier(0.16, 0.84, 0.32, 1) forwards;
+      }
+
+      @-webkit-keyframes fly {
+        0% {
+          opacity: 0;
+          -webkit-transform: translate3d(0, 20px, 0) rotate(-10deg) scale(0.72);
+        }
+
+        22%,
+        78% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 1;
+          -webkit-transform: translate3d(calc(-100vw + 230px), -24vh, 0) rotate(10deg) scale(1);
+        }
+      }
+
+      @keyframes fly {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 20px, 0) rotate(-10deg) scale(0.72);
+        }
+
+        22%,
+        78% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 1;
+          transform: translate3d(calc(-100vw + 230px), -24vh, 0) rotate(10deg) scale(1);
+        }
+      }
+
+      @media (max-width: 640px) {
+        body {
+          overflow: hidden;
+        }
+
+        .scene {
+          gap: 20px;
+        }
+
+        .mascot {
+          right: -150px;
+          bottom: 12vh;
+          width: min(150px, 44vw);
+        }
+
+        @-webkit-keyframes fly {
+          0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 18px, 0) rotate(-10deg) scale(0.72);
+          }
+
+          22%,
+          78% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 1;
+            -webkit-transform: translate3d(calc(-100vw + 170px), -20vh, 0) rotate(10deg) scale(1);
+          }
+        }
+
+        @keyframes fly {
+          0% {
+            opacity: 0;
+            transform: translate3d(0, 18px, 0) rotate(-10deg) scale(0.72);
+          }
+
+          22%,
+          78% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 1;
+            transform: translate3d(calc(-100vw + 170px), -20vh, 0) rotate(10deg) scale(1);
+          }
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          -webkit-animation-duration: 1ms !important;
+          animation-duration: 1ms !important;
+          transition-duration: 1ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="scene" aria-label="Happy 520">
+        <h1>Happy 520</h1>
+        <button class="rose-button" type="button" aria-label="Bloom" data-bloom>
+          <img src="../assets/520/rose.svg" alt="Rose" draggable="false" />
+        </button>
+      </section>
+      <img class="mascot" src="../assets/520/air-air-dumb.svg" alt="" aria-hidden="true" draggable="false" data-mascot />
+    </main>
+    <script>
+      (function () {
+        var button = document.querySelector("[data-bloom]");
+        var mascot = document.querySelector("[data-mascot]");
+
+        function dropPetal() {
+          var petal = document.createElement("span");
+          petal.className = "petal-drop";
+          petal.style.left = Math.random() * 100 + "vw";
+          petal.style.setProperty("--drift", Math.random() * 180 - 90 + "px");
+          petal.style.setProperty("--duration", 3.8 + Math.random() * 2.8 + "s");
+          document.body.appendChild(petal);
+          window.setTimeout(function () {
+            if (petal.parentNode) petal.parentNode.removeChild(petal);
+          }, 7000);
+        }
+
+        function bloom() {
+          for (var index = 0; index < 34; index += 1) {
+            window.setTimeout(dropPetal, index * 48);
+          }
+
+          mascot.classList.remove("is-flying");
+          void mascot.offsetWidth;
+          mascot.classList.add("is-flying");
+        }
+
+        button.addEventListener("click", bloom, false);
+      })();
+    </script>
+  </body>
+</html>
