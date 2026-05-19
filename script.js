@@ -282,6 +282,7 @@ const translations = {
 
 const translationAdditions = {
   en: {
+    "nav.home": "Home",
     "nav.cases": "Cases",
     "visual.eyebrow": "Market Entry",
     "visual.title": "Thailand & Southeast Asia",
@@ -323,6 +324,7 @@ const translationAdditions = {
     "packages.package3.pool": "60 creator candidates for selection",
   },
   ms: {
+    "nav.home": "Utama",
     "nav.cases": "Kes",
     "visual.eyebrow": "Kemasukan Pasaran",
     "visual.title": "Thailand & Asia Tenggara",
@@ -364,6 +366,7 @@ const translationAdditions = {
     "packages.package3.pool": "60 calon kreator untuk pemilihan",
   },
   th: {
+    "nav.home": "หน้าแรก",
     "nav.cases": "เคส",
     "visual.eyebrow": "เข้าสู่ตลาด",
     "visual.title": "ไทยและเอเชียตะวันออกเฉียงใต้",
@@ -405,6 +408,7 @@ const translationAdditions = {
     "packages.package3.pool": "ตัวเลือกครีเอเตอร์ 60 ราย",
   },
   zh: {
+    "nav.home": "首页",
     "nav.cases": "案例",
     "visual.eyebrow": "市场进入",
     "visual.title": "泰国与东南亚",
@@ -473,6 +477,9 @@ const languageOptions = document.querySelector("[data-language-options]");
 const languageOptionButtons = document.querySelectorAll("[data-lang-option]");
 const currentLanguageLabel = document.querySelector("[data-current-language]");
 const currentLanguageFlag = languageTrigger?.querySelector(".flag");
+const viewPanels = document.querySelectorAll("[data-view]");
+const routeLinks = document.querySelectorAll("[data-route]");
+const viewNames = new Set(Array.from(viewPanels, (panel) => panel.dataset.view));
 
 const getPreferredLanguage = () => {
   const savedLanguage = localStorage.getItem("louder-language");
@@ -571,89 +578,43 @@ document.addEventListener("click", (event) => {
   }
 });
 
-const canvas = document.querySelector("#ambientCanvas");
-const context = canvas?.getContext("2d");
-const pointer = { x: 0.64, y: 0.42 };
-let width = 0;
-let height = 0;
-let nodes = [];
-
-const resizeCanvas = () => {
-  if (!canvas || !context) return;
-  const ratio = Math.min(window.devicePixelRatio || 1, 2);
-  width = window.innerWidth;
-  height = window.innerHeight;
-  canvas.width = Math.floor(width * ratio);
-  canvas.height = Math.floor(height * ratio);
-  canvas.style.width = `${width}px`;
-  canvas.style.height = `${height}px`;
-  context.setTransform(ratio, 0, 0, ratio, 0, 0);
-
-  const nodeCount = width < 700 ? 30 : 54;
-  nodes = Array.from({ length: nodeCount }, (_, index) => ({
-    x: (index * 197) % Math.max(width, 1),
-    y: (index * 113) % Math.max(height, 1),
-    vx: ((index % 7) - 3) * 0.04,
-    vy: ((index % 5) - 2) * 0.035,
-  }));
+const getViewFromHash = () => {
+  const hashView = window.location.hash.replace("#", "");
+  return viewNames.has(hashView) ? hashView : "home";
 };
 
-const drawAmbient = () => {
-  if (!context) return;
-  context.clearRect(0, 0, width, height);
-  context.fillStyle = "rgba(247, 249, 247, 0.42)";
-  context.fillRect(0, 0, width, height);
+const setActiveView = (view, updateHash = true) => {
+  const activeView = viewNames.has(view) ? view : "home";
 
-  const focusX = pointer.x * width;
-  const focusY = pointer.y * height;
-  const glow = context.createRadialGradient(focusX, focusY, 0, focusX, focusY, Math.max(width, height) * 0.72);
-  glow.addColorStop(0, "rgba(110, 231, 242, 0.16)");
-  glow.addColorStop(0.35, "rgba(255, 212, 61, 0.08)");
-  glow.addColorStop(1, "rgba(247, 249, 247, 0)");
-  context.fillStyle = glow;
-  context.fillRect(0, 0, width, height);
-
-  nodes.forEach((node, index) => {
-    node.x += node.vx;
-    node.y += node.vy;
-
-    if (node.x < -40) node.x = width + 40;
-    if (node.x > width + 40) node.x = -40;
-    if (node.y < -40) node.y = height + 40;
-    if (node.y > height + 40) node.y = -40;
-
-    for (let nextIndex = index + 1; nextIndex < nodes.length; nextIndex += 1) {
-      const next = nodes[nextIndex];
-      const distance = Math.hypot(node.x - next.x, node.y - next.y);
-
-      if (distance < 170) {
-        context.strokeStyle = `rgba(6, 20, 23, ${0.09 - distance / 2400})`;
-        context.lineWidth = 1;
-        context.beginPath();
-        context.moveTo(node.x, node.y);
-        context.lineTo(next.x, next.y);
-        context.stroke();
-      }
-    }
-
-    context.fillStyle = index % 8 === 0 ? "rgba(243, 176, 0, 0.5)" : "rgba(6, 20, 23, 0.24)";
-    context.beginPath();
-    context.arc(node.x, node.y, index % 8 === 0 ? 2.4 : 1.6, 0, Math.PI * 2);
-    context.fill();
+  viewPanels.forEach((panel) => {
+    const isActive = panel.dataset.view === activeView;
+    panel.classList.toggle("is-active", isActive);
+    panel.toggleAttribute("hidden", !isActive);
   });
 
-  window.requestAnimationFrame(drawAmbient);
+  routeLinks.forEach((link) => {
+    link.classList.toggle("is-active", link.dataset.route === activeView);
+  });
+
+  if (updateHash && window.location.hash !== `#${activeView}`) {
+    window.history.pushState(null, "", `#${activeView}`);
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  closeMenu();
 };
 
-window.addEventListener(
-  "pointermove",
-  (event) => {
-    pointer.x = event.clientX / Math.max(window.innerWidth, 1);
-    pointer.y = event.clientY / Math.max(window.innerHeight, 1);
-  },
-  { passive: true },
-);
+routeLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const route = link.dataset.route;
+    if (!route) return;
+    event.preventDefault();
+    setActiveView(route);
+  });
+});
 
-window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
-drawAmbient();
+window.addEventListener("hashchange", () => {
+  setActiveView(getViewFromHash(), false);
+});
+
+setActiveView(getViewFromHash(), false);

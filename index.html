@@ -12,19 +12,18 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <canvas class="ambient-canvas" id="ambientCanvas" aria-hidden="true"></canvas>
-
     <header class="site-header" data-header>
-      <a class="brand-mark" href="#top" aria-label="LOUDER Creative home">
+      <a class="brand-mark" href="#home" data-route="home" aria-label="LOUDER Creative home">
         <img src="assets/logo_small.PNG" alt="" />
         <span>LOUDER</span>
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#services" data-i18n="nav.services">Services</a>
-        <a href="#why" data-i18n="nav.why">Why LOUDER</a>
-        <a href="#cases" data-i18n="nav.cases">Cases</a>
-        <a href="#packages" data-i18n="nav.packages">Packages</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a class="is-active" href="#home" data-route="home" data-i18n="nav.home">Home</a>
+        <a href="#services" data-route="services" data-i18n="nav.services">Services</a>
+        <a href="#why" data-route="why" data-i18n="nav.why">Why LOUDER</a>
+        <a href="#cases" data-route="cases" data-i18n="nav.cases">Cases</a>
+        <a href="#packages" data-route="packages" data-i18n="nav.packages">Packages</a>
+        <a href="#contact" data-route="contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="header-actions">
         <div class="language-switch" data-language-menu>
@@ -65,286 +64,319 @@
     </header>
 
     <nav class="mobile-nav" data-mobile-nav aria-label="Mobile navigation">
-      <a href="#services" data-i18n="nav.services">Services</a>
-      <a href="#why" data-i18n="nav.why">Why LOUDER</a>
-      <a href="#cases" data-i18n="nav.cases">Cases</a>
-      <a href="#packages" data-i18n="nav.packages">Packages</a>
-      <a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a class="is-active" href="#home" data-route="home" data-i18n="nav.home">Home</a>
+      <a href="#services" data-route="services" data-i18n="nav.services">Services</a>
+      <a href="#why" data-route="why" data-i18n="nav.why">Why LOUDER</a>
+      <a href="#cases" data-route="cases" data-i18n="nav.cases">Cases</a>
+      <a href="#packages" data-route="packages" data-i18n="nav.packages">Packages</a>
+      <a href="#contact" data-route="contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-content">
-          <img class="hero-logo" src="assets/logo.PNG" alt="LOUDER Creative" />
-          <p class="eyebrow" data-i18n="hero.eyebrow">Thailand & Southeast Asia Growth Partner</p>
-          <h1 data-i18n="hero.title">Localize, launch, and scale your brand across Southeast Asia.</h1>
-          <p class="hero-copy" data-i18n="hero.copy">
-            LOUDER Creative helps brands enter Thailand and Southeast Asia through localized marketing, KOL/KOC
-            activation, content operations, commerce setup, and data-driven growth.
+    <main class="site-main" id="top">
+      <section class="view-panel home-view is-active" id="home" data-view="home" aria-label="Home">
+        <section class="hero">
+          <div class="hero-content">
+            <img class="hero-logo" src="assets/logo.PNG" alt="LOUDER Creative" />
+            <p class="eyebrow" data-i18n="hero.eyebrow">Thailand & Southeast Asia Growth Partner</p>
+            <h1 data-i18n="hero.title">Localize, launch, and scale your brand across Southeast Asia.</h1>
+            <p class="hero-copy" data-i18n="hero.copy">
+              LOUDER Creative helps brands enter Thailand and Southeast Asia through localized marketing, KOL/KOC
+              activation, content operations, commerce setup, and data-driven growth.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button primary" href="mailto:postmaster@louder-creative.com" data-i18n="hero.primary">
+                Contact us
+              </a>
+              <a class="button secondary" href="#services" data-route="services" data-i18n="hero.secondary">
+                Explore services
+              </a>
+            </div>
+          </div>
+          <aside class="hero-visual" aria-label="Market entry visual">
+            <div class="visual-frame">
+              <img src="assets/building-visual.jpg" alt="" />
+              <span class="visual-stripe stripe-yellow-one"></span>
+              <span class="visual-stripe stripe-ink"></span>
+              <span class="visual-stripe stripe-yellow-two"></span>
+            </div>
+            <div class="visual-console">
+              <span class="console-kicker" data-i18n="visual.eyebrow">Market Entry</span>
+              <strong data-i18n="visual.title">Thailand & Southeast Asia</strong>
+              <div class="market-chips" aria-label="Markets">
+                <span>TH</span>
+                <span>MY</span>
+                <span>SG</span>
+                <span>SEA</span>
+              </div>
+              <div class="signal-rail">
+                <span data-i18n="signal.one">KOL/KOC Activation</span>
+                <span data-i18n="signal.two">Content Operations</span>
+                <span data-i18n="signal.three">Commerce Growth</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section intro split-intro" aria-label="Brand introduction">
+          <p data-i18n="intro.copy">
+            We are a cross-border marketing and commercialization partner focused on helping Chinese brands localize,
+            promote, sell, and scale in Thailand and Southeast Asia.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="mailto:postmaster@louder-creative.com" data-i18n="hero.primary">
-              Contact us
+          <div class="stat-grid compact">
+            <div>
+              <strong>6+</strong>
+              <span data-i18n="stats.platforms">partner platforms</span>
+            </div>
+            <div>
+              <strong>10+</strong>
+              <span data-i18n="stats.industries">industries served</span>
+            </div>
+            <div>
+              <strong>10,000+</strong>
+              <span data-i18n="stats.creators">creator resources</span>
+            </div>
+            <div>
+              <strong>20,000+</strong>
+              <span data-i18n="stats.content">content outputs</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view-panel services-view" id="services" data-view="services" aria-label="Services" hidden>
+        <section class="section services">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="services.eyebrow">Services</p>
+            <h2 data-i18n="services.title">Full-cycle services for Thailand market growth</h2>
+          </div>
+          <div class="service-layout">
+            <aside class="service-visual" aria-label="Growth system visual">
+              <img src="assets/building-visual.jpg" alt="" />
+              <div class="system-stack">
+                <span data-i18n="matrix.brand.title">Brand Strategy</span>
+                <span data-i18n="matrix.content.title">Viral Content Distribution</span>
+                <span data-i18n="matrix.commerce.title">E-commerce Services</span>
+              </div>
+            </aside>
+            <div class="service-grid">
+              <article class="glass-card">
+                <span>01</span>
+                <h3 data-i18n="services.market.title">Market Entry Strategy</h3>
+                <p data-i18n="services.market.copy">Market research, competitor benchmarking, product positioning, and launch planning.</p>
+              </article>
+              <article class="glass-card">
+                <span>02</span>
+                <h3 data-i18n="services.kol.title">KOC/KOL Marketing</h3>
+                <p data-i18n="services.kol.copy">Creator sourcing, campaign planning, creative briefs, script writing, and performance tracking.</p>
+              </article>
+              <article class="glass-card">
+                <span>03</span>
+                <h3 data-i18n="services.content.title">Content Planning</h3>
+                <p data-i18n="services.content.copy">Content strategy, short-form scripts, and Chinese, English, and Thai translation support.</p>
+              </article>
+              <article class="glass-card">
+                <span>04</span>
+                <h3 data-i18n="services.social.title">Social Growth</h3>
+                <p data-i18n="services.social.copy">Account setup, posting strategy, and ads support across TikTok, Instagram, and Facebook.</p>
+              </article>
+              <article class="glass-card">
+                <span>05</span>
+                <h3 data-i18n="services.live.title">Live Commerce</h3>
+                <p data-i18n="services.live.copy">Thailand-based livestream execution, creator coordination, run-of-show design, and conversion optimization.</p>
+              </article>
+              <article class="glass-card">
+                <span>06</span>
+                <h3 data-i18n="services.store.title">E-commerce Operations</h3>
+                <p data-i18n="services.store.copy">Local store setup, product listing optimization, campaign operations, and ongoing store support.</p>
+              </article>
+              <article class="glass-card">
+                <span>07</span>
+                <h3 data-i18n="services.data.title">Data & Optimization</h3>
+                <p data-i18n="services.data.copy">Trend analysis, ROI review, performance optimization, and reporting.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section matrix">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="matrix.eyebrow">Marketing Matrix</p>
+            <h2 data-i18n="matrix.title">A multi-channel system for new commerce models</h2>
+          </div>
+          <div class="matrix-grid">
+            <article class="glass-card">
+              <span>Brand</span>
+              <h3 data-i18n="matrix.brand.title">Brand Strategy</h3>
+              <p data-i18n="matrix.brand.copy">Positioning, messaging, launch planning, and localized storytelling for the target market.</p>
+            </article>
+            <article class="glass-card">
+              <span>Commerce</span>
+              <h3 data-i18n="matrix.commerce.title">E-commerce Services</h3>
+              <p data-i18n="matrix.commerce.copy">Store setup, product operations, livestream coordination, promotions, and conversion support.</p>
+            </article>
+            <article class="glass-card">
+              <span>Content</span>
+              <h3 data-i18n="matrix.content.title">Viral Content Distribution</h3>
+              <p data-i18n="matrix.content.copy">KOL/KOC seeding, short-video scripts, platform content rhythm, and performance optimization.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="view-panel why-view" id="why" data-view="why" aria-label="Why LOUDER" hidden>
+        <section class="section why">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="why.eyebrow">Why LOUDER</p>
+            <h2 data-i18n="why.title">Local teams, data discipline, mature execution</h2>
+          </div>
+          <div class="why-grid">
+            <article class="glass-card">
+              <span>01</span>
+              <h3 data-i18n="why.direct.title">Direct Local Execution</h3>
+              <p data-i18n="why.direct.copy">
+                Direct access to Thailand-based execution resources reduces agency layers and improves efficiency.
+              </p>
+            </article>
+            <article class="glass-card">
+              <span>02</span>
+              <h3 data-i18n="why.data.title">Data-Driven Matching</h3>
+              <p data-i18n="why.data.copy">
+                Creator selection, content strategy, and campaign decisions are informed by database resources and
+                past performance.
+              </p>
+            </article>
+            <article class="glass-card">
+              <span>03</span>
+              <h3 data-i18n="why.experience.title">Cross-Market Experience</h3>
+              <p data-i18n="why.experience.copy">
+                The team has hands-on experience across China, Thailand, and Singapore in cross-border commerce and
+                brand marketing.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section team" aria-label="Team background">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="team.eyebrow">Team Background</p>
+            <h2 data-i18n="team.title">Thailand-local execution with cross-market operators</h2>
+          </div>
+          <div class="team-grid">
+            <article class="glass-card">
+              <span>01</span>
+              <h3 data-i18n="team.local.title">Thailand Local Team</h3>
+              <p data-i18n="team.local.copy">Thailand-based resources connected with a Hangzhou office rhythm for faster coordination.</p>
+            </article>
+            <article class="glass-card">
+              <span>02</span>
+              <h3 data-i18n="team.alumni.title">Founder Background</h3>
+              <p data-i18n="team.alumni.copy">Founding members include three Zhejiang University alumni with practical market experience.</p>
+            </article>
+            <article class="glass-card">
+              <span>03</span>
+              <h3 data-i18n="team.operator.title">Operator Experience</h3>
+              <p data-i18n="team.operator.copy">More than two years of hands-on work across China, Thailand, and Singapore commerce and brand marketing.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="view-panel cases-view" id="cases" data-view="cases" aria-label="Cases" hidden>
+        <section class="section cases">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="cases.eyebrow">Brand Cases</p>
+            <h2 data-i18n="cases.title">Selected brand and platform collaborations</h2>
+          </div>
+          <p class="section-copy" data-i18n="cases.copy">
+            Experience spans consumer brands, platform campaigns, beauty, wellness, lifestyle, and commerce categories.
+          </p>
+          <div class="case-stage">
+            <div class="case-grid" aria-label="Brand case logos">
+              <figure><img src="assets/cases/imou.png" alt="imou" /><figcaption>imou</figcaption></figure>
+              <figure><img src="assets/cases/lemon8.png" alt="lemon8" /><figcaption>lemon8</figcaption></figure>
+              <figure><img src="assets/cases/chioture.jpg" alt="Chioture" /><figcaption>Chioture</figcaption></figure>
+              <figure><img src="assets/cases/you-pure.jpg" alt="YOU&PURE" /><figcaption>YOU&amp;PURE</figcaption></figure>
+              <figure><img src="assets/cases/spring-letter.jpg" alt="春日来信" /><figcaption>春日来信</figcaption></figure>
+              <figure><img src="assets/cases/mizuchol.png" alt="Mizuchol" /><figcaption>Mizuchol</figcaption></figure>
+              <figure><img src="assets/cases/encom.png" alt="ENCOM" /><figcaption>ENCOM</figcaption></figure>
+              <figure><img src="assets/cases/zuben.png" alt="逐本" /><figcaption>逐本</figcaption></figure>
+              <figure><img src="assets/cases/neau.jpg" alt="neau" /><figcaption>neau</figcaption></figure>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view-panel packages-view" id="packages" data-view="packages" aria-label="Packages" hidden>
+        <section class="section packages">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="packages.eyebrow">Packages</p>
+            <h2 data-i18n="packages.title">TikTok creator packages</h2>
+          </div>
+          <p class="section-copy" data-i18n="packages.copy">
+            All services can be customized to match your goals, timeline, and budget.
+          </p>
+          <div class="scope-grid" aria-label="Package customization scope">
+            <span data-i18n="packages.scope.brief">Creative brief writing</span>
+            <span data-i18n="packages.scope.matrix">Content matrix placement</span>
+            <span data-i18n="packages.scope.criteria">Creator screening criteria</span>
+            <span data-i18n="packages.scope.cycle">Service cycle planning</span>
+            <span data-i18n="packages.scope.quantity">Fixed creator quantity</span>
+          </div>
+          <div class="package-grid">
+            <article class="package-card">
+              <p class="package-type" data-i18n="packages.package1.type">30 KOCs · 1k-100k followers</p>
+              <h3 data-i18n="packages.package1.title">Package 1</h3>
+              <p data-i18n="packages.package1.copy">TikTok review short-video production for early creator testing.</p>
+              <ul>
+                <li data-i18n="packages.shared.cart">Shopping cart attachment and dedicated promo code</li>
+                <li data-i18n="packages.package1.pool">50 creator candidates for selection</li>
+                <li data-i18n="packages.shared.translation">Chinese, English, and Thai script translation</li>
+              </ul>
+            </article>
+            <article class="package-card is-featured">
+              <p class="package-type" data-i18n="packages.package2.type">100 KOCs · 1k-100k followers</p>
+              <h3 data-i18n="packages.package2.title">Package 2</h3>
+              <p data-i18n="packages.package2.copy">Broader TikTok review distribution for stronger content coverage.</p>
+              <ul>
+                <li data-i18n="packages.shared.cart">Shopping cart attachment and dedicated promo code</li>
+                <li data-i18n="packages.package2.pool">150 creator candidates for selection</li>
+                <li data-i18n="packages.shared.translation">Chinese, English, and Thai script translation</li>
+              </ul>
+            </article>
+            <article class="package-card">
+              <p class="package-type" data-i18n="packages.package3.type">50 KOLs · 10k-100k followers</p>
+              <h3 data-i18n="packages.package3.title">Package 3</h3>
+              <p data-i18n="packages.package3.copy">Higher-impact TikTok review campaigns with mid-tier creator reach.</p>
+              <ul>
+                <li data-i18n="packages.shared.cart">Shopping cart attachment and dedicated promo code</li>
+                <li data-i18n="packages.package3.pool">60 creator candidates for selection</li>
+                <li data-i18n="packages.shared.translation">Chinese, English, and Thai script translation</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="view-panel contact-view" id="contact" data-view="contact" aria-label="Contact" hidden>
+        <section class="section contact">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Ready to plan your Southeast Asia growth system?</h2>
+            <p data-i18n="contact.copy">
+              Tell us your target market, category, and launch timeline. We will help shape a localized operating plan.
+            </p>
+          </div>
+          <div class="contact-panel">
+            <a class="contact-link" href="mailto:postmaster@louder-creative.com">
+              <span data-i18n="contact.emailLabel">Email</span>
+              <strong>postmaster@louder-creative.com</strong>
             </a>
-            <a class="button secondary" href="#services" data-i18n="hero.secondary">Explore services</a>
+            <a class="contact-link" href="https://www.louder-creative.com/">
+              <span data-i18n="contact.domainLabel">Website</span>
+              <strong>www.louder-creative.com</strong>
+            </a>
           </div>
-        </div>
-        <aside class="hero-visual" aria-label="Market entry visual">
-          <img src="assets/building-visual.jpg" alt="" />
-          <span class="visual-stripe stripe-yellow-one"></span>
-          <span class="visual-stripe stripe-ink"></span>
-          <span class="visual-stripe stripe-yellow-two"></span>
-          <div class="visual-caption">
-            <span data-i18n="visual.eyebrow">Market Entry</span>
-            <strong data-i18n="visual.title">Thailand & Southeast Asia</strong>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section intro" aria-label="Brand introduction">
-        <p data-i18n="intro.copy">
-          We are a cross-border marketing and commercialization partner focused on helping Chinese brands localize,
-          promote, sell, and scale in Thailand and Southeast Asia.
-        </p>
-      </section>
-
-      <section class="section team" aria-label="Team background">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="team.eyebrow">Team Background</p>
-          <h2 data-i18n="team.title">Thailand-local execution with cross-market operators</h2>
-        </div>
-        <div class="team-grid">
-          <article class="glass-card">
-            <span>01</span>
-            <h3 data-i18n="team.local.title">Thailand Local Team</h3>
-            <p data-i18n="team.local.copy">Thailand-based resources connected with a Hangzhou office rhythm for faster coordination.</p>
-          </article>
-          <article class="glass-card">
-            <span>02</span>
-            <h3 data-i18n="team.alumni.title">Founder Background</h3>
-            <p data-i18n="team.alumni.copy">Founding members include three Zhejiang University alumni with practical market experience.</p>
-          </article>
-          <article class="glass-card">
-            <span>03</span>
-            <h3 data-i18n="team.operator.title">Operator Experience</h3>
-            <p data-i18n="team.operator.copy">More than two years of hands-on work across China, Thailand, and Singapore commerce and brand marketing.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section stats" aria-label="Portfolio metrics">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="stats.eyebrow">Portfolio</p>
-          <h2 data-i18n="stats.title">Built for practical market execution</h2>
-        </div>
-        <div class="stat-grid">
-          <div>
-            <strong>6+</strong>
-            <span data-i18n="stats.platforms">partner platforms</span>
-          </div>
-          <div>
-            <strong>10+</strong>
-            <span data-i18n="stats.industries">industries served</span>
-          </div>
-          <div>
-            <strong>10,000+</strong>
-            <span data-i18n="stats.creators">creator resources</span>
-          </div>
-          <div>
-            <strong>20,000+</strong>
-            <span data-i18n="stats.content">content outputs</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section cases" id="cases">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="cases.eyebrow">Brand Cases</p>
-          <h2 data-i18n="cases.title">Selected brand and platform collaborations</h2>
-        </div>
-        <p class="section-copy" data-i18n="cases.copy">
-          Experience spans consumer brands, platform campaigns, beauty, wellness, lifestyle, and commerce categories.
-        </p>
-        <div class="case-grid" aria-label="Brand case logos">
-          <figure><img src="assets/cases/imou.png" alt="imou" /><figcaption>imou</figcaption></figure>
-          <figure><img src="assets/cases/lemon8.png" alt="lemon8" /><figcaption>lemon8</figcaption></figure>
-          <figure><img src="assets/cases/chioture.jpg" alt="Chioture" /><figcaption>Chioture</figcaption></figure>
-          <figure><img src="assets/cases/you-pure.jpg" alt="YOU&PURE" /><figcaption>YOU&amp;PURE</figcaption></figure>
-          <figure><img src="assets/cases/spring-letter.jpg" alt="春日来信" /><figcaption>春日来信</figcaption></figure>
-          <figure><img src="assets/cases/mizuchol.png" alt="Mizuchol" /><figcaption>Mizuchol</figcaption></figure>
-          <figure><img src="assets/cases/encom.png" alt="ENCOM" /><figcaption>ENCOM</figcaption></figure>
-          <figure><img src="assets/cases/zuben.png" alt="逐本" /><figcaption>逐本</figcaption></figure>
-          <figure><img src="assets/cases/neau.jpg" alt="neau" /><figcaption>neau</figcaption></figure>
-        </div>
-      </section>
-
-      <section class="section why" id="why">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="why.eyebrow">Why LOUDER</p>
-          <h2 data-i18n="why.title">Local teams, data discipline, mature execution</h2>
-        </div>
-        <div class="why-grid">
-          <article class="glass-card">
-            <span>01</span>
-            <h3 data-i18n="why.direct.title">Direct Local Execution</h3>
-            <p data-i18n="why.direct.copy">
-              Direct access to Thailand-based execution resources reduces agency layers and improves efficiency.
-            </p>
-          </article>
-          <article class="glass-card">
-            <span>02</span>
-            <h3 data-i18n="why.data.title">Data-Driven Matching</h3>
-            <p data-i18n="why.data.copy">
-              Creator selection, content strategy, and campaign decisions are informed by database resources and
-              past performance.
-            </p>
-          </article>
-          <article class="glass-card">
-            <span>03</span>
-            <h3 data-i18n="why.experience.title">Cross-Market Experience</h3>
-            <p data-i18n="why.experience.copy">
-              The team has hands-on experience across China, Thailand, and Singapore in cross-border commerce and
-              brand marketing.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section services" id="services">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="services.eyebrow">Services</p>
-          <h2 data-i18n="services.title">Full-cycle services for Thailand market growth</h2>
-        </div>
-        <div class="service-grid">
-          <article class="glass-card">
-            <span>01</span>
-            <h3 data-i18n="services.market.title">Market Entry Strategy</h3>
-            <p data-i18n="services.market.copy">Market research, competitor benchmarking, product positioning, and launch planning.</p>
-          </article>
-          <article class="glass-card">
-            <span>02</span>
-            <h3 data-i18n="services.kol.title">KOC/KOL Marketing</h3>
-            <p data-i18n="services.kol.copy">Creator sourcing, campaign planning, creative briefs, script writing, and performance tracking.</p>
-          </article>
-          <article class="glass-card">
-            <span>03</span>
-            <h3 data-i18n="services.content.title">Content Planning</h3>
-            <p data-i18n="services.content.copy">Content strategy, short-form scripts, and Chinese, English, and Thai translation support.</p>
-          </article>
-          <article class="glass-card">
-            <span>04</span>
-            <h3 data-i18n="services.social.title">Social Growth</h3>
-            <p data-i18n="services.social.copy">Account setup, posting strategy, and ads support across TikTok, Instagram, and Facebook.</p>
-          </article>
-          <article class="glass-card">
-            <span>05</span>
-            <h3 data-i18n="services.live.title">Live Commerce</h3>
-            <p data-i18n="services.live.copy">Thailand-based livestream execution, creator coordination, run-of-show design, and conversion optimization.</p>
-          </article>
-          <article class="glass-card">
-            <span>06</span>
-            <h3 data-i18n="services.store.title">E-commerce Operations</h3>
-            <p data-i18n="services.store.copy">Local store setup, product listing optimization, campaign operations, and ongoing store support.</p>
-          </article>
-          <article class="glass-card">
-            <span>07</span>
-            <h3 data-i18n="services.data.title">Data & Optimization</h3>
-            <p data-i18n="services.data.copy">Trend analysis, ROI review, performance optimization, and reporting.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section matrix">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="matrix.eyebrow">Marketing Matrix</p>
-          <h2 data-i18n="matrix.title">A multi-channel system for new commerce models</h2>
-        </div>
-        <div class="matrix-grid">
-          <article class="glass-card">
-            <span>Brand</span>
-            <h3 data-i18n="matrix.brand.title">Brand Strategy</h3>
-            <p data-i18n="matrix.brand.copy">Positioning, messaging, launch planning, and localized storytelling for the target market.</p>
-          </article>
-          <article class="glass-card">
-            <span>Commerce</span>
-            <h3 data-i18n="matrix.commerce.title">E-commerce Services</h3>
-            <p data-i18n="matrix.commerce.copy">Store setup, product operations, livestream coordination, promotions, and conversion support.</p>
-          </article>
-          <article class="glass-card">
-            <span>Content</span>
-            <h3 data-i18n="matrix.content.title">Viral Content Distribution</h3>
-            <p data-i18n="matrix.content.copy">KOL/KOC seeding, short-video scripts, platform content rhythm, and performance optimization.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section packages" id="packages">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="packages.eyebrow">Packages</p>
-          <h2 data-i18n="packages.title">TikTok creator packages</h2>
-        </div>
-        <p class="section-copy" data-i18n="packages.copy">
-          All services can be customized to match your goals, timeline, and budget.
-        </p>
-        <div class="scope-grid" aria-label="Package customization scope">
-          <span data-i18n="packages.scope.brief">Creative brief writing</span>
-          <span data-i18n="packages.scope.matrix">Content matrix placement</span>
-          <span data-i18n="packages.scope.criteria">Creator screening criteria</span>
-          <span data-i18n="packages.scope.cycle">Service cycle planning</span>
-          <span data-i18n="packages.scope.quantity">Fixed creator quantity</span>
-        </div>
-        <div class="package-grid">
-          <article class="package-card">
-            <p class="package-type" data-i18n="packages.package1.type">30 KOCs · 1k-100k followers</p>
-            <h3 data-i18n="packages.package1.title">Package 1</h3>
-            <p data-i18n="packages.package1.copy">TikTok review short-video production for early creator testing.</p>
-            <ul>
-              <li data-i18n="packages.shared.cart">Shopping cart attachment and dedicated promo code</li>
-              <li data-i18n="packages.package1.pool">50 creator candidates for selection</li>
-              <li data-i18n="packages.shared.translation">Chinese, English, and Thai script translation</li>
-            </ul>
-          </article>
-          <article class="package-card is-featured">
-            <p class="package-type" data-i18n="packages.package2.type">100 KOCs · 1k-100k followers</p>
-            <h3 data-i18n="packages.package2.title">Package 2</h3>
-            <p data-i18n="packages.package2.copy">Broader TikTok review distribution for stronger content coverage.</p>
-            <ul>
-              <li data-i18n="packages.shared.cart">Shopping cart attachment and dedicated promo code</li>
-              <li data-i18n="packages.package2.pool">150 creator candidates for selection</li>
-              <li data-i18n="packages.shared.translation">Chinese, English, and Thai script translation</li>
-            </ul>
-          </article>
-          <article class="package-card">
-            <p class="package-type" data-i18n="packages.package3.type">50 KOLs · 10k-100k followers</p>
-            <h3 data-i18n="packages.package3.title">Package 3</h3>
-            <p data-i18n="packages.package3.copy">Higher-impact TikTok review campaigns with mid-tier creator reach.</p>
-            <ul>
-              <li data-i18n="packages.shared.cart">Shopping cart attachment and dedicated promo code</li>
-              <li data-i18n="packages.package3.pool">60 creator candidates for selection</li>
-              <li data-i18n="packages.shared.translation">Chinese, English, and Thai script translation</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact">
-        <div>
-          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
-          <h2 data-i18n="contact.title">Ready to plan your Southeast Asia growth system?</h2>
-          <p data-i18n="contact.copy">
-            Tell us your target market, category, and launch timeline. We will help shape a localized operating plan.
-          </p>
-        </div>
-        <div class="contact-panel">
-          <a class="contact-link" href="mailto:postmaster@louder-creative.com">
-            <span data-i18n="contact.emailLabel">Email</span>
-            <strong>postmaster@louder-creative.com</strong>
-          </a>
-          <a class="contact-link" href="https://www.louder-creative.com/">
-            <span data-i18n="contact.domainLabel">Website</span>
-            <strong>www.louder-creative.com</strong>
-          </a>
-        </div>
+        </section>
       </section>
     </main>
 
