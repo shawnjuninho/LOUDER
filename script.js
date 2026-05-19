@@ -480,6 +480,10 @@ const currentLanguageFlag = languageTrigger?.querySelector(".flag");
 const viewPanels = document.querySelectorAll("[data-view]");
 const routeLinks = document.querySelectorAll("[data-route]");
 const viewNames = new Set(Array.from(viewPanels, (panel) => panel.dataset.view));
+const routeAliases = {
+  packages: "services",
+  why: "cases",
+};
 
 const getPreferredLanguage = () => {
   const savedLanguage = localStorage.getItem("louder-language");
@@ -580,11 +584,13 @@ document.addEventListener("click", (event) => {
 
 const getViewFromHash = () => {
   const hashView = window.location.hash.replace("#", "");
-  return viewNames.has(hashView) ? hashView : "home";
+  const routedView = routeAliases[hashView] || hashView;
+  return viewNames.has(routedView) ? routedView : "home";
 };
 
 const setActiveView = (view, updateHash = true) => {
-  const activeView = viewNames.has(view) ? view : "home";
+  const routedView = routeAliases[view] || view;
+  const activeView = viewNames.has(routedView) ? routedView : "home";
 
   viewPanels.forEach((panel) => {
     const isActive = panel.dataset.view === activeView;
