@@ -1,182 +1,280 @@
 const translations = {
   en: {
     "nav.services": "Services",
-    "nav.method": "Method",
+    "nav.why": "Why LOUDER",
+    "nav.packages": "Packages",
     "nav.contact": "Contact",
-    "hero.eyebrow": "Global Market Operations",
-    "hero.title": "Make your brand visible, understood, and scalable overseas.",
+    "hero.eyebrow": "Thailand & Southeast Asia Growth Partner",
+    "hero.title": "Localize, launch, and scale your brand across Southeast Asia.",
     "hero.copy":
-      "LOUDER Creative helps ambitious brands enter overseas markets with localized strategy, content operations, channel growth, and long-term operating rhythm.",
-    "hero.primary": "Start global expansion",
+      "LOUDER Creative helps brands enter Thailand and Southeast Asia through localized marketing, KOL/KOC activation, content operations, commerce setup, and data-driven growth.",
+    "hero.primary": "Contact us",
     "hero.secondary": "Explore services",
+    "signal.one": "KOL/KOC Activation",
+    "signal.two": "Content Operations",
+    "signal.three": "Commerce Growth",
     "intro.copy":
-      "We turn “going global” into an operating system. From positioning and messaging to social content, creator partnerships, and performance reviews, LOUDER helps overseas growth become a repeatable practice.",
+      "We are a cross-border marketing and commercialization partner focused on helping Chinese brands localize, promote, sell, and scale in Thailand and Southeast Asia.",
+    "stats.eyebrow": "Portfolio",
+    "stats.title": "Built for practical market execution",
+    "stats.platforms": "partner platforms",
+    "stats.industries": "industries served",
+    "stats.creators": "creator resources",
+    "stats.content": "content outputs",
+    "why.eyebrow": "Why LOUDER",
+    "why.title": "Local teams, data discipline, mature execution",
+    "why.direct.title": "Direct Local Execution",
+    "why.direct.copy": "Direct access to Thailand-based execution resources reduces agency layers and improves efficiency.",
+    "why.data.title": "Data-Driven Matching",
+    "why.data.copy":
+      "Creator selection, content strategy, and campaign decisions are informed by database resources and past performance.",
+    "why.experience.title": "Cross-Market Experience",
+    "why.experience.copy":
+      "The team has hands-on experience across China, Thailand, and Singapore in cross-border commerce and brand marketing.",
     "services.eyebrow": "Services",
-    "services.title": "From market entry to long-term operations",
-    "services.card1.title": "Market Positioning",
-    "services.card1.copy": "Define the audience, competitive landscape, brand narrative, and differentiated angle before launch.",
-    "services.card2.title": "Content & Social Ops",
-    "services.card2.copy": "Build overseas platform rhythm, visual language, and communication systems that feel native.",
-    "services.card3.title": "Localized Growth",
-    "services.card3.copy": "Connect channels, creators, communities, and campaign moments into a growth loop.",
-    "services.card4.title": "Data Review",
-    "services.card4.copy": "Use operating data to refine content, channels, budget direction, and the next growth move.",
-    "method.eyebrow": "Method",
-    "method.title": "Start light, iterate continuously",
-    "method.step1": "Understand the brand, product, audience, and target market.",
-    "method.step2": "Shape the overseas message, content strategy, and operating rhythm.",
-    "method.step3": "Run content, channel, campaign, and growth actions.",
-    "method.step4": "Optimize the system with data, feedback, and market response.",
+    "services.title": "Full-cycle services for Thailand market growth",
+    "services.market.title": "Market Entry Strategy",
+    "services.market.copy": "Market research, competitor benchmarking, product positioning, and launch planning.",
+    "services.kol.title": "KOC/KOL Marketing",
+    "services.kol.copy": "Creator sourcing, campaign planning, creative briefs, script writing, and performance tracking.",
+    "services.content.title": "Content Planning",
+    "services.content.copy": "Content strategy, short-form scripts, and Chinese, English, and Thai translation support.",
+    "services.social.title": "Social Growth",
+    "services.social.copy": "Account setup, posting strategy, and ads support across TikTok, Instagram, and Facebook.",
+    "services.live.title": "Live Commerce",
+    "services.live.copy":
+      "Thailand-based livestream execution, creator coordination, run-of-show design, and conversion optimization.",
+    "services.store.title": "E-commerce Operations",
+    "services.store.copy": "Local store setup, product listing optimization, campaign operations, and ongoing store support.",
+    "services.data.title": "Data & Optimization",
+    "services.data.copy": "Trend analysis, ROI review, performance optimization, and reporting.",
+    "packages.eyebrow": "Packages",
+    "packages.title": "TikTok creator packages",
+    "packages.copy": "All services can be customized to match your goals, timeline, and budget.",
+    "packages.kocStarter.type": "KOC Starter",
+    "packages.kocStarter.copy": "30 KOCs with 1k-100k followers for TikTok review short videos.",
+    "packages.kocStarter.pool": "50 creator candidates for selection",
+    "packages.kocScale.type": "KOC Scale",
+    "packages.kocScale.copy": "100 KOCs with 1k-100k followers for broader TikTok review distribution.",
+    "packages.kocScale.pool": "150 creator candidates for selection",
+    "packages.kolGrowth.type": "KOL Growth",
+    "packages.kolGrowth.copy": "50 KOLs with 10k-100k followers for higher-impact TikTok review campaigns.",
+    "packages.kolGrowth.pool": "60 creator candidates for selection",
+    "packages.shared.cart": "Shopping cart attachment and dedicated promo code",
+    "packages.shared.translation": "Chinese, English, and Thai script translation",
     "contact.eyebrow": "Contact",
-    "contact.title": "Ready to build your overseas market system?",
-    "footer.copy": "Global market operations for ambitious brands.",
-    "modal.statusPrefix": "Current time",
-    "modal.statusSuffix": "Past working hours",
-    "modal.overline": "Shawn has clocked out",
-    "modal.title": "Pay overtime to keep Shawn building",
-    "modal.copy":
-      "Please choose an extension package. Features will continue after the developer receives adequate snacks, caffeine, and emotional support.",
-    "modal.option1.title": "Continue work for 2 hours",
-    "modal.option2.title": "Continue work for 4 hours",
-    "modal.option3.title": "Work until dawn",
-    "modal.endTimeLabel": "Estimated finish time:",
-    "modal.option3.note": "recommended",
-    "modal.pay": "Pretend to pay and continue",
+    "contact.title": "Ready to plan your Southeast Asia growth system?",
+    "contact.copy":
+      "Tell us your target market, category, and launch timeline. We will help shape a localized operating plan.",
+    "contact.emailLabel": "Email",
+    "contact.domainLabel": "Website",
+    "footer.copy": "Thailand and Southeast Asia growth operations.",
     "menu.open": "Open menu",
     "menu.close": "Close menu",
   },
   ms: {
     "nav.services": "Servis",
-    "nav.method": "Kaedah",
+    "nav.why": "Kenapa LOUDER",
+    "nav.packages": "Pakej",
     "nav.contact": "Hubungi",
-    "hero.eyebrow": "Operasi Pasaran Global",
-    "hero.title": "Jadikan jenama anda dilihat, difahami, dan mampu berkembang di luar negara.",
+    "hero.eyebrow": "Rakan Pertumbuhan Thailand & Asia Tenggara",
+    "hero.title": "Setempatkan, lancarkan, dan skala jenama anda di Asia Tenggara.",
     "hero.copy":
-      "LOUDER Creative membantu jenama bercita-cita tinggi memasuki pasaran luar negara melalui strategi setempat, operasi kandungan, pertumbuhan saluran, dan rentak operasi jangka panjang.",
-    "hero.primary": "Mula berkembang global",
+      "LOUDER Creative membantu jenama memasuki Thailand dan Asia Tenggara melalui pemasaran setempat, aktivasi KOL/KOC, operasi kandungan, persediaan dagang, dan pertumbuhan berasaskan data.",
+    "hero.primary": "Hubungi kami",
     "hero.secondary": "Lihat servis",
+    "signal.one": "Aktivasi KOL/KOC",
+    "signal.two": "Operasi Kandungan",
+    "signal.three": "Pertumbuhan Dagang",
     "intro.copy":
-      "Kami menukar hasrat “go global” menjadi sistem operasi. Daripada penentuan posisi dan mesej jenama hingga kandungan sosial, kerjasama kreator, dan semakan prestasi, LOUDER membantu pertumbuhan luar negara menjadi amalan yang boleh diulang.",
+      "Kami ialah rakan pemasaran rentas sempadan dan komersialisasi yang membantu jenama China menyesuaikan diri, mempromosi, menjual, dan berkembang di Thailand serta Asia Tenggara.",
+    "stats.eyebrow": "Portfolio",
+    "stats.title": "Dibina untuk pelaksanaan pasaran sebenar",
+    "stats.platforms": "platform rakan",
+    "stats.industries": "industri dilayani",
+    "stats.creators": "sumber kreator",
+    "stats.content": "output kandungan",
+    "why.eyebrow": "Kenapa LOUDER",
+    "why.title": "Pasukan setempat, disiplin data, pelaksanaan matang",
+    "why.direct.title": "Pelaksanaan Setempat Langsung",
+    "why.direct.copy": "Akses langsung kepada sumber pelaksanaan di Thailand mengurangkan lapisan agensi dan meningkatkan kecekapan.",
+    "why.data.title": "Padanan Berasaskan Data",
+    "why.data.copy": "Pemilihan kreator, strategi kandungan, dan keputusan kempen disokong oleh sumber data dan prestasi terdahulu.",
+    "why.experience.title": "Pengalaman Rentas Pasaran",
+    "why.experience.copy": "Pasukan mempunyai pengalaman langsung di China, Thailand, dan Singapura dalam dagang rentas sempadan dan pemasaran jenama.",
     "services.eyebrow": "Servis",
-    "services.title": "Daripada kemasukan pasaran hingga operasi jangka panjang",
-    "services.card1.title": "Penentuan Posisi Pasaran",
-    "services.card1.copy": "Tetapkan audiens, landskap pesaing, naratif jenama, dan sudut pembezaan sebelum pelancaran.",
-    "services.card2.title": "Kandungan & Sosial",
-    "services.card2.copy": "Bina rentak platform luar negara, bahasa visual, dan sistem komunikasi yang terasa setempat.",
-    "services.card3.title": "Pertumbuhan Setempat",
-    "services.card3.copy": "Hubungkan saluran, kreator, komuniti, dan kempen menjadi gelung pertumbuhan.",
-    "services.card4.title": "Semakan Data",
-    "services.card4.copy": "Gunakan data operasi untuk menambah baik kandungan, saluran, bajet, dan langkah pertumbuhan seterusnya.",
-    "method.eyebrow": "Kaedah",
-    "method.title": "Mula dengan ringan, iterasi secara berterusan",
-    "method.step1": "Fahami jenama, produk, audiens, dan pasaran sasaran.",
-    "method.step2": "Bentuk mesej luar negara, strategi kandungan, dan rentak operasi.",
-    "method.step3": "Jalankan kandungan, saluran, kempen, dan tindakan pertumbuhan.",
-    "method.step4": "Optimumkan sistem melalui data, maklum balas, dan respons pasaran.",
+    "services.title": "Servis penuh untuk pertumbuhan pasaran Thailand",
+    "services.market.title": "Strategi Kemasukan Pasaran",
+    "services.market.copy": "Kajian pasaran, perbandingan pesaing, penentuan posisi produk, dan perancangan pelancaran.",
+    "services.kol.title": "Pemasaran KOC/KOL",
+    "services.kol.copy": "Pencarian kreator, perancangan kempen, brief kreatif, penulisan skrip, dan penjejakan prestasi.",
+    "services.content.title": "Perancangan Kandungan",
+    "services.content.copy": "Strategi kandungan, skrip video pendek, dan sokongan terjemahan Cina, Inggeris, dan Thai.",
+    "services.social.title": "Pertumbuhan Sosial",
+    "services.social.copy": "Persediaan akaun, strategi siaran, dan sokongan iklan di TikTok, Instagram, dan Facebook.",
+    "services.live.title": "Dagang Siaran Langsung",
+    "services.live.copy": "Pelaksanaan livestream di Thailand, koordinasi kreator, reka aliran siaran, dan pengoptimuman penukaran.",
+    "services.store.title": "Operasi E-dagang",
+    "services.store.copy": "Persediaan kedai tempatan, pengoptimuman senarai produk, operasi kempen, dan sokongan berterusan.",
+    "services.data.title": "Data & Pengoptimuman",
+    "services.data.copy": "Analisis trend, semakan ROI, pengoptimuman prestasi, dan pelaporan.",
+    "packages.eyebrow": "Pakej",
+    "packages.title": "Pakej kreator TikTok",
+    "packages.copy": "Semua servis boleh disesuaikan mengikut matlamat, masa, dan bajet anda.",
+    "packages.kocStarter.type": "KOC Permulaan",
+    "packages.kocStarter.copy": "30 KOC dengan 1k-100k pengikut untuk video ulasan pendek TikTok.",
+    "packages.kocStarter.pool": "50 calon kreator untuk pemilihan",
+    "packages.kocScale.type": "KOC Skala",
+    "packages.kocScale.copy": "100 KOC dengan 1k-100k pengikut untuk edaran ulasan TikTok yang lebih luas.",
+    "packages.kocScale.pool": "150 calon kreator untuk pemilihan",
+    "packages.kolGrowth.type": "KOL Growth",
+    "packages.kolGrowth.copy": "50 KOL dengan 10k-100k pengikut untuk kempen ulasan TikTok berimpak lebih tinggi.",
+    "packages.kolGrowth.pool": "60 calon kreator untuk pemilihan",
+    "packages.shared.cart": "Lampiran troli beli-belah dan kod promosi khusus",
+    "packages.shared.translation": "Terjemahan skrip Cina, Inggeris, dan Thai",
     "contact.eyebrow": "Hubungi",
-    "contact.title": "Sedia membina sistem pasaran luar negara anda?",
-    "footer.copy": "Operasi pasaran global untuk jenama yang bercita-cita tinggi.",
-    "modal.statusPrefix": "Masa semasa",
-    "modal.statusSuffix": "Melepasi waktu kerja",
-    "modal.overline": "Shawn sudah tamat kerja",
-    "modal.title": "Bayar kerja lebih masa untuk Shawn terus membina",
-    "modal.copy":
-      "Sila pilih pakej sambungan. Ciri baharu akan diteruskan selepas pembangun menerima snek, kafein, dan sokongan emosi yang mencukupi.",
-    "modal.option1.title": "Terus bekerja 2 jam",
-    "modal.option2.title": "Terus bekerja 4 jam",
-    "modal.option3.title": "Bekerja hingga subuh",
-    "modal.endTimeLabel": "Anggaran tamat:",
-    "modal.option3.note": "disyorkan",
-    "modal.pay": "Pura-pura bayar dan teruskan",
+    "contact.title": "Sedia merancang sistem pertumbuhan Asia Tenggara anda?",
+    "contact.copy": "Beritahu kami pasaran sasaran, kategori, dan garis masa pelancaran anda. Kami akan membantu membentuk pelan operasi setempat.",
+    "contact.emailLabel": "E-mel",
+    "contact.domainLabel": "Laman web",
+    "footer.copy": "Operasi pertumbuhan Thailand dan Asia Tenggara.",
     "menu.open": "Buka menu",
     "menu.close": "Tutup menu",
   },
   th: {
     "nav.services": "บริการ",
-    "nav.method": "วิธีทำงาน",
+    "nav.why": "ทำไม LOUDER",
+    "nav.packages": "แพ็กเกจ",
     "nav.contact": "ติดต่อ",
-    "hero.eyebrow": "การดำเนินงานตลาดระดับโลก",
-    "hero.title": "ทำให้แบรนด์ของคุณเป็นที่เห็น เข้าใจ และเติบโตได้ในต่างประเทศ",
+    "hero.eyebrow": "พันธมิตรการเติบโตในไทยและเอเชียตะวันออกเฉียงใต้",
+    "hero.title": "ปรับแบรนด์ให้เข้าท้องถิ่น เปิดตลาด และขยายในเอเชียตะวันออกเฉียงใต้",
     "hero.copy":
-      "LOUDER Creative ช่วยแบรนด์ที่มีความทะเยอทะยานเข้าสู่ตลาดต่างประเทศ ด้วยกลยุทธ์ท้องถิ่น การดูแลคอนเทนต์ การเติบโตของช่องทาง และจังหวะการดำเนินงานระยะยาว",
-    "hero.primary": "เริ่มขยายสู่โลก",
+      "LOUDER Creative ช่วยแบรนด์เข้าสู่ไทยและเอเชียตะวันออกเฉียงใต้ผ่านการตลาดท้องถิ่น การทำงานกับ KOL/KOC การดูแลคอนเทนต์ การตั้งค่าคอมเมิร์ซ และการเติบโตจากข้อมูล",
+    "hero.primary": "ติดต่อเรา",
     "hero.secondary": "ดูบริการ",
+    "signal.one": "การเปิดใช้งาน KOL/KOC",
+    "signal.two": "การดำเนินงานคอนเทนต์",
+    "signal.three": "การเติบโตด้านคอมเมิร์ซ",
     "intro.copy":
-      "เราเปลี่ยนการออกสู่ตลาดโลกให้เป็นระบบการดำเนินงาน ตั้งแต่การวางตำแหน่งและข้อความสื่อสาร ไปจนถึงคอนเทนต์โซเชียล การร่วมงานกับครีเอเตอร์ และการทบทวนผลลัพธ์ LOUDER ช่วยให้การเติบโตในต่างประเทศทำซ้ำได้",
+      "เราเป็นพันธมิตรด้านการตลาดข้ามพรมแดนและการทำธุรกิจเชิงพาณิชย์ ที่ช่วยแบรนด์จีนปรับตัว โปรโมต ขาย และเติบโตในไทยและเอเชียตะวันออกเฉียงใต้",
+    "stats.eyebrow": "ผลงาน",
+    "stats.title": "สร้างขึ้นเพื่อการลงตลาดจริง",
+    "stats.platforms": "แพลตฟอร์มพันธมิตร",
+    "stats.industries": "อุตสาหกรรมที่ให้บริการ",
+    "stats.creators": "ทรัพยากรครีเอเตอร์",
+    "stats.content": "ผลงานคอนเทนต์",
+    "why.eyebrow": "ทำไม LOUDER",
+    "why.title": "ทีมท้องถิ่น วินัยด้านข้อมูล และการลงมือทำที่成熟",
+    "why.direct.title": "การดำเนินงานท้องถิ่นโดยตรง",
+    "why.direct.copy": "เข้าถึงทรัพยากรการดำเนินงานในไทยโดยตรง ลดชั้นกลางของเอเจนซีและเพิ่มประสิทธิภาพ",
+    "why.data.title": "การจับคู่จากข้อมูล",
+    "why.data.copy": "การเลือกครีเอเตอร์ กลยุทธ์คอนเทนต์ และการตัดสินใจแคมเปญอิงจากฐานข้อมูลและผลลัพธ์ที่ผ่านมา",
+    "why.experience.title": "ประสบการณ์หลายตลาด",
+    "why.experience.copy": "ทีมมีประสบการณ์จริงในจีน ไทย และสิงคโปร์ ด้านคอมเมิร์ซข้ามพรมแดนและการตลาดแบรนด์",
     "services.eyebrow": "บริการ",
-    "services.title": "ตั้งแต่เข้าสู่ตลาดจนถึงการดำเนินงานระยะยาว",
-    "services.card1.title": "การวางตำแหน่งตลาด",
-    "services.card1.copy": "กำหนดกลุ่มเป้าหมาย ภาพการแข่งขัน เรื่องเล่าแบรนด์ และจุดต่างก่อนเปิดตัว",
-    "services.card2.title": "คอนเทนต์และโซเชียล",
-    "services.card2.copy": "สร้างจังหวะแพลตฟอร์ม ภาษาภาพ และระบบสื่อสารที่เข้ากับตลาดต่างประเทศ",
-    "services.card3.title": "การเติบโตแบบท้องถิ่น",
-    "services.card3.copy": "เชื่อมช่องทาง ครีเอเตอร์ คอมมูนิตี้ และแคมเปญให้เป็นวงจรการเติบโต",
-    "services.card4.title": "การทบทวนข้อมูล",
-    "services.card4.copy": "ใช้ข้อมูลการดำเนินงานปรับคอนเทนต์ ช่องทาง งบประมาณ และก้าวถัดไป",
-    "method.eyebrow": "วิธีทำงาน",
-    "method.title": "เริ่มอย่างคล่องตัว แล้วปรับต่อเนื่อง",
-    "method.step1": "เข้าใจแบรนด์ สินค้า ผู้ชม และตลาดเป้าหมาย",
-    "method.step2": "ออกแบบข้อความ คอนเทนต์ และจังหวะการดำเนินงานในต่างประเทศ",
-    "method.step3": "ดำเนินคอนเทนต์ ช่องทาง แคมเปญ และกิจกรรมเพื่อการเติบโต",
-    "method.step4": "ปรับระบบจากข้อมูล ฟีดแบ็ก และการตอบสนองของตลาด",
+    "services.title": "บริการครบวงจรเพื่อการเติบโตในตลาดไทย",
+    "services.market.title": "กลยุทธ์เข้าสู่ตลาด",
+    "services.market.copy": "วิจัยตลาด วิเคราะห์คู่แข่ง วางตำแหน่งสินค้า และวางแผนเปิดตัว",
+    "services.kol.title": "การตลาด KOC/KOL",
+    "services.kol.copy": "ค้นหาครีเอเตอร์ วางแผนแคมเปญ ทำครีเอทีฟบรีฟ เขียนสคริปต์ และติดตามผล",
+    "services.content.title": "การวางแผนคอนเทนต์",
+    "services.content.copy": "กลยุทธ์คอนเทนต์ สคริปต์วิดีโอสั้น และการแปลภาษาจีน อังกฤษ และไทย",
+    "services.social.title": "การเติบโตบนโซเชียล",
+    "services.social.copy": "ตั้งค่าบัญชี วางแผนการโพสต์ และสนับสนุนโฆษณาบน TikTok, Instagram และ Facebook",
+    "services.live.title": "ไลฟ์คอมเมิร์ซ",
+    "services.live.copy": "ดำเนินไลฟ์ในไทย ประสานงานครีเอเตอร์ ออกแบบลำดับรายการ และเพิ่มประสิทธิภาพการขาย",
+    "services.store.title": "การดำเนินงานอีคอมเมิร์ซ",
+    "services.store.copy": "ตั้งค่าร้านท้องถิ่น ปรับรายการสินค้า ดำเนินแคมเปญ และดูแลร้านต่อเนื่อง",
+    "services.data.title": "ข้อมูลและการปรับปรุง",
+    "services.data.copy": "วิเคราะห์เทรนด์ ตรวจ ROI ปรับผลลัพธ์ และจัดทำรายงาน",
+    "packages.eyebrow": "แพ็กเกจ",
+    "packages.title": "แพ็กเกจครีเอเตอร์ TikTok",
+    "packages.copy": "บริการทั้งหมดสามารถปรับแต่งตามเป้าหมาย เวลา และงบประมาณของคุณ",
+    "packages.kocStarter.type": "KOC Starter",
+    "packages.kocStarter.copy": "30 KOC ผู้ติดตาม 1k-100k สำหรับวิดีโอรีวิวสั้นบน TikTok",
+    "packages.kocStarter.pool": "ตัวเลือกครีเอเตอร์ 50 ราย",
+    "packages.kocScale.type": "KOC Scale",
+    "packages.kocScale.copy": "100 KOC ผู้ติดตาม 1k-100k เพื่อกระจายวิดีโอรีวิว TikTok ในวงกว้าง",
+    "packages.kocScale.pool": "ตัวเลือกครีเอเตอร์ 150 ราย",
+    "packages.kolGrowth.type": "KOL Growth",
+    "packages.kolGrowth.copy": "50 KOL ผู้ติดตาม 10k-100k สำหรับแคมเปญรีวิว TikTok ที่มีผลกระทบสูง",
+    "packages.kolGrowth.pool": "ตัวเลือกครีเอเตอร์ 60 ราย",
+    "packages.shared.cart": "แนบตะกร้าสินค้าและสร้างโค้ดโปรโมชันเฉพาะ",
+    "packages.shared.translation": "แปลสคริปต์ภาษาจีน อังกฤษ และไทย",
     "contact.eyebrow": "ติดต่อ",
-    "contact.title": "พร้อมสร้างระบบตลาดต่างประเทศของคุณหรือยัง",
-    "footer.copy": "การดำเนินงานตลาดระดับโลกสำหรับแบรนด์ที่ทะเยอทะยาน",
-    "modal.statusPrefix": "เวลาปัจจุบัน",
-    "modal.statusSuffix": "เลยเวลางานแล้ว",
-    "modal.overline": "Shawn เลิกงานแล้ว",
-    "modal.title": "จ่ายค่าโอทีเพื่อให้ Shawn สร้างต่อ",
-    "modal.copy": "กรุณาเลือกแพ็กเกจต่อเวลา ฟีเจอร์จะเดินหน้าต่อเมื่อผู้พัฒนาได้รับขนม คาเฟอีน และกำลังใจเพียงพอ",
-    "modal.option1.title": "ทำงานต่อ 2 ชั่วโมง",
-    "modal.option2.title": "ทำงานต่อ 4 ชั่วโมง",
-    "modal.option3.title": "ทำงานถึงรุ่งเช้า",
-    "modal.endTimeLabel": "เวลาจบโดยประมาณ:",
-    "modal.option3.note": "แนะนำ",
-    "modal.pay": "แกล้งจ่ายแล้วทำต่อ",
+    "contact.title": "พร้อมวางระบบการเติบโตในเอเชียตะวันออกเฉียงใต้หรือยัง",
+    "contact.copy": "บอกตลาดเป้าหมาย หมวดหมู่สินค้า และกำหนดการเปิดตัวของคุณ เราจะช่วยออกแบบแผนการดำเนินงานท้องถิ่น",
+    "contact.emailLabel": "อีเมล",
+    "contact.domainLabel": "เว็บไซต์",
+    "footer.copy": "การดำเนินงานเพื่อการเติบโตในไทยและเอเชียตะวันออกเฉียงใต้",
     "menu.open": "เปิดเมนู",
     "menu.close": "ปิดเมนู",
   },
   zh: {
     "nav.services": "服务",
-    "nav.method": "方法",
+    "nav.why": "为什么选择 LOUDER",
+    "nav.packages": "套餐",
     "nav.contact": "联系",
-    "hero.eyebrow": "全球市场运营",
-    "hero.title": "让品牌在海外市场被看见、被理解、并持续增长。",
-    "hero.copy": "LOUDER Creative 帮助有野心的品牌进入海外市场，建立本地化策略、内容运营、渠道增长与长期运营节奏。",
-    "hero.primary": "开始全球化",
+    "hero.eyebrow": "泰国与东南亚增长伙伴",
+    "hero.title": "帮助品牌在东南亚本地化落地、推广、销售与增长。",
+    "hero.copy":
+      "LOUDER Creative 聚焦泰国及东南亚市场，通过本地化营销、KOL/KOC 投放、内容运营、电商搭建与数据驱动增长，帮助品牌进入并放大海外市场。",
+    "hero.primary": "联系我们",
     "hero.secondary": "查看服务",
-    "intro.copy":
-      "我们把“想出海”变成一套可运转的系统。从市场定位、表达体系、社媒内容、达人合作到数据复盘，LOUDER 让海外增长成为可持续重复的实践。",
+    "signal.one": "KOL/KOC 激活",
+    "signal.two": "内容运营",
+    "signal.three": "电商增长",
+    "intro.copy": "我们是跨境营销与商业化服务伙伴，专注帮助中国品牌在泰国及东南亚实现本土化落地、推广、销售与规模化增长。",
+    "stats.eyebrow": "项目能力",
+    "stats.title": "为真实市场执行而搭建",
+    "stats.platforms": "合作平台",
+    "stats.industries": "覆盖行业",
+    "stats.creators": "达人资源",
+    "stats.content": "内容输出",
+    "why.eyebrow": "为什么选择 LOUDER",
+    "why.title": "本地团队、数据纪律、成熟执行",
+    "why.direct.title": "本地直执",
+    "why.direct.copy": "直连泰国本地执行资源，减少中间代理层级，提高执行效率。",
+    "why.data.title": "数据驱动匹配",
+    "why.data.copy": "基于数据库资源与过往表现筛选达人、制定内容策略并优化投放决策。",
+    "why.experience.title": "跨市场经验",
+    "why.experience.copy": "团队拥有中国、泰国、新加坡跨境电商与品牌营销实操经验。",
     "services.eyebrow": "服务",
-    "services.title": "从进入市场到长期运营",
-    "services.card1.title": "海外市场定位",
-    "services.card1.copy": "梳理目标人群、竞争环境、品牌叙事与差异化表达，建立进入市场的清晰坐标。",
-    "services.card2.title": "内容与社媒运营",
-    "services.card2.copy": "搭建适合海外平台的内容节奏、视觉语言和沟通方式，让品牌持续出现在正确语境里。",
-    "services.card3.title": "本地化增长",
-    "services.card3.copy": "结合渠道、达人、社群和活动触点，推动从曝光到转化的海外增长闭环。",
-    "services.card4.title": "数据复盘",
-    "services.card4.copy": "用运营数据校准内容、渠道、预算方向和下一轮增长动作。",
-    "method.eyebrow": "方法",
-    "method.title": "轻量启动，持续迭代",
-    "method.step1": "理解品牌、产品、受众与目标市场。",
-    "method.step2": "设计海外表达、内容策略和运营节奏。",
-    "method.step3": "执行内容、渠道、活动与增长动作。",
-    "method.step4": "基于数据、反馈和市场反应持续优化系统。",
+    "services.title": "覆盖泰国市场增长全周期的服务能力",
+    "services.market.title": "市场进入策略",
+    "services.market.copy": "市场调研、竞品对标、产品定位与上市推广规划。",
+    "services.kol.title": "KOC/KOL 营销",
+    "services.kol.copy": "达人资源挖掘与匹配、营销活动策划、创意 brief、脚本撰写与效果追踪。",
+    "services.content.title": "内容创意策划",
+    "services.content.copy": "内容策略、短视频脚本，以及中、英、泰三语翻译支持。",
+    "services.social.title": "社媒账号增长",
+    "services.social.copy": "账号搭建、内容发布策略，以及 TikTok、Instagram、Facebook 平台广告支持。",
+    "services.live.title": "直播电商",
+    "services.live.copy": "泰国本地直播执行、KOL 达人协调、直播脚本与流程设计、销售转化优化。",
+    "services.store.title": "电商店铺搭建与运营",
+    "services.store.copy": "泰国本土电商店铺搭建、产品上架优化、营销活动与店铺运营支持。",
+    "services.data.title": "数据与效果优化",
+    "services.data.copy": "市场趋势分析、ROI 复盘、效果优化与数据报告输出。",
+    "packages.eyebrow": "套餐",
+    "packages.title": "TikTok 达人套餐",
+    "packages.copy": "所有服务均可根据目标、周期与预算进行定制组合。",
+    "packages.kocStarter.type": "KOC Starter",
+    "packages.kocStarter.copy": "30 位 KOC，粉丝量 1k-100k，用于 TikTok 测评短视频制作。",
+    "packages.kocStarter.pool": "提供 50 位达人备选池",
+    "packages.kocScale.type": "KOC Scale",
+    "packages.kocScale.copy": "100 位 KOC，粉丝量 1k-100k，适合更大规模 TikTok 测评分发。",
+    "packages.kocScale.pool": "提供 150 位达人备选池",
+    "packages.kolGrowth.type": "KOL Growth",
+    "packages.kolGrowth.copy": "50 位 KOL，粉丝量 10k-100k，适合更高影响力 TikTok 测评投放。",
+    "packages.kolGrowth.pool": "提供 60 位达人备选池",
+    "packages.shared.cart": "挂载品牌购物车并生成专属推广码",
+    "packages.shared.translation": "提供中 / 英 / 泰三语脚本翻译",
     "contact.eyebrow": "联系",
-    "contact.title": "准备搭建你的海外市场系统了吗？",
-    "footer.copy": "为有野心的品牌提供全球市场运营。",
-    "modal.statusPrefix": "当前时间",
-    "modal.statusSuffix": "已超过下班时间",
-    "modal.overline": "Shawn 已经下班",
-    "modal.title": "支付加班费，让 Shawn 继续工作",
-    "modal.copy": "请选择延长工时套餐。程序员在收到足够零食、咖啡因和情绪支持后，将继续安排功能开发。",
-    "modal.option1.title": "继续工作 2 小时",
-    "modal.option2.title": "继续工作 4 小时",
-    "modal.option3.title": "工作到凌晨",
-    "modal.endTimeLabel": "预计结束时间：",
-    "modal.option3.note": "豪华推荐",
-    "modal.pay": "假装支付并继续",
+    "contact.title": "准备规划你的东南亚增长系统了吗？",
+    "contact.copy": "告诉我们你的目标市场、品类与上线节奏，我们会协助制定本地化运营方案。",
+    "contact.emailLabel": "邮箱",
+    "contact.domainLabel": "官网",
+    "footer.copy": "泰国与东南亚增长运营服务。",
     "menu.open": "打开菜单",
     "menu.close": "关闭菜单",
   },
@@ -204,12 +302,6 @@ const languageOptions = document.querySelector("[data-language-options]");
 const languageOptionButtons = document.querySelectorAll("[data-lang-option]");
 const currentLanguageLabel = document.querySelector("[data-current-language]");
 const currentLanguageFlag = languageTrigger?.querySelector(".flag");
-const modal = document.querySelector("[data-modal]");
-const jokeTriggers = document.querySelectorAll("[data-joke-trigger]");
-const modalCloseButtons = document.querySelectorAll("[data-modal-close]");
-const overtimeOptions = document.querySelectorAll(".overtime-options label");
-const currentTime = document.querySelector("[data-current-time]");
-const extensionTimes = document.querySelectorAll("[data-extension-hours]");
 
 const getPreferredLanguage = () => {
   const savedLanguage = localStorage.getItem("louder-language");
@@ -253,55 +345,17 @@ const closeMenu = () => {
   menuToggle?.setAttribute("aria-label", translations[language]["menu.open"]);
 };
 
-const updateHeader = () => {
-  header?.classList.toggle("is-scrolled", window.scrollY > 16);
-};
-
-const openModal = () => {
-  if (!modal) return;
-  updateCurrentTime();
-  modal.hidden = false;
-  document.body.classList.add("modal-open");
-  modal.querySelector(".modal-close")?.focus();
-};
-
-const closeModal = () => {
-  if (!modal) return;
-  modal.hidden = true;
-  document.body.classList.remove("modal-open");
-};
-
 const closeLanguageMenu = () => {
   if (!languageOptions || !languageTrigger) return;
   languageOptions.hidden = true;
   languageTrigger.setAttribute("aria-expanded", "false");
 };
 
-const updateCurrentTime = () => {
-  const now = new Date();
-  const language = document.documentElement.lang || "en";
-  const timeFormatter = new Intl.DateTimeFormat(language, {
-    hour: "2-digit",
-    minute: "2-digit",
-    hourCycle: "h23",
-  });
-
-  if (currentTime) {
-    currentTime.textContent = timeFormatter.format(now);
-    currentTime.setAttribute("datetime", now.toISOString());
-  }
-
-  extensionTimes.forEach((timeElement) => {
-    const hours = Number(timeElement.dataset.extensionHours || 0);
-    const endTime = new Date(now.getTime() + hours * 60 * 60 * 1000);
-    timeElement.textContent = timeFormatter.format(endTime);
-    timeElement.setAttribute("datetime", endTime.toISOString());
-  });
+const updateHeader = () => {
+  header?.classList.toggle("is-scrolled", window.scrollY > 16);
 };
 
 setLanguage(getPreferredLanguage());
-updateCurrentTime();
-window.setInterval(updateCurrentTime, 30000);
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
 
@@ -333,23 +387,8 @@ mobileNav?.addEventListener("click", (event) => {
   }
 });
 
-jokeTriggers.forEach((trigger) => {
-  trigger.addEventListener("click", openModal);
-});
-
-modalCloseButtons.forEach((button) => {
-  button.addEventListener("click", closeModal);
-});
-
-modal?.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
-
 window.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
-    closeModal();
     closeMenu();
     closeLanguageMenu();
   }
@@ -359,13 +398,6 @@ document.addEventListener("click", (event) => {
   if (event.target instanceof Element && !event.target.closest("[data-language-menu]")) {
     closeLanguageMenu();
   }
-});
-
-overtimeOptions.forEach((option) => {
-  option.addEventListener("click", () => {
-    overtimeOptions.forEach((item) => item.classList.remove("is-selected"));
-    option.classList.add("is-selected");
-  });
 });
 
 const canvas = document.querySelector("#ambientCanvas");
@@ -404,8 +436,8 @@ const drawAmbient = () => {
   const focusX = pointer.x * width;
   const focusY = pointer.y * height;
   const glow = context.createRadialGradient(focusX, focusY, 0, focusX, focusY, Math.max(width, height) * 0.72);
-  glow.addColorStop(0, "rgba(110, 231, 242, 0.18)");
-  glow.addColorStop(0.35, "rgba(255, 212, 61, 0.09)");
+  glow.addColorStop(0, "rgba(110, 231, 242, 0.16)");
+  glow.addColorStop(0.35, "rgba(255, 212, 61, 0.08)");
   glow.addColorStop(1, "rgba(247, 249, 247, 0)");
   context.fillStyle = glow;
   context.fillRect(0, 0, width, height);
@@ -424,7 +456,7 @@ const drawAmbient = () => {
       const distance = Math.hypot(node.x - next.x, node.y - next.y);
 
       if (distance < 170) {
-        context.strokeStyle = `rgba(6, 20, 23, ${0.1 - distance / 2200})`;
+        context.strokeStyle = `rgba(6, 20, 23, ${0.09 - distance / 2400})`;
         context.lineWidth = 1;
         context.beginPath();
         context.moveTo(node.x, node.y);
@@ -433,7 +465,7 @@ const drawAmbient = () => {
       }
     }
 
-    context.fillStyle = index % 8 === 0 ? "rgba(243, 176, 0, 0.52)" : "rgba(6, 20, 23, 0.28)";
+    context.fillStyle = index % 8 === 0 ? "rgba(243, 176, 0, 0.5)" : "rgba(6, 20, 23, 0.24)";
     context.beginPath();
     context.arc(node.x, node.y, index % 8 === 0 ? 2.4 : 1.6, 0, Math.PI * 2);
     context.fill();
