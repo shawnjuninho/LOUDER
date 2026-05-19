@@ -399,6 +399,73 @@ h1 {
   margin-top: 34px;
 }
 
+.hero-visual {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(24px) saturate(150%);
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.04);
+}
+
+.visual-stripe {
+  position: absolute;
+  top: -12%;
+  bottom: -12%;
+  width: 64px;
+  transform: skewX(-15deg);
+}
+
+.stripe-yellow-one {
+  left: 30px;
+  background: var(--accent);
+}
+
+.stripe-ink {
+  right: 48px;
+  background: #20333b;
+}
+
+.stripe-yellow-two {
+  right: -28px;
+  background: var(--accent);
+}
+
+.visual-caption {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px) saturate(150%);
+}
+
+.visual-caption span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 840;
+  text-transform: uppercase;
+}
+
+.visual-caption strong {
+  font-size: 1.15rem;
+}
+
 .button {
   display: inline-flex;
   min-height: 48px;
@@ -510,9 +577,13 @@ h1 {
 }
 
 .stat-grid,
+.team-grid,
 .why-grid,
 .service-grid,
-.package-grid {
+.matrix-grid,
+.package-grid,
+.case-grid,
+.scope-grid {
   display: grid;
   gap: 14px;
 }
@@ -521,7 +592,9 @@ h1 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.team-grid,
 .why-grid,
+.matrix-grid,
 .package-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -530,10 +603,21 @@ h1 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.case-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.scope-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 0 0 18px;
+}
+
 .stat-grid div,
 .glass-card,
 .package-card,
-.contact-link {
+.contact-link,
+.case-grid figure,
+.scope-grid span {
   border: 1px solid rgba(255, 255, 255, 0.64);
   border-radius: var(--radius);
   background: var(--panel);
@@ -557,6 +641,28 @@ h1 {
 .stat-grid span {
   color: var(--muted);
   font-weight: 760;
+}
+
+.case-grid figure {
+  display: grid;
+  min-height: 210px;
+  place-items: center;
+  margin: 0;
+  padding: 22px;
+}
+
+.case-grid img {
+  max-width: min(190px, 80%);
+  max-height: 132px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.case-grid figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 780;
 }
 
 .glass-card {
@@ -603,8 +709,18 @@ h1 {
 
 .package-card h3 {
   margin: 52px 0 16px;
-  font-size: 2.25rem;
+  font-size: 2.15rem;
   line-height: 1;
+}
+
+.scope-grid span {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  color: rgba(6, 20, 23, 0.74);
+  font-size: 0.9rem;
+  font-weight: 780;
 }
 
 .package-card ul {
@@ -711,11 +827,15 @@ h1 {
 
   .stat-grid,
   .service-grid,
+  .case-grid,
+  .scope-grid,
   .package-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .team-grid,
   .why-grid,
+  .matrix-grid,
   .contact {
     grid-template-columns: 1fr;
   }
@@ -779,6 +899,15 @@ h1 {
     gap: 30px;
   }
 
+  .hero-visual,
+  .hero-visual img {
+    min-height: 420px;
+  }
+
+  .visual-stripe {
+    width: 46px;
+  }
+
   .hero-logo {
     width: 210px;
     margin-bottom: 26px;
@@ -811,8 +940,12 @@ h1 {
   }
 
   .stat-grid,
+  .team-grid,
   .why-grid,
   .service-grid,
+  .matrix-grid,
+  .case-grid,
+  .scope-grid,
   .package-grid {
     grid-template-columns: 1fr;
   }
