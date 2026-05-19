@@ -781,10 +781,13 @@ h1 {
 
 .case-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px 44px;
 }
 
 .case-stage {
   position: relative;
+  max-width: 1060px;
+  margin: 0 auto;
   isolation: isolate;
 }
 
@@ -831,25 +834,43 @@ h1 {
 
 .case-grid figure {
   display: grid;
-  min-height: 214px;
+  min-height: 224px;
   place-items: center;
   margin: 0;
-  padding: 22px;
-  background: rgba(255, 255, 255, 0.82);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .case-grid img {
-  max-width: min(190px, 80%);
-  max-height: 132px;
+  width: min(220px, 82%);
+  max-height: 220px;
   object-fit: contain;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
+}
+
+.case-logo.is-circle img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: cover;
+}
+
+.case-logo.is-wide img {
+  width: min(250px, 84%);
+  max-height: 160px;
+  object-fit: contain;
 }
 
 .case-grid figcaption {
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 0.84rem;
-  font-weight: 780;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .glass-card {
@@ -867,6 +888,12 @@ h1 {
   border-color: rgba(237, 172, 0, 0.28);
   box-shadow: 0 22px 62px rgba(7, 17, 19, 0.12);
   transform: translateY(-3px);
+}
+
+.case-grid figure:hover {
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
 }
 
 .glass-card span {
