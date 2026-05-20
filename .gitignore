@@ -1,2 +1,4 @@
 *.pdf
 assets/fake_shawn.png
+.env*
+!.env.example

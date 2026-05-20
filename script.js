@@ -284,6 +284,54 @@ const translationAdditions = {
   en: {
     "nav.home": "Home",
     "nav.cases": "Cases",
+    "nav.about": "About Us",
+    "hero.primary": "Free consultation",
+    "hero.check.market": "Unsure which market should come first?",
+    "hero.check.creators": "Need the right local creators and content rhythm?",
+    "hero.check.commerce": "Want a launch plan that connects marketing with sales?",
+    "lead.eyebrow": "Free Consultation",
+    "lead.title": "Tell us what you want to build overseas.",
+    "lead.copy": "Share your target service and contact details. We will shape the next step with the right operator.",
+    "lead.serviceLabel": "Desired service",
+    "lead.servicePlaceholder": "Choose a service",
+    "lead.service.market": "Market Entry Strategy",
+    "lead.service.kol": "KOC/KOL Marketing",
+    "lead.service.content": "Content Planning",
+    "lead.service.commerce": "E-commerce Operations",
+    "lead.service.live": "Live Commerce",
+    "lead.service.launch": "Full Launch Plan",
+    "lead.marketLabel": "Target market",
+    "lead.marketPlaceholder": "Thailand, Malaysia, SEA...",
+    "lead.noteLabel": "Project note",
+    "lead.notePlaceholder": "Tell us your category, timeline, and current challenge.",
+    "lead.contactLabel": "Email / phone / WeChat",
+    "lead.contactPlaceholder": "How should we reach you?",
+    "lead.submit": "Request consultation",
+    "lead.statusSending": "Sending your request...",
+    "lead.statusSuccess": "Thanks. We received your request and will reply soon.",
+    "lead.statusMailFallback": "Opening your email app so the request is not lost.",
+    "lead.statusError": "Something went wrong. Please email postmaster@louder-creative.com.",
+    "about.eyebrow": "About Us",
+    "about.title": "A compact team built for cross-border execution.",
+    "about.copy":
+      "LOUDER Creative combines local market operators, content planners, creator resources, and commerce execution to help brands move from first market test to repeatable growth.",
+    "about.signal.local": "Local market sense",
+    "about.signal.creator": "Creator operations",
+    "about.signal.commerce": "Commerce conversion",
+    "about.console.kicker": "Operating Model",
+    "about.console.title": "Strategy + content + commerce",
+    "about.console.copy":
+      "A small core team coordinates market research, local creators, campaign execution, and performance review.",
+    "members.eyebrow": "Team",
+    "members.title": "People you can talk to directly",
+    "members.air.meta": "Female",
+    "members.air.role": "Market research and creator coordination",
+    "members.pim.meta": "Female",
+    "members.pim.role": "Local content planning and community operations",
+    "members.kelvin.meta": "Male",
+    "members.kelvin.role": "Commerce operations and performance review",
+    "members.shawn.meta": "Male",
+    "members.shawn.role": "Strategy, partnerships, and client coordination",
     "visual.eyebrow": "Market Entry",
     "visual.title": "Thailand & Southeast Asia",
     "team.eyebrow": "Team Background",
@@ -326,6 +374,53 @@ const translationAdditions = {
   ms: {
     "nav.home": "Utama",
     "nav.cases": "Kes",
+    "nav.about": "Tentang Kami",
+    "hero.primary": "Konsultasi percuma",
+    "hero.check.market": "Belum pasti pasaran mana patut dimulakan?",
+    "hero.check.creators": "Perlukan kreator tempatan dan rentak kandungan yang tepat?",
+    "hero.check.commerce": "Mahukan pelan pelancaran yang menghubungkan pemasaran dengan jualan?",
+    "lead.eyebrow": "Konsultasi Percuma",
+    "lead.title": "Beritahu kami apa yang ingin anda bina di luar negara.",
+    "lead.copy": "Kongsi servis sasaran dan maklumat kontak. Kami akan bentuk langkah seterusnya dengan operator yang sesuai.",
+    "lead.serviceLabel": "Servis yang diperlukan",
+    "lead.servicePlaceholder": "Pilih servis",
+    "lead.service.market": "Strategi Kemasukan Pasaran",
+    "lead.service.kol": "Pemasaran KOC/KOL",
+    "lead.service.content": "Perancangan Kandungan",
+    "lead.service.commerce": "Operasi E-dagang",
+    "lead.service.live": "Dagang Siaran Langsung",
+    "lead.service.launch": "Pelan Pelancaran Penuh",
+    "lead.marketLabel": "Pasaran sasaran",
+    "lead.marketPlaceholder": "Thailand, Malaysia, SEA...",
+    "lead.noteLabel": "Nota projek",
+    "lead.notePlaceholder": "Beritahu kategori, masa, dan cabaran semasa.",
+    "lead.contactLabel": "E-mel / telefon / WeChat",
+    "lead.contactPlaceholder": "Bagaimana kami boleh hubungi anda?",
+    "lead.submit": "Minta konsultasi",
+    "lead.statusSending": "Menghantar permintaan anda...",
+    "lead.statusSuccess": "Terima kasih. Kami menerima permintaan anda dan akan membalas segera.",
+    "lead.statusMailFallback": "Membuka aplikasi e-mel supaya permintaan tidak hilang.",
+    "lead.statusError": "Ada ralat. Sila e-mel postmaster@louder-creative.com.",
+    "about.eyebrow": "Tentang Kami",
+    "about.title": "Pasukan kecil yang dibina untuk pelaksanaan rentas sempadan.",
+    "about.copy":
+      "LOUDER Creative menggabungkan operator pasaran tempatan, perancang kandungan, sumber kreator, dan pelaksanaan dagang untuk membantu jenama bergerak daripada ujian pasaran pertama kepada pertumbuhan berulang.",
+    "about.signal.local": "Kepekaan pasaran tempatan",
+    "about.signal.creator": "Operasi kreator",
+    "about.signal.commerce": "Penukaran dagang",
+    "about.console.kicker": "Model Operasi",
+    "about.console.title": "Strategi + kandungan + dagang",
+    "about.console.copy": "Pasukan teras kecil menyelaras kajian pasaran, kreator tempatan, pelaksanaan kempen, dan semakan prestasi.",
+    "members.eyebrow": "Pasukan",
+    "members.title": "Orang yang boleh anda hubungi terus",
+    "members.air.meta": "Perempuan",
+    "members.air.role": "Kajian pasaran dan koordinasi kreator",
+    "members.pim.meta": "Perempuan",
+    "members.pim.role": "Perancangan kandungan tempatan dan operasi komuniti",
+    "members.kelvin.meta": "Lelaki",
+    "members.kelvin.role": "Operasi dagang dan semakan prestasi",
+    "members.shawn.meta": "Lelaki",
+    "members.shawn.role": "Strategi, perkongsian, dan koordinasi klien",
     "visual.eyebrow": "Kemasukan Pasaran",
     "visual.title": "Thailand & Asia Tenggara",
     "team.eyebrow": "Latar Pasukan",
@@ -368,6 +463,53 @@ const translationAdditions = {
   th: {
     "nav.home": "หน้าแรก",
     "nav.cases": "เคส",
+    "nav.about": "เกี่ยวกับเรา",
+    "hero.primary": "ปรึกษาฟรี",
+    "hero.check.market": "ยังไม่แน่ใจว่าควรเริ่มจากตลาดไหน?",
+    "hero.check.creators": "ต้องการครีเอเตอร์ท้องถิ่นและจังหวะคอนเทนต์ที่เหมาะสม?",
+    "hero.check.commerce": "ต้องการแผนเปิดตัวที่เชื่อมการตลาดกับยอดขาย?",
+    "lead.eyebrow": "ปรึกษาฟรี",
+    "lead.title": "บอกเราว่าคุณอยากสร้างอะไรในตลาดต่างประเทศ",
+    "lead.copy": "แชร์บริการที่ต้องการและช่องทางติดต่อ เราจะช่วยกำหนดขั้นตอนต่อไปกับผู้ดูแลที่เหมาะสม",
+    "lead.serviceLabel": "บริการที่ต้องการ",
+    "lead.servicePlaceholder": "เลือกบริการ",
+    "lead.service.market": "กลยุทธ์เข้าสู่ตลาด",
+    "lead.service.kol": "การตลาด KOC/KOL",
+    "lead.service.content": "วางแผนคอนเทนต์",
+    "lead.service.commerce": "ปฏิบัติการอีคอมเมิร์ซ",
+    "lead.service.live": "ไลฟ์คอมเมิร์ซ",
+    "lead.service.launch": "แผนเปิดตัวเต็มรูปแบบ",
+    "lead.marketLabel": "ตลาดเป้าหมาย",
+    "lead.marketPlaceholder": "ไทย มาเลเซีย SEA...",
+    "lead.noteLabel": "รายละเอียดโปรเจกต์",
+    "lead.notePlaceholder": "บอกหมวดสินค้า ไทม์ไลน์ และปัญหาปัจจุบัน",
+    "lead.contactLabel": "อีเมล / โทรศัพท์ / WeChat",
+    "lead.contactPlaceholder": "ให้เราติดต่อคุณทางไหน?",
+    "lead.submit": "ขอรับคำปรึกษา",
+    "lead.statusSending": "กำลังส่งคำขอของคุณ...",
+    "lead.statusSuccess": "ขอบคุณ เราได้รับคำขอแล้วและจะติดต่อกลับเร็วๆ นี้",
+    "lead.statusMailFallback": "กำลังเปิดแอปอีเมลเพื่อไม่ให้คำขอสูญหาย",
+    "lead.statusError": "เกิดข้อผิดพลาด กรุณาอีเมล postmaster@louder-creative.com",
+    "about.eyebrow": "เกี่ยวกับเรา",
+    "about.title": "ทีมขนาดกะทัดรัดที่สร้างมาเพื่อการปฏิบัติการข้ามพรมแดน",
+    "about.copy":
+      "LOUDER Creative รวมผู้ปฏิบัติการตลาดท้องถิ่น นักวางแผนคอนเทนต์ ทรัพยากรครีเอเตอร์ และการดำเนินงานคอมเมิร์ซ เพื่อช่วยแบรนด์จากการทดสอบตลาดครั้งแรกสู่การเติบโตซ้ำได้",
+    "about.signal.local": "ความเข้าใจตลาดท้องถิ่น",
+    "about.signal.creator": "ปฏิบัติการครีเอเตอร์",
+    "about.signal.commerce": "การแปลงยอดขาย",
+    "about.console.kicker": "โมเดลปฏิบัติการ",
+    "about.console.title": "กลยุทธ์ + คอนเทนต์ + คอมเมิร์ซ",
+    "about.console.copy": "ทีมแกนกลางขนาดเล็กประสานงานวิจัยตลาด ครีเอเตอร์ท้องถิ่น การดำเนินแคมเปญ และรีวิวผลลัพธ์",
+    "members.eyebrow": "ทีม",
+    "members.title": "คนที่คุณคุยได้โดยตรง",
+    "members.air.meta": "หญิง",
+    "members.air.role": "วิจัยตลาดและประสานงานครีเอเตอร์",
+    "members.pim.meta": "หญิง",
+    "members.pim.role": "วางแผนคอนเทนต์ท้องถิ่นและดูแลชุมชน",
+    "members.kelvin.meta": "ชาย",
+    "members.kelvin.role": "ปฏิบัติการคอมเมิร์ซและรีวิวผลงาน",
+    "members.shawn.meta": "ชาย",
+    "members.shawn.role": "กลยุทธ์ พาร์ตเนอร์ และประสานงานลูกค้า",
     "visual.eyebrow": "เข้าสู่ตลาด",
     "visual.title": "ไทยและเอเชียตะวันออกเฉียงใต้",
     "team.eyebrow": "ทีมงาน",
@@ -410,6 +552,53 @@ const translationAdditions = {
   zh: {
     "nav.home": "首页",
     "nav.cases": "案例",
+    "nav.about": "关于我们",
+    "hero.primary": "免费咨询",
+    "hero.check.market": "还不确定应该先进入哪个市场？",
+    "hero.check.creators": "需要匹配本地达人与内容节奏？",
+    "hero.check.commerce": "希望启动计划能把营销和销售转化连起来？",
+    "lead.eyebrow": "免费咨询",
+    "lead.title": "告诉我们你想在海外做什么。",
+    "lead.copy": "留下你需要的服务和联系方式，我们会匹配合适的负责人沟通下一步。",
+    "lead.serviceLabel": "期望服务",
+    "lead.servicePlaceholder": "选择一项服务",
+    "lead.service.market": "市场进入策略",
+    "lead.service.kol": "KOC/KOL 营销",
+    "lead.service.content": "内容规划",
+    "lead.service.commerce": "电商运营",
+    "lead.service.live": "直播电商",
+    "lead.service.launch": "完整出海启动方案",
+    "lead.marketLabel": "目标市场",
+    "lead.marketPlaceholder": "泰国、马来西亚、东南亚...",
+    "lead.noteLabel": "项目说明",
+    "lead.notePlaceholder": "告诉我们你的品类、时间节奏和当前问题。",
+    "lead.contactLabel": "邮箱 / 电话 / 微信",
+    "lead.contactPlaceholder": "我们如何联系你？",
+    "lead.submit": "提交咨询",
+    "lead.statusSending": "正在发送你的需求...",
+    "lead.statusSuccess": "谢谢，我们已收到你的需求，会尽快回复。",
+    "lead.statusMailFallback": "正在打开邮件应用，避免你的需求丢失。",
+    "lead.statusError": "提交出现问题，请邮件联系 postmaster@louder-creative.com。",
+    "about.eyebrow": "关于我们",
+    "about.title": "一个为跨境落地而组建的小型核心团队。",
+    "about.copy":
+      "LOUDER Creative 结合本地市场操盘、内容策划、达人资源与电商执行能力，帮助品牌从首次市场测试走向可复制增长。",
+    "about.signal.local": "本地市场判断",
+    "about.signal.creator": "达人运营",
+    "about.signal.commerce": "电商转化",
+    "about.console.kicker": "运营模型",
+    "about.console.title": "策略 + 内容 + 电商",
+    "about.console.copy": "小型核心团队协同市场研究、本地达人、活动执行与效果复盘。",
+    "members.eyebrow": "团队",
+    "members.title": "可以直接沟通的人",
+    "members.air.meta": "女性",
+    "members.air.role": "市场研究与达人协调",
+    "members.pim.meta": "女性",
+    "members.pim.role": "本地内容规划与社区运营",
+    "members.kelvin.meta": "男性",
+    "members.kelvin.role": "电商运营与效果复盘",
+    "members.shawn.meta": "男性",
+    "members.shawn.role": "策略、合作伙伴与客户沟通",
     "visual.eyebrow": "市场进入",
     "visual.title": "泰国与东南亚",
     "team.eyebrow": "团队背景",
@@ -479,11 +668,19 @@ const currentLanguageLabel = document.querySelector("[data-current-language]");
 const currentLanguageFlag = languageTrigger?.querySelector(".flag");
 const viewPanels = document.querySelectorAll("[data-view]");
 const routeLinks = document.querySelectorAll("[data-route]");
+const consultScrollLinks = document.querySelectorAll("[data-consult-scroll]");
 const viewNames = new Set(Array.from(viewPanels, (panel) => panel.dataset.view));
 const routeAliases = {
   packages: "services",
   why: "cases",
 };
+const endpointMeta = document.querySelector('meta[name="louder-lead-endpoint"]');
+const leadConfig = {
+  endpoint: window.LOUDER_LEAD_ENDPOINT || endpointMeta?.getAttribute("content") || "",
+  email: "postmaster@louder-creative.com",
+};
+const leadForm = document.querySelector("[data-lead-form]");
+const leadStatus = document.querySelector("[data-lead-status]");
 
 const getPreferredLanguage = () => {
   const savedLanguage = localStorage.getItem("louder-language");
@@ -499,6 +696,13 @@ const setLanguage = (language) => {
     const key = element.dataset.i18n;
     if (key && dictionary[key]) {
       element.textContent = dictionary[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+    const key = element.dataset.i18nPlaceholder;
+    if (key && dictionary[key]) {
+      element.setAttribute("placeholder", dictionary[key]);
     }
   });
 
@@ -531,6 +735,46 @@ const closeLanguageMenu = () => {
   if (!languageOptions || !languageTrigger) return;
   languageOptions.hidden = true;
   languageTrigger.setAttribute("aria-expanded", "false");
+};
+
+const getDictionaryText = (key) => {
+  const language = document.documentElement.dataset.language || "en";
+  return translations[language]?.[key] || translations.en[key] || "";
+};
+
+const setLeadStatus = (key, state = "") => {
+  if (!leadStatus) return;
+  leadStatus.textContent = getDictionaryText(key);
+  leadStatus.classList.toggle("is-success", state === "success");
+  leadStatus.classList.toggle("is-error", state === "error");
+};
+
+const buildLeadPayload = (form) => {
+  const data = new FormData(form);
+  return {
+    service: data.get("service") || "",
+    market: data.get("market") || "",
+    message: data.get("message") || "",
+    contact: data.get("contact") || "",
+    source: "louder-website",
+    submittedAt: new Date().toISOString(),
+  };
+};
+
+const createLeadEmailLink = (payload) => {
+  const subject = `LOUDER consultation request - ${payload.service || "Website lead"}`;
+  const body = [
+    "New consultation request from louder-creative.com",
+    "",
+    `Desired service: ${payload.service || "-"}`,
+    `Target market: ${payload.market || "-"}`,
+    `Contact: ${payload.contact || "-"}`,
+    "",
+    "Project note:",
+    payload.message || "-",
+  ].join("\n");
+
+  return `mailto:${leadConfig.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 };
 
 const updateHeader = () => {
@@ -569,6 +813,21 @@ mobileNav?.addEventListener("click", (event) => {
   }
 });
 
+consultScrollLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    leadForm?.scrollIntoView({ behavior: "smooth", block: "center" });
+    window.setTimeout(() => {
+      const firstField = leadForm?.querySelector("select, input, textarea");
+      try {
+        firstField?.focus({ preventScroll: true });
+      } catch (error) {
+        firstField?.focus();
+      }
+    }, 360);
+  });
+});
+
 window.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeMenu();
@@ -579,6 +838,47 @@ window.addEventListener("keydown", (event) => {
 document.addEventListener("click", (event) => {
   if (event.target instanceof Element && !event.target.closest("[data-language-menu]")) {
     closeLanguageMenu();
+  }
+});
+
+leadForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  if (!leadForm.reportValidity()) return;
+
+  const payload = buildLeadPayload(leadForm);
+  const submitButton = leadForm.querySelector('[type="submit"]');
+
+  submitButton?.setAttribute("disabled", "true");
+  setLeadStatus("lead.statusSending");
+
+  if (!leadConfig.endpoint) {
+    window.location.href = createLeadEmailLink(payload);
+    setLeadStatus("lead.statusMailFallback", "success");
+    submitButton?.removeAttribute("disabled");
+    return;
+  }
+
+  try {
+    const response = await fetch(leadConfig.endpoint, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Lead endpoint returned ${response.status}`);
+    }
+
+    leadForm.reset();
+    setLeadStatus("lead.statusSuccess", "success");
+  } catch (error) {
+    setLeadStatus("lead.statusError", "error");
+  } finally {
+    submitButton?.removeAttribute("disabled");
   }
 });
 

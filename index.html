@@ -8,6 +8,7 @@
       content="LOUDER Creative helps brands localize, promote, sell, and scale across Thailand and Southeast Asia."
     />
     <link rel="canonical" href="https://www.louder-creative.com/" />
+    <meta name="louder-lead-endpoint" content="https://louder-orcin.vercel.app/api/submit-lead" />
     <title>LOUDER Creative | Thailand & Southeast Asia Growth Partner</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -21,6 +22,7 @@
         <a class="is-active" href="#home" data-route="home" data-i18n="nav.home">Home</a>
         <a href="#services" data-route="services" data-i18n="nav.services">Services</a>
         <a href="#cases" data-route="cases" data-i18n="nav.cases">Cases</a>
+        <a href="#about" data-route="about" data-i18n="nav.about">About Us</a>
         <a href="#contact" data-route="contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="header-actions">
@@ -65,6 +67,7 @@
       <a class="is-active" href="#home" data-route="home" data-i18n="nav.home">Home</a>
       <a href="#services" data-route="services" data-i18n="nav.services">Services</a>
       <a href="#cases" data-route="cases" data-i18n="nav.cases">Cases</a>
+      <a href="#about" data-route="about" data-i18n="nav.about">About Us</a>
       <a href="#contact" data-route="contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
@@ -79,37 +82,85 @@
               LOUDER Creative helps brands enter Thailand and Southeast Asia through localized marketing, KOL/KOC
               activation, content operations, commerce setup, and data-driven growth.
             </p>
+            <ul class="hero-checks" aria-label="Common expansion questions">
+              <li data-i18n="hero.check.market">Unsure which market should come first?</li>
+              <li data-i18n="hero.check.creators">Need the right local creators and content rhythm?</li>
+              <li data-i18n="hero.check.commerce">Want a launch plan that connects marketing with sales?</li>
+            </ul>
             <div class="hero-actions" aria-label="Primary actions">
-              <a class="button primary" href="mailto:postmaster@louder-creative.com" data-i18n="hero.primary">
-                Contact us
+              <a class="button primary" href="#consultation-form" data-consult-scroll data-i18n="hero.primary">
+                Free consultation
               </a>
               <a class="button secondary" href="#services" data-route="services" data-i18n="hero.secondary">
                 Explore services
               </a>
             </div>
-          </div>
-          <aside class="hero-visual" aria-label="Market entry visual">
-            <div class="visual-frame">
+            <div class="hero-market-card" aria-label="Market entry visual">
               <img src="assets/building-visual.jpg" alt="" />
-              <span class="visual-stripe stripe-yellow-one"></span>
-              <span class="visual-stripe stripe-ink"></span>
-              <span class="visual-stripe stripe-yellow-two"></span>
-            </div>
-            <div class="visual-console">
-              <span class="console-kicker" data-i18n="visual.eyebrow">Market Entry</span>
-              <strong data-i18n="visual.title">Thailand & Southeast Asia</strong>
-              <div class="market-chips" aria-label="Markets">
-                <span>TH</span>
-                <span>MY</span>
-                <span>SG</span>
-                <span>SEA</span>
-              </div>
-              <div class="signal-rail">
-                <span data-i18n="signal.one">KOL/KOC Activation</span>
-                <span data-i18n="signal.two">Content Operations</span>
-                <span data-i18n="signal.three">Commerce Growth</span>
+              <div>
+                <span data-i18n="visual.eyebrow">Market Entry</span>
+                <strong data-i18n="visual.title">Thailand & Southeast Asia</strong>
+                <div class="market-chips" aria-label="Markets">
+                  <span>TH</span>
+                  <span>MY</span>
+                  <span>SG</span>
+                  <span>SEA</span>
+                </div>
               </div>
             </div>
+          </div>
+          <aside class="consult-card" aria-label="Free consultation form">
+            <div class="consult-brand">
+              <img src="assets/logo_small.PNG" alt="" />
+              <span>LOUDER</span>
+            </div>
+            <div class="consult-heading">
+              <p class="eyebrow" data-i18n="lead.eyebrow">Free Consultation</p>
+              <h2 data-i18n="lead.title">Tell us what you want to build overseas.</h2>
+              <p data-i18n="lead.copy">
+                Share your target service and contact details. We will shape the next step with the right operator.
+              </p>
+            </div>
+            <form class="lead-form" id="consultation-form" data-lead-form>
+              <label>
+                <span data-i18n="lead.serviceLabel">Desired service</span>
+                <select name="service" required>
+                  <option value="" data-i18n="lead.servicePlaceholder">Choose a service</option>
+                  <option value="Market Entry Strategy" data-i18n="lead.service.market">Market Entry Strategy</option>
+                  <option value="KOC/KOL Marketing" data-i18n="lead.service.kol">KOC/KOL Marketing</option>
+                  <option value="Content Planning" data-i18n="lead.service.content">Content Planning</option>
+                  <option value="E-commerce Operations" data-i18n="lead.service.commerce">E-commerce Operations</option>
+                  <option value="Live Commerce" data-i18n="lead.service.live">Live Commerce</option>
+                  <option value="Full Launch Plan" data-i18n="lead.service.launch">Full Launch Plan</option>
+                </select>
+              </label>
+              <label>
+                <span data-i18n="lead.marketLabel">Target market</span>
+                <input name="market" type="text" data-i18n-placeholder="lead.marketPlaceholder" placeholder="Thailand, Malaysia, SEA..." />
+              </label>
+              <label>
+                <span data-i18n="lead.noteLabel">Project note</span>
+                <textarea
+                  name="message"
+                  rows="4"
+                  data-i18n-placeholder="lead.notePlaceholder"
+                  placeholder="Tell us your category, timeline, and current challenge."
+                ></textarea>
+              </label>
+              <label>
+                <span data-i18n="lead.contactLabel">Email / phone / WeChat</span>
+                <input
+                  name="contact"
+                  type="text"
+                  required
+                  autocomplete="on"
+                  data-i18n-placeholder="lead.contactPlaceholder"
+                  placeholder="How should we reach you?"
+                />
+              </label>
+              <button class="button primary lead-submit" type="submit" data-i18n="lead.submit">Request consultation</button>
+              <p class="form-status" data-lead-status aria-live="polite"></p>
+            </form>
           </aside>
         </section>
 
@@ -344,6 +395,76 @@
               <span>03</span>
               <h3 data-i18n="team.operator.title">Operator Experience</h3>
               <p data-i18n="team.operator.copy">More than two years of hands-on work across China, Thailand, and Singapore commerce and brand marketing.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="view-panel about-view" id="about" data-view="about" aria-label="About Us" hidden>
+        <section class="section about">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="about.eyebrow">About Us</p>
+            <h2 data-i18n="about.title">A compact team built for cross-border execution.</h2>
+          </div>
+          <div class="about-layout">
+            <div class="about-copy">
+              <p data-i18n="about.copy">
+                LOUDER Creative combines local market operators, content planners, creator resources, and commerce
+                execution to help brands move from first market test to repeatable growth.
+              </p>
+              <div class="about-signals" aria-label="Operating strengths">
+                <span data-i18n="about.signal.local">Local market sense</span>
+                <span data-i18n="about.signal.creator">Creator operations</span>
+                <span data-i18n="about.signal.commerce">Commerce conversion</span>
+              </div>
+            </div>
+            <div class="about-console" aria-label="Team operating model">
+              <span data-i18n="about.console.kicker">Operating Model</span>
+              <strong data-i18n="about.console.title">Strategy + content + commerce</strong>
+              <p data-i18n="about.console.copy">
+                A small core team coordinates market research, local creators, campaign execution, and performance review.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section member-section">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="members.eyebrow">Team</p>
+            <h2 data-i18n="members.title">People you can talk to directly</h2>
+          </div>
+          <div class="member-grid">
+            <article class="member-card">
+              <img class="member-portrait" src="assets/team/air.svg" alt="Air placeholder portrait" />
+              <div>
+                <p class="member-meta" data-i18n="members.air.meta">Female</p>
+                <h3>Air</h3>
+                <p data-i18n="members.air.role">Market research and creator coordination</p>
+              </div>
+            </article>
+            <article class="member-card">
+              <img class="member-portrait" src="assets/team/pim.svg" alt="Pim placeholder portrait" />
+              <div>
+                <p class="member-meta" data-i18n="members.pim.meta">Female</p>
+                <h3>Pim</h3>
+                <p data-i18n="members.pim.role">Local content planning and community operations</p>
+              </div>
+            </article>
+            <article class="member-card">
+              <img class="member-portrait" src="assets/team/kelvin.svg" alt="Kelvin placeholder portrait" />
+              <div>
+                <p class="member-meta" data-i18n="members.kelvin.meta">Male</p>
+                <h3>Kelvin</h3>
+                <p data-i18n="members.kelvin.role">Commerce operations and performance review</p>
+              </div>
+            </article>
+            <article class="member-card">
+              <img class="member-portrait" src="assets/team/shawn.svg" alt="Shawn placeholder portrait" />
+              <div>
+                <p class="member-meta" data-i18n="members.shawn.meta">Male</p>
+                <h3>Shawn</h3>
+                <p data-i18n="members.shawn.role">Strategy, partnerships, and client coordination</p>
+              </div>
             </article>
           </div>
         </section>
