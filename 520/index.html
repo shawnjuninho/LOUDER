@@ -64,6 +64,9 @@
       }
 
       .rose-button {
+        position: relative;
+        display: inline-grid;
+        place-items: center;
         width: min(250px, 58vw);
         border: 0;
         background: transparent;
@@ -72,6 +75,16 @@
         touch-action: manipulation;
         -webkit-user-select: none;
         user-select: none;
+      }
+
+      .rose-button::after {
+        position: absolute;
+        inset: 7%;
+        border: 1px solid rgba(255, 79, 128, 0.34);
+        border-radius: 50%;
+        content: "";
+        opacity: 0;
+        pointer-events: none;
       }
 
       .rose-button img {
@@ -85,6 +98,36 @@
 
       .rose-button:active img {
         transform: scale(0.96);
+      }
+
+      .rose-button.is-hinting::after {
+        -webkit-animation: hint-ring 1.8s ease-out infinite;
+        animation: hint-ring 1.8s ease-out infinite;
+      }
+
+      .rose-button.is-hinting img {
+        -webkit-animation: rose-pulse 1.8s ease-in-out infinite;
+        animation: rose-pulse 1.8s ease-in-out infinite;
+      }
+
+      .tap-hint {
+        min-height: 24px;
+        margin: -8px 0 0;
+        color: rgba(58, 10, 24, 0.62);
+        font-size: 0.95rem;
+        line-height: 1.5;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 8px, 0);
+        transform: translate3d(0, 8px, 0);
+        transition:
+          opacity 240ms ease,
+          transform 240ms ease;
+      }
+
+      .tap-hint.is-visible {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
       }
 
       .petal-drop {
@@ -114,6 +157,52 @@
         to {
           transform: translate3d(var(--drift, 40px), 112vh, 0) rotate(330deg);
           opacity: 0;
+        }
+      }
+
+      @-webkit-keyframes hint-ring {
+        0% {
+          opacity: 0.6;
+          -webkit-transform: scale(0.78);
+        }
+
+        100% {
+          opacity: 0;
+          -webkit-transform: scale(1.24);
+        }
+      }
+
+      @keyframes hint-ring {
+        0% {
+          opacity: 0.6;
+          transform: scale(0.78);
+        }
+
+        100% {
+          opacity: 0;
+          transform: scale(1.24);
+        }
+      }
+
+      @-webkit-keyframes rose-pulse {
+        0%,
+        100% {
+          -webkit-transform: scale(1);
+        }
+
+        50% {
+          -webkit-transform: scale(1.045);
+        }
+      }
+
+      @keyframes rose-pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.045);
         }
       }
 
@@ -237,13 +326,23 @@
         <button class="rose-button" type="button" aria-label="Bloom" data-bloom>
           <img src="../assets/520/rose.svg" alt="Rose" draggable="false" />
         </button>
+        <p class="tap-hint" aria-live="polite" data-hint>Tap the rose.</p>
       </section>
       <img class="mascot" src="../assets/520/air-air-dumb.svg" alt="" aria-hidden="true" draggable="false" data-mascot />
     </main>
     <script>
       (function () {
         var button = document.querySelector("[data-bloom]");
+        var hint = document.querySelector("[data-hint]");
         var mascot = document.querySelector("[data-mascot]");
+        var hasBloomed = false;
+        var idleTimer = window.setTimeout(showHint, 5600);
+
+        function showHint() {
+          if (hasBloomed) return;
+          hint.classList.add("is-visible");
+          button.classList.add("is-hinting");
+        }
 
         function dropPetal() {
           var petal = document.createElement("span");
@@ -258,6 +357,11 @@
         }
 
         function bloom() {
+          hasBloomed = true;
+          window.clearTimeout(idleTimer);
+          hint.classList.remove("is-visible");
+          button.classList.remove("is-hinting");
+
           for (var index = 0; index < 34; index += 1) {
             window.setTimeout(dropPetal, index * 48);
           }

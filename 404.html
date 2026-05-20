@@ -17,7 +17,10 @@
         }
 
         if (decodedPath === "/air-air-dumb~" || decodedPath === "/air-air-dumb") {
-          window.location.replace("/520/");
+          document.documentElement.className = "is-redirecting";
+          window.setTimeout(function () {
+            window.location.replace("/520/");
+          }, 2800);
         }
       })();
     </script>
@@ -38,16 +41,168 @@
         width: min(520px, calc(100% - 40px));
       }
 
+      .redirecting {
+        display: none;
+      }
+
+      html.is-redirecting body {
+        color: #34101a;
+        background:
+          radial-gradient(circle at 50% 34%, rgba(255, 92, 132, 0.23), transparent 24rem),
+          linear-gradient(180deg, #fffafb 0%, #ffe9ee 100%);
+        overflow: hidden;
+      }
+
+      html.is-redirecting .not-found {
+        display: none;
+      }
+
+      html.is-redirecting .redirecting {
+        display: grid;
+        width: min(420px, calc(100% - 40px));
+        place-items: center;
+        gap: 18px;
+        text-align: center;
+      }
+
+      .orbit {
+        position: relative;
+        width: 112px;
+        height: 112px;
+      }
+
+      .orbit::before,
+      .orbit::after {
+        position: absolute;
+        inset: 0;
+        border: 1px solid rgba(255, 75, 124, 0.36);
+        border-radius: 50%;
+        content: "";
+        -webkit-animation: breathe 2.2s ease-in-out infinite;
+        animation: breathe 2.2s ease-in-out infinite;
+      }
+
+      .orbit::after {
+        inset: 18px;
+        -webkit-animation-delay: 0.28s;
+        animation-delay: 0.28s;
+      }
+
+      .heart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 34px;
+        height: 34px;
+        background: #ff4f80;
+        -webkit-transform: translate(-50%, -44%) rotate(45deg);
+        transform: translate(-50%, -44%) rotate(45deg);
+        box-shadow: 0 18px 40px rgba(178, 15, 66, 0.28);
+      }
+
+      .heart::before,
+      .heart::after {
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: inherit;
+        content: "";
+      }
+
+      .heart::before {
+        left: -17px;
+      }
+
+      .heart::after {
+        top: -17px;
+      }
+
+      .bar {
+        width: min(260px, 72vw);
+        height: 4px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(52, 16, 26, 0.12);
+      }
+
+      .bar span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #ff87a6, #ff3f78);
+        -webkit-transform-origin: left;
+        transform-origin: left;
+        -webkit-animation: load 2.8s ease forwards;
+        animation: load 2.8s ease forwards;
+      }
+
       a {
         color: inherit;
         font-weight: 800;
       }
+
+      @-webkit-keyframes breathe {
+        0%,
+        100% {
+          opacity: 0.56;
+          -webkit-transform: scale(0.82);
+        }
+
+        50% {
+          opacity: 1;
+          -webkit-transform: scale(1);
+        }
+      }
+
+      @keyframes breathe {
+        0%,
+        100% {
+          opacity: 0.56;
+          transform: scale(0.82);
+        }
+
+        50% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @-webkit-keyframes load {
+        from {
+          -webkit-transform: scaleX(0);
+        }
+
+        to {
+          -webkit-transform: scaleX(1);
+        }
+      }
+
+      @keyframes load {
+        from {
+          transform: scaleX(0);
+        }
+
+        to {
+          transform: scaleX(1);
+        }
+      }
     </style>
   </head>
   <body>
-    <main>
+    <main class="not-found">
       <h1>File not found</h1>
       <p>The page you are looking for is not here. <a href="/">Return home</a>.</p>
+    </main>
+    <main class="redirecting" aria-label="Opening Happy 520">
+      <div class="orbit" aria-hidden="true">
+        <span class="heart"></span>
+      </div>
+      <h1>Almost there</h1>
+      <p>Taking a tiny detour to <strong>/520</strong>.</p>
+      <div class="bar" aria-hidden="true"><span></span></div>
+      <p><a href="/520/">Open now</a></p>
     </main>
   </body>
 </html>
