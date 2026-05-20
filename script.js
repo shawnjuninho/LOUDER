@@ -749,6 +749,33 @@ const setLeadStatus = (key, state = "") => {
   leadStatus.classList.toggle("is-error", state === "error");
 };
 
+const setLeadStatusMessage = (message, state = "") => {
+  if (!leadStatus) return;
+  leadStatus.textContent = message;
+  leadStatus.classList.toggle("is-success", state === "success");
+  leadStatus.classList.toggle("is-error", state === "error");
+};
+
+const readLeadResponse = async (response) => {
+  const fallback = `HTTP ${response.status}`;
+  const contentType = response.headers.get("content-type") || "";
+
+  if (contentType.includes("application/json")) {
+    try {
+      return await response.json();
+    } catch (error) {
+      return { error: fallback };
+    }
+  }
+
+  try {
+    const text = (await response.text()).trim();
+    return { error: text.slice(0, 360) || fallback };
+  } catch (error) {
+    return { error: fallback };
+  }
+};
+
 const buildLeadPayload = (form) => {
   const data = new FormData(form);
   return {
@@ -869,14 +896,20 @@ leadForm?.addEventListener("submit", async (event) => {
       body: JSON.stringify(payload),
     });
 
-    if (!response.ok) {
-      throw new Error(`Lead endpoint returned ${response.status}`);
+    const result = await readLeadResponse(response);
+    if (!response.ok || result?.ok === false) {
+      const detail = typeof result?.error === "string" && result.error.trim()
+        ? result.error.trim()
+        : `Lead endpoint returned ${response.status}`;
+      throw new Error(detail);
     }
 
     leadForm.reset();
     setLeadStatus("lead.statusSuccess", "success");
   } catch (error) {
-    setLeadStatus("lead.statusError", "error");
+    const fallback = getDictionaryText("lead.statusError");
+    const detail = error instanceof Error && error.message ? ` Debug: ${error.message}` : "";
+    setLeadStatusMessage(`${fallback}${detail}`, "error");
   } finally {
     submitButton?.removeAttribute("disabled");
   }
