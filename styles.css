@@ -404,8 +404,8 @@ button {
   min-height: 92vh;
   margin: 0 auto;
   padding: 142px 0 70px;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.78fr);
-  gap: 44px;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 430px);
+  gap: 36px;
   align-items: center;
 }
 
@@ -567,10 +567,13 @@ h1 {
 
 .consult-card {
   position: relative;
+  width: 100%;
+  max-width: 430px;
+  justify-self: end;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: var(--radius);
-  padding: 26px;
+  padding: 22px;
   background:
     linear-gradient(138deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.62)),
     radial-gradient(circle at 86% 12%, rgba(66, 217, 230, 0.2), transparent 16rem);
@@ -591,41 +594,41 @@ h1 {
 .consult-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin-bottom: 20px;
   color: var(--ink);
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 900;
 }
 
 .consult-brand img {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
 .consult-heading h2 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  line-height: 1.05;
+  font-size: clamp(1.56rem, 3vw, 2.24rem);
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .consult-heading p:not(.eyebrow) {
-  margin: 18px 0 0;
+  margin: 12px 0 0;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.58;
 }
 
 .lead-form {
   display: grid;
-  gap: 14px;
-  margin-top: 28px;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .lead-form label {
   display: grid;
-  gap: 8px;
+  gap: 6px;
 }
 
 .lead-form label span {
@@ -638,7 +641,7 @@ h1 {
 .lead-form select,
 .lead-form textarea {
   width: 100%;
-  min-height: 48px;
+  min-height: 44px;
   border: 1px solid rgba(7, 17, 19, 0.14);
   border-radius: 6px;
   color: var(--ink);
@@ -653,7 +656,7 @@ h1 {
 }
 
 .lead-form textarea {
-  min-height: 104px;
+  min-height: 82px;
   padding-top: 12px;
   resize: vertical;
 }
@@ -668,6 +671,7 @@ h1 {
 
 .lead-submit {
   width: 100%;
+  min-height: 46px;
   margin-top: 4px;
   border: 0;
   cursor: pointer;
@@ -983,25 +987,19 @@ h1 {
 
 .case-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 30px 44px;
+  gap: 26px 54px;
 }
 
 .case-stage {
   position: relative;
-  max-width: 1060px;
+  max-width: 980px;
   margin: 0 auto;
+  padding: 10px 0;
   isolation: isolate;
 }
 
 .case-stage::before {
-  position: absolute;
-  top: 8%;
-  right: -3%;
-  bottom: 8%;
-  left: -3%;
-  z-index: -1;
-  background: linear-gradient(118deg, rgba(255, 212, 61, 0.2) 0 10%, transparent 10% 58%, rgba(66, 217, 230, 0.12) 58% 72%, transparent 72%);
-  content: "";
+  display: none;
 }
 
 .stat-grid div,
@@ -1036,7 +1034,7 @@ h1 {
 
 .case-grid figure {
   display: grid;
-  min-height: 224px;
+  min-height: 218px;
   place-items: center;
   margin: 0;
   padding: 0;
@@ -1058,6 +1056,11 @@ h1 {
   border-radius: 50%;
   background: #fff;
   object-fit: cover;
+}
+
+.case-logo.has-inner-circle img {
+  width: min(238px, 86%);
+  clip-path: circle(45.8% at 50% 50%);
 }
 
 .case-logo.is-wide img {
@@ -1302,20 +1305,12 @@ h1 {
   object-fit: cover;
 }
 
-.member-meta {
-  margin: 0 0 10px;
-  color: var(--accent-deep);
-  font-size: 0.78rem;
-  font-weight: 860;
-  text-transform: uppercase;
-}
-
 .member-card h3 {
   margin: 0 0 12px;
   font-size: 1.55rem;
 }
 
-.member-card p:not(.member-meta) {
+.member-card p {
   margin: 0;
   color: var(--muted);
   line-height: 1.62;
@@ -1382,6 +1377,11 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .consult-card {
+    max-width: none;
+    justify-self: stretch;
+  }
+
   .hero-visual {
     min-height: 560px;
   }
@@ -1428,6 +1428,10 @@ h1 {
   .consult-heading h2,
   .contact h2 {
     font-size: 3rem;
+  }
+
+  .consult-heading h2 {
+    font-size: 2.24rem;
   }
 }
 
@@ -1551,6 +1555,10 @@ h1 {
   .consult-heading h2,
   .contact h2 {
     font-size: 2.34rem;
+  }
+
+  .consult-heading h2 {
+    font-size: 1.92rem;
   }
 
   .stat-grid,

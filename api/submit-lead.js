@@ -37,6 +37,12 @@ const parseAllowedOrigins = () =>
     .map((origin) => origin.trim())
     .filter(Boolean);
 
+const parseRecipients = (value) =>
+  clean(value, 4000)
+    .split(/[;,]/)
+    .map((recipient) => recipient.trim())
+    .filter(Boolean);
+
 const getCors = (request) => {
   const origin = request.headers.get("origin");
   const allowedOrigins = parseAllowedOrigins();
@@ -89,13 +95,18 @@ const getEnvConfig = () => {
     throw new Error("SMTP_SECURE must be true or false.");
   }
 
+  const recipients = parseRecipients(process.env.MAIL_TO);
+  if (!recipients.length) {
+    throw new Error("MAIL_TO must include at least one recipient.");
+  }
+
   return {
     host: process.env.SMTP_HOST,
     port,
     secure,
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
-    to: process.env.MAIL_TO,
+    to: recipients,
     from: process.env.MAIL_FROM,
   };
 };

@@ -1,30 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Placeholder portrait">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Air pig avatar">
   <defs>
-    <linearGradient id="bg" x1="42" y1="30" x2="280" y2="292" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F9E7EF"/>
-      <stop offset=".48" stop-color="#D9F8F9"/>
-      <stop offset="1" stop-color="#FFF0A8"/>
+    <linearGradient id="bg" x1="30" y1="28" x2="296" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7D6"/>
+      <stop offset=".5" stop-color="#DDF8F8"/>
+      <stop offset="1" stop-color="#FFE4F0"/>
     </linearGradient>
-    <linearGradient id="hair" x1="92" y1="70" x2="232" y2="250" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#172326"/>
-      <stop offset="1" stop-color="#314A4F"/>
+    <linearGradient id="skin" x1="88" y1="78" x2="238" y2="254" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD6E4"/>
+      <stop offset="1" stop-color="#F6AFC8"/>
     </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#071113" flood-opacity=".18"/>
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#071113" flood-opacity=".16"/>
     </filter>
   </defs>
   <rect width="320" height="320" rx="42" fill="url(#bg)"/>
-  <circle cx="238" cy="64" r="46" fill="#42D9E6" opacity=".26"/>
-  <circle cx="82" cy="238" r="70" fill="#FFD43D" opacity=".26"/>
+  <circle cx="246" cy="62" r="48" fill="#42D9E6" opacity=".24"/>
+  <circle cx="72" cy="240" r="68" fill="#FFD43D" opacity=".28"/>
   <g filter="url(#shadow)">
-    <path d="M92 272c16-54 39-79 68-79s52 25 68 79H92z" fill="#F8FAFA"/>
-    <path d="M111 178c-16-54 5-102 48-109 46-8 87 28 72 106-8 41-26 65-61 67-32 2-50-18-59-64z" fill="url(#hair)"/>
-    <path d="M117 154c7-43 31-66 67-58 27 6 43 30 42 63-2 43-23 78-57 78-31 0-55-35-52-83z" fill="#F4C7AA"/>
-    <path d="M116 151c25 2 52-10 78-35 10 23 23 39 38 49 7-57-21-93-72-93-42 0-62 31-44 79z" fill="url(#hair)"/>
-    <path d="M121 199c13 23 28 35 46 35 21 0 39-14 53-42l6 80H94l27-73z" fill="#203238"/>
-    <path d="M142 196c15 11 31 11 48 0-5 16-12 25-23 26-11 0-19-9-25-26z" fill="#F9D8C8" opacity=".72"/>
-    <circle cx="147" cy="158" r="4" fill="#071113"/>
-    <circle cx="188" cy="158" r="4" fill="#071113"/>
-    <path d="M151 188c11 8 25 8 36 0" fill="none" stroke="#9F675D" stroke-width="5" stroke-linecap="round"/>
+    <path d="M96 276c14-45 37-67 68-67s54 22 68 67H96z" fill="#203238"/>
+    <path d="M91 119c-12-32 0-58 30-63 26-5 45 13 49 39-28 2-53 10-79 24z" fill="#F9AFC8"/>
+    <path d="M229 119c12-32 0-58-30-63-26-5-45 13-49 39 28 2 53 10 79 24z" fill="#F9AFC8"/>
+    <path d="M111 96c-10-16-6-28 10-31 15-3 25 8 29 27-13 1-26 2-39 4z" fill="#FFE7EF" opacity=".82"/>
+    <path d="M209 96c10-16 6-28-10-31-15-3-25 8-29 27 13 1 26 2 39 4z" fill="#FFE7EF" opacity=".82"/>
+    <circle cx="160" cy="166" r="82" fill="url(#skin)"/>
+    <path d="M98 166c8-42 36-68 71-68 30 0 55 18 68 50-18-18-42-28-72-28-33 0-55 14-67 46z" fill="#FFFFFF" opacity=".35"/>
+    <ellipse cx="160" cy="187" rx="42" ry="31" fill="#FFDDE8"/>
+    <circle cx="146" cy="187" r="5" fill="#8E5163"/>
+    <circle cx="174" cy="187" r="5" fill="#8E5163"/>
+    <circle cx="131" cy="153" r="6" fill="#071113"/>
+    <circle cx="189" cy="153" r="6" fill="#071113"/>
+    <path d="M138 221c13 10 31 10 44 0" fill="none" stroke="#9B5B6E" stroke-width="6" stroke-linecap="round"/>
+    <path d="M111 132c-10 8-20 10-31 5" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" opacity=".42"/>
+    <path d="M238 136c-11 5-21 3-31-5" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" opacity=".42"/>
   </g>
 </svg>
