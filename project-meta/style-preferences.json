@@ -1,47 +1,49 @@
 {
   "brand": "LOUDER Creative",
-  "lastUpdated": "2026-05-21",
+  "lastUpdated": "2026-05-22",
   "defaultLanguage": "en",
   "supportedLanguages": ["en", "ms", "th", "zh"],
-  "targetMarkets": ["Thailand", "Vietnam", "Malaysia", "Singapore", "Southeast Asia"],
+  "targetMarkets": ["Thailand", "Malaysia", "Vietnam", "Singapore", "Southeast Asia"],
   "visualDirection": {
     "keywords": [
-      "modern minimal",
-      "futuristic",
-      "glassmorphism",
+      "black and white modern minimal",
+      "futuristic commerce interface",
+      "cool glassmorphism",
       "realistic commercial photography",
       "premium technology",
       "global growth operations"
     ],
     "mustUse": [
       "large confident typography",
-      "clean white space",
-      "transparent glass panels",
+      "black-white contrast with clean white space",
+      "transparent glass panels over cool gray systems",
       "subtle grid systems",
       "scan light effects",
       "motion layers",
       "realistic product visuals",
-      "realistic team portraits"
+      "realistic full-color team portraits"
     ],
     "avoid": [
       "cartoon avatars",
       "cute illustration style",
+      "black-and-white or desaturated people portraits",
       "early personal-blog connection-line backgrounds",
       "real brand-logo walls as the main case visual",
       "single-hue purple or beige themes",
       "heavy text stacking without media"
     ],
     "palette": {
-      "core": ["ink black", "white", "cool gray", "glass cyan"],
+      "core": ["ink black", "optic white", "cool gray", "glass cyan"],
       "accent": ["LOUDER yellow"],
-      "usage": "Use yellow as a precise signal color, not as the whole palette."
+      "usage": "Use black, white, and cool gray as the base. Add controlled accent colors such as cyan, LOUDER yellow, and small electric highlights; do not make human portraits monochrome."
     }
   },
   "contentRules": {
     "companyName": "Do not add a legal company name until confirmed.",
     "domain": "https://www.louder-creative.com/",
     "email": "postmaster@louder-creative.com",
-    "tone": "International, direct, professional, focused on brand globalization and overseas market operations."
+    "tone": "International, direct, professional, focused on brand globalization and overseas market operations.",
+    "customerFacingCopy": "Avoid internal draft terms such as logo-free assets, placeholders, fake data, or implementation notes on public pages."
   },
   "implementationRules": {
     "siteEntry": "Repository root remains the deployment entry for now: index.html, styles.css, script.js, api/.",
