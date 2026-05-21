@@ -1,15 +1,5 @@
 # LOUDER Brand Style
 
-本项目默认视觉方向：现代极简、扁平化、轻科幻，并带有类似 Apple 透明玻璃的克制质感。
+Canonical preference file: `project-meta/style-preferences.json`.
 
-后续新增页面、组件和视觉资产应优先遵循：
-
-- 保持版面留白充足，避免拥挤和过度装饰。
-- 使用清晰的几何结构、扁平化图形、细线条、柔和阴影和半透明玻璃层。
-- 主色以深墨色、白色、冷灰为基础，并使用 logo 中的黄色作为强调色。
-- 科幻感应来自细腻材质、空间感、网格、光线和动效，而不是复杂炫技。
-- 避免早期个人博客式的点线连接背景；科技感优先使用干净网格、扫描光、玻璃层、图像切片和数据化模块。
-- 官网内容优先拆成顶部导航可切换的分区视图，避免单页从头到尾纯文字堆叠；当前顶部入口保持为 Home / Services / Cases / Contact，其中套餐归入 Services，团队优势归入 Cases。
-- 文案应专业、直接、国际化，聚焦品牌出海、海外市场运营和持续增长。
-- 网站默认主语言为英语，并支持马来西亚语、泰语和中文切换。
-- 公司法定名称未确认前，不在官网页面中展示。
+Use that JSON file first when making visual or content decisions. This markdown file is kept as a human-readable pointer so the preference is easy to find from the repository root.

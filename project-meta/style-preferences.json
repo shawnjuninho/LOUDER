@@ -1,0 +1,51 @@
+{
+  "brand": "LOUDER Creative",
+  "lastUpdated": "2026-05-21",
+  "defaultLanguage": "en",
+  "supportedLanguages": ["en", "ms", "th", "zh"],
+  "targetMarkets": ["Thailand", "Vietnam", "Malaysia", "Singapore", "Southeast Asia"],
+  "visualDirection": {
+    "keywords": [
+      "modern minimal",
+      "futuristic",
+      "glassmorphism",
+      "realistic commercial photography",
+      "premium technology",
+      "global growth operations"
+    ],
+    "mustUse": [
+      "large confident typography",
+      "clean white space",
+      "transparent glass panels",
+      "subtle grid systems",
+      "scan light effects",
+      "motion layers",
+      "realistic product visuals",
+      "realistic team portraits"
+    ],
+    "avoid": [
+      "cartoon avatars",
+      "cute illustration style",
+      "early personal-blog connection-line backgrounds",
+      "real brand-logo walls as the main case visual",
+      "single-hue purple or beige themes",
+      "heavy text stacking without media"
+    ],
+    "palette": {
+      "core": ["ink black", "white", "cool gray", "glass cyan"],
+      "accent": ["LOUDER yellow"],
+      "usage": "Use yellow as a precise signal color, not as the whole palette."
+    }
+  },
+  "contentRules": {
+    "companyName": "Do not add a legal company name until confirmed.",
+    "domain": "https://www.louder-creative.com/",
+    "email": "postmaster@louder-creative.com",
+    "tone": "International, direct, professional, focused on brand globalization and overseas market operations."
+  },
+  "implementationRules": {
+    "siteEntry": "Repository root remains the deployment entry for now: index.html, styles.css, script.js, api/.",
+    "localOnlyFolder": "workspace-local/ is ignored by git and used for reference PDFs, discarded assets, source captures, and previews.",
+    "preferenceLookup": "Read this file before making future visual decisions."
+  }
+}

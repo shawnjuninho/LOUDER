@@ -2,3 +2,5 @@
 assets/fake_shawn.png
 .env*
 !.env.example
+preview-*.png
+workspace-local/
