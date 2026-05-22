@@ -17,6 +17,9 @@
       "large confident typography",
       "black-white contrast with clean white space",
       "transparent glass panels over cool gray systems",
+      "wide desktop layouts around 1700-1750px on 1920px displays",
+      "soft boundaryless sections with obvious borders only for functional windows",
+      "centered and constrained heading/copy blocks for text-heavy sections",
       "subtle grid systems",
       "scan light effects",
       "motion layers",
@@ -35,7 +38,7 @@
     "palette": {
       "core": ["ink black", "optic white", "cool gray", "glass cyan"],
       "accent": ["LOUDER yellow"],
-      "usage": "Use black, white, and cool gray as the base. Add controlled accent colors such as cyan, LOUDER yellow, and small electric highlights; do not make human portraits monochrome."
+      "usage": "Use black, white, and cool gray as the base. Add controlled accent colors such as cyan, LOUDER yellow, rose, and small electric highlights; do not make human portraits monochrome."
     }
   },
   "contentRules": {
