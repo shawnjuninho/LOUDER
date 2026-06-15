@@ -1,5 +1,5 @@
 {
-  "brand": "LOUDER Creative",
+  "brand": "Louder Creative",
   "lastUpdated": "2026-05-22",
   "defaultLanguage": "en",
   "supportedLanguages": ["en", "ms", "th", "zh"],
@@ -37,8 +37,8 @@
     ],
     "palette": {
       "core": ["ink black", "optic white", "cool gray", "glass cyan"],
-      "accent": ["LOUDER yellow"],
-      "usage": "Use black, white, and cool gray as the base. Add controlled accent colors such as cyan, LOUDER yellow, rose, and small electric highlights; do not make human portraits monochrome."
+      "accent": ["Louder yellow"],
+      "usage": "Use black, white, and cool gray as the base. Add controlled accent colors such as cyan, Louder yellow, rose, and small electric highlights; do not make human portraits monochrome."
     }
   },
   "contentRules": {

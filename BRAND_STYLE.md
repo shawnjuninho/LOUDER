@@ -1,4 +1,4 @@
-# LOUDER Brand Style
+# Louder Creative Brand Style
 
 Canonical preference file: `project-meta/style-preferences.json`.
 

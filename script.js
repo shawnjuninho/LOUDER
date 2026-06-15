@@ -1,13 +1,13 @@
 const translations = {
   en: {
     "nav.services": "Services",
-    "nav.why": "Why LOUDER",
+    "nav.why": "Why Louder",
     "nav.packages": "Packages",
     "nav.contact": "Contact",
     "hero.eyebrow": "Thailand, Malaysia, Vietnam & Southeast Asia Growth Partner",
     "hero.title": "Localize, launch, and scale your brand across Southeast Asia.",
     "hero.copy":
-      "LOUDER Creative helps brands enter Thailand, Malaysia, Vietnam, and Southeast Asia through localized marketing, KOL/KOC activation, content operations, commerce setup, and data-driven growth.",
+      "Louder Creative helps brands enter Thailand, Malaysia, Vietnam, and Southeast Asia through localized marketing, KOL/KOC activation, content operations, commerce setup, and data-driven growth.",
     "hero.primary": "Contact us",
     "hero.secondary": "Explore services",
     "signal.one": "KOL/KOC Activation",
@@ -21,7 +21,7 @@ const translations = {
     "stats.industries": "industries served",
     "stats.creators": "creator resources",
     "stats.content": "content outputs",
-    "why.eyebrow": "Why LOUDER",
+    "why.eyebrow": "Why Louder",
     "why.title": "Local teams, data discipline, mature execution",
     "why.direct.title": "Direct Local Execution",
     "why.direct.copy": "Direct access to local execution resources reduces agency layers and improves efficiency.",
@@ -74,13 +74,13 @@ const translations = {
   },
   ms: {
     "nav.services": "Servis",
-    "nav.why": "Kenapa LOUDER",
+    "nav.why": "Kenapa Louder",
     "nav.packages": "Pakej",
     "nav.contact": "Hubungi",
     "hero.eyebrow": "Rakan Pertumbuhan Thailand, Malaysia, Vietnam & Asia Tenggara",
     "hero.title": "Setempatkan, lancarkan, dan skala jenama anda di Asia Tenggara.",
     "hero.copy":
-      "LOUDER Creative membantu jenama memasuki Thailand, Malaysia, Vietnam dan Asia Tenggara melalui pemasaran setempat, aktivasi KOL/KOC, operasi kandungan, persediaan dagang, dan pertumbuhan berasaskan data.",
+      "Louder Creative membantu jenama memasuki Thailand, Malaysia, Vietnam dan Asia Tenggara melalui pemasaran setempat, aktivasi KOL/KOC, operasi kandungan, persediaan dagang, dan pertumbuhan berasaskan data.",
     "hero.primary": "Hubungi kami",
     "hero.secondary": "Lihat servis",
     "signal.one": "Aktivasi KOL/KOC",
@@ -94,7 +94,7 @@ const translations = {
     "stats.industries": "industri dilayani",
     "stats.creators": "sumber kreator",
     "stats.content": "output kandungan",
-    "why.eyebrow": "Kenapa LOUDER",
+    "why.eyebrow": "Kenapa Louder",
     "why.title": "Pasukan setempat, disiplin data, pelaksanaan matang",
     "why.direct.title": "Pelaksanaan Setempat Langsung",
     "why.direct.copy": "Akses langsung kepada sumber pelaksanaan tempatan mengurangkan lapisan agensi dan meningkatkan kecekapan.",
@@ -143,13 +143,13 @@ const translations = {
   },
   th: {
     "nav.services": "บริการ",
-    "nav.why": "ทำไม LOUDER",
+    "nav.why": "ทำไม Louder",
     "nav.packages": "แพ็กเกจ",
     "nav.contact": "ติดต่อ",
     "hero.eyebrow": "พาร์ทเนอร์การเติบโตในไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้",
     "hero.title": "ปรับแบรนด์ให้เข้าท้องถิ่น เปิดตลาด และขยายในเอเชียตะวันออกเฉียงใต้",
     "hero.copy":
-      "LOUDER Creative ช่วยแบรนด์เข้าสู่ไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้ผ่านการตลาดท้องถิ่น การทำงานกับ KOL/KOC การดูแลคอนเทนต์ การตั้งค่าคอมเมิร์ซ และการเติบโตจากข้อมูล",
+      "Louder Creative ช่วยแบรนด์เข้าสู่ไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้ผ่านการตลาดท้องถิ่น การทำงานกับ KOL/KOC การดูแลคอนเทนต์ การตั้งค่าคอมเมิร์ซ และการเติบโตจากข้อมูล",
     "hero.primary": "ติดต่อเรา",
     "hero.secondary": "ดูบริการ",
     "signal.one": "การเปิดใช้งาน KOL/KOC",
@@ -163,7 +163,7 @@ const translations = {
     "stats.industries": "อุตสาหกรรมที่ให้บริการ",
     "stats.creators": "ทรัพยากรครีเอเตอร์",
     "stats.content": "ผลงานคอนเทนต์",
-    "why.eyebrow": "ทำไม LOUDER",
+    "why.eyebrow": "ทำไม Louder",
     "why.title": "ทีมท้องถิ่น วินัยด้านข้อมูล และการลงมือทำที่成熟",
     "why.direct.title": "การดำเนินงานท้องถิ่นโดยตรง",
     "why.direct.copy": "เข้าถึงทรัพยากรการดำเนินงานท้องถิ่นโดยตรง ลดชั้นกลางของเอเจนซีและเพิ่มประสิทธิภาพ",
@@ -212,13 +212,13 @@ const translations = {
   },
   zh: {
     "nav.services": "服务",
-    "nav.why": "为什么选择 LOUDER",
+    "nav.why": "为什么选择 Louder",
     "nav.packages": "套餐",
     "nav.contact": "联系",
     "hero.eyebrow": "泰国、马来西亚、越南与东南亚增长伙伴",
     "hero.title": "帮助品牌在东南亚本地化落地、推广、销售与增长。",
     "hero.copy":
-      "LOUDER Creative 聚焦泰国、马来西亚、越南与东南亚市场，通过本地化营销、KOL/KOC 投放、内容运营、电商搭建与数据驱动增长，帮助品牌进入并放大海外市场。",
+      "Louder Creative 聚焦泰国、马来西亚、越南与东南亚市场，通过本地化营销、KOL/KOC 投放、内容运营、电商搭建与数据驱动增长，帮助品牌进入并放大海外市场。",
     "hero.primary": "联系我们",
     "hero.secondary": "查看服务",
     "signal.one": "KOL/KOC 激活",
@@ -231,7 +231,7 @@ const translations = {
     "stats.industries": "覆盖行业",
     "stats.creators": "达人资源",
     "stats.content": "内容输出",
-    "why.eyebrow": "为什么选择 LOUDER",
+    "why.eyebrow": "为什么选择 Louder",
     "why.title": "本地团队、数据纪律、成熟执行",
     "why.direct.title": "本地直执",
     "why.direct.copy": "直连本地执行资源，减少中间代理层级，提高执行效率。",
@@ -287,7 +287,7 @@ const translationAdditions = {
     "nav.about": "About Us",
     "hero.eyebrow": "Thailand, Malaysia, Vietnam & Southeast Asia Growth Partner",
     "hero.copy":
-      "LOUDER Creative helps brands enter Thailand, Malaysia, Vietnam, and Southeast Asia through localized marketing, KOL/KOC activation, content operations, commerce setup, and data-driven growth.",
+      "Louder Creative helps brands enter Thailand, Malaysia, Vietnam, and Southeast Asia through localized marketing, KOL/KOC activation, content operations, commerce setup, and data-driven growth.",
     "hero.primary": "Free consultation",
     "hero.check.market": "Unsure which market should come first?",
     "hero.check.creators": "Need the right local creators and content rhythm?",
@@ -317,7 +317,7 @@ const translationAdditions = {
     "about.eyebrow": "About Us",
     "about.title": "A compact team built for cross-border execution.",
     "about.copy":
-      "LOUDER Creative combines local market operators, content planners, creator resources, and commerce execution to help brands move from first market test to repeatable growth.",
+      "Louder Creative combines local market operators, content planners, creator resources, and commerce execution to help brands move from first market test to repeatable growth.",
     "about.signal.local": "Local market sense",
     "about.signal.creator": "Creator operations",
     "about.signal.commerce": "Commerce conversion",
@@ -390,7 +390,7 @@ const translationAdditions = {
     "nav.about": "Tentang Kami",
     "hero.eyebrow": "Rakan Pertumbuhan Thailand, Malaysia, Vietnam & Asia Tenggara",
     "hero.copy":
-      "LOUDER Creative membantu jenama memasuki Thailand, Malaysia, Vietnam dan Asia Tenggara melalui pemasaran setempat, aktivasi KOL/KOC, operasi kandungan, persediaan dagang, dan pertumbuhan berasaskan data.",
+      "Louder Creative membantu jenama memasuki Thailand, Malaysia, Vietnam dan Asia Tenggara melalui pemasaran setempat, aktivasi KOL/KOC, operasi kandungan, persediaan dagang, dan pertumbuhan berasaskan data.",
     "hero.primary": "Konsultasi percuma",
     "hero.check.market": "Belum pasti pasaran mana patut dimulakan?",
     "hero.check.creators": "Perlukan kreator tempatan dan rentak kandungan yang tepat?",
@@ -420,7 +420,7 @@ const translationAdditions = {
     "about.eyebrow": "Tentang Kami",
     "about.title": "Pasukan kecil yang dibina untuk pelaksanaan rentas sempadan.",
     "about.copy":
-      "LOUDER Creative menggabungkan operator pasaran tempatan, perancang kandungan, sumber kreator, dan pelaksanaan dagang untuk membantu jenama bergerak daripada ujian pasaran pertama kepada pertumbuhan berulang.",
+      "Louder Creative menggabungkan operator pasaran tempatan, perancang kandungan, sumber kreator, dan pelaksanaan dagang untuk membantu jenama bergerak daripada ujian pasaran pertama kepada pertumbuhan berulang.",
     "about.signal.local": "Kepekaan pasaran tempatan",
     "about.signal.creator": "Operasi kreator",
     "about.signal.commerce": "Penukaran dagang",
@@ -492,7 +492,7 @@ const translationAdditions = {
     "nav.about": "เกี่ยวกับเรา",
     "hero.eyebrow": "พาร์ทเนอร์การเติบโตในไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้",
     "hero.copy":
-      "LOUDER Creative ช่วยแบรนด์เข้าสู่ไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้ผ่านการตลาดท้องถิ่น การทำงานกับ KOL/KOC การดำเนินคอนเทนต์ การตั้งระบบคอมเมิร์ซ และการเติบโตด้วยข้อมูล",
+      "Louder Creative ช่วยแบรนด์เข้าสู่ไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้ผ่านการตลาดท้องถิ่น การทำงานกับ KOL/KOC การดำเนินคอนเทนต์ การตั้งระบบคอมเมิร์ซ และการเติบโตด้วยข้อมูล",
     "hero.primary": "ปรึกษาฟรี",
     "hero.check.market": "ยังไม่แน่ใจว่าควรเริ่มจากตลาดไหน?",
     "hero.check.creators": "ต้องการครีเอเตอร์ท้องถิ่นและจังหวะคอนเทนต์ที่เหมาะสม?",
@@ -522,7 +522,7 @@ const translationAdditions = {
     "about.eyebrow": "เกี่ยวกับเรา",
     "about.title": "ทีมขนาดกะทัดรัดที่สร้างมาเพื่อการปฏิบัติการข้ามพรมแดน",
     "about.copy":
-      "LOUDER Creative รวมผู้ปฏิบัติการตลาดท้องถิ่น นักวางแผนคอนเทนต์ ทรัพยากรครีเอเตอร์ และการดำเนินงานคอมเมิร์ซ เพื่อช่วยแบรนด์จากการทดสอบตลาดครั้งแรกสู่การเติบโตซ้ำได้",
+      "Louder Creative รวมผู้ปฏิบัติการตลาดท้องถิ่น นักวางแผนคอนเทนต์ ทรัพยากรครีเอเตอร์ และการดำเนินงานคอมเมิร์ซ เพื่อช่วยแบรนด์จากการทดสอบตลาดครั้งแรกสู่การเติบโตซ้ำได้",
     "about.signal.local": "ความเข้าใจตลาดท้องถิ่น",
     "about.signal.creator": "ปฏิบัติการครีเอเตอร์",
     "about.signal.commerce": "การแปลงยอดขาย",
@@ -594,7 +594,7 @@ const translationAdditions = {
     "nav.about": "关于我们",
     "hero.eyebrow": "泰国、马来西亚、越南与东南亚增长伙伴",
     "hero.copy":
-      "LOUDER Creative 帮助品牌进入泰国、马来西亚、越南与东南亚市场，覆盖本地化营销、KOL/KOC 激活、内容运营、电商搭建与数据驱动增长。",
+      "Louder Creative 帮助品牌进入泰国、马来西亚、越南与东南亚市场，覆盖本地化营销、KOL/KOC 激活、内容运营、电商搭建与数据驱动增长。",
     "hero.primary": "免费咨询",
     "hero.check.market": "还不确定应该先进入哪个市场？",
     "hero.check.creators": "需要匹配本地达人与内容节奏？",
@@ -624,7 +624,7 @@ const translationAdditions = {
     "about.eyebrow": "关于我们",
     "about.title": "一个为跨境落地而组建的小型核心团队。",
     "about.copy":
-      "LOUDER Creative 结合本地市场操盘、内容策划、达人资源与电商执行能力，帮助品牌从首次市场测试走向可复制增长。",
+      "Louder Creative 结合本地市场操盘、内容策划、达人资源与电商执行能力，帮助品牌从首次市场测试走向可复制增长。",
     "about.signal.local": "本地市场判断",
     "about.signal.creator": "达人运营",
     "about.signal.commerce": "电商转化",
@@ -834,7 +834,7 @@ const buildLeadPayload = (form) => {
 };
 
 const createLeadEmailLink = (payload) => {
-  const subject = `LOUDER consultation request - ${payload.service || "Website lead"}`;
+  const subject = `Louder Creative consultation request - ${payload.service || "Website lead"}`;
   const body = [
     "New consultation request from louder-creative.com",
     "",

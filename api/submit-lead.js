@@ -115,7 +115,7 @@ const isEmailLike = (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
 const createEmail = (lead, request) => {
   const serverReceivedAt = new Date().toISOString();
-  const subject = `LOUDER consultation request - ${lead.service}`;
+  const subject = `Louder Creative consultation request - ${lead.service}`;
   const rows = [
     ["Desired service", lead.service],
     ["Target market", lead.market || "-"],
@@ -141,7 +141,7 @@ const createEmail = (lead, request) => {
   return {
     subject,
     text,
-    html: `<div style="font-family:Arial,sans-serif;line-height:1.5;color:#071113;"><h2>New LOUDER consultation request</h2><table cellpadding="0" cellspacing="0" style="border-collapse:collapse;">${htmlRows}</table></div>`,
+    html: `<div style="font-family:Arial,sans-serif;line-height:1.5;color:#071113;"><h2>New Louder Creative consultation request</h2><table cellpadding="0" cellspacing="0" style="border-collapse:collapse;">${htmlRows}</table></div>`,
     replyTo: isEmailLike(lead.contact) ? lead.contact : undefined,
   };
 };
