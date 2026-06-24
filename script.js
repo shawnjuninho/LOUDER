@@ -383,6 +383,11 @@ const translationAdditions = {
     "packages.package3.type": "50 KOLs · 10k-100k followers",
     "packages.package3.copy": "Higher-impact TikTok review campaigns with mid-tier creator reach.",
     "packages.package3.pool": "60 creator candidates for selection",
+    "contact.findUs": "Reach us at",
+    "contact.signal.strategy": "Market strategy",
+    "contact.signal.creators": "Creator activation",
+    "contact.signal.commerce": "Commerce operations",
+    "contact.note": "Share a short brief by email and we will reply with the right next step.",
   },
   ms: {
     "nav.home": "Utama",
@@ -485,6 +490,11 @@ const translationAdditions = {
     "packages.package3.type": "50 KOL · 10k-100k pengikut",
     "packages.package3.copy": "Kempen ulasan TikTok berimpak lebih tinggi dengan jangkauan kreator pertengahan.",
     "packages.package3.pool": "60 calon kreator untuk pemilihan",
+    "contact.findUs": "Hubungi kami di",
+    "contact.signal.strategy": "Strategi pasaran",
+    "contact.signal.creators": "Aktivasi kreator",
+    "contact.signal.commerce": "Operasi dagang",
+    "contact.note": "Kongsi brief ringkas melalui e-mel dan kami akan balas dengan langkah seterusnya yang sesuai.",
   },
   th: {
     "nav.home": "หน้าแรก",
@@ -587,6 +597,11 @@ const translationAdditions = {
     "packages.package3.type": "50 KOL · ผู้ติดตาม 10k-100k",
     "packages.package3.copy": "แคมเปญรีวิว TikTok ที่มีผลกระทบสูงขึ้นด้วยครีเอเตอร์ระดับกลาง",
     "packages.package3.pool": "ตัวเลือกครีเอเตอร์ 60 ราย",
+    "contact.findUs": "ติดต่อเราได้ที่",
+    "contact.signal.strategy": "กลยุทธ์ตลาด",
+    "contact.signal.creators": "เปิดใช้งานครีเอเตอร์",
+    "contact.signal.commerce": "ปฏิบัติการคอมเมิร์ซ",
+    "contact.note": "ส่งบรีฟสั้น ๆ ทางอีเมล แล้วเราจะตอบกลับพร้อมขั้นตอนถัดไปที่เหมาะสม.",
   },
   zh: {
     "nav.home": "首页",
@@ -689,6 +704,11 @@ const translationAdditions = {
     "packages.package3.type": "50 位 KOL · 粉丝量 10k-100k",
     "packages.package3.copy": "适合更高影响力 TikTok 测评投放。",
     "packages.package3.pool": "提供 60 位达人备选池",
+    "contact.findUs": "联系方式",
+    "contact.signal.strategy": "市场策略",
+    "contact.signal.creators": "达人激活",
+    "contact.signal.commerce": "电商运营",
+    "contact.note": "请通过邮件发送简短需求，我们会回复适合的下一步方案。",
   },
 };
 

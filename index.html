@@ -75,7 +75,13 @@
       <section class="view-panel home-view is-active" id="home" data-view="home" aria-label="Home">
         <section class="hero">
           <div class="hero-content">
-            <img class="hero-logo" src="assets/logo.PNG" alt="Louder Creative" />
+            <div class="hero-brand-lockup" aria-label="Louder Creative">
+              <img src="assets/logo_small.PNG" alt="" />
+              <span>
+                <strong>Louder</strong>
+                <em>Creative</em>
+              </span>
+            </div>
             <p class="eyebrow" data-i18n="hero.eyebrow">Thailand, Malaysia, Vietnam & Southeast Asia Growth Partner</p>
             <h1 data-i18n="hero.title">Localize, launch, and scale your brand across Southeast Asia.</h1>
             <p class="hero-copy" data-i18n="hero.copy">
@@ -181,10 +187,18 @@
             We are a cross-border marketing and commercialization partner focused on helping Chinese brands localize,
             promote, sell, and scale in Thailand, Malaysia, Vietnam, and Southeast Asia.
           </p>
-          <div class="stat-grid compact">
-            <div>
+          <div class="stat-grid compact metrics-panel">
+            <div class="platform-stat">
               <strong>6+</strong>
               <span data-i18n="stats.platforms">partner platforms</span>
+              <div class="platform-logo-grid" aria-label="Partner platforms">
+                <span class="platform-logo platform-tiktok">TikTok Shop</span>
+                <span class="platform-logo platform-shopee">Shopee</span>
+                <span class="platform-logo platform-lazada">Lazada</span>
+                <span class="platform-logo platform-meta">Meta</span>
+                <span class="platform-logo platform-youtube">YouTube</span>
+                <span class="platform-logo platform-line">LINE</span>
+              </div>
             </div>
             <div>
               <strong>10+</strong>
@@ -345,41 +359,56 @@
               <span data-i18n="product.kicker">Category growth system</span>
               <strong data-i18n="product.title">Products move through a market-ready growth system.</strong>
             </div>
-            <div class="product-lanes" aria-label="Product category loops">
-              <div class="product-lane">
-                <span data-i18n="product.lane.beauty">Beauty & personal care</span>
-                <div class="product-track">
+            <div class="case-scroll" aria-label="Product category loops">
+              <div class="case-track">
+                <figure class="case-product">
                   <img src="assets/products/pump-bottle.jpg" alt="" loading="lazy" />
+                  <figcaption data-i18n="product.lane.beauty">Beauty & personal care</figcaption>
+                </figure>
+                <figure class="case-product">
                   <img src="assets/products/amber-bottle.jpg" alt="" loading="lazy" />
-                  <img src="assets/products/blank-bottles.jpg" alt="" loading="lazy" />
-                  <img src="assets/products/pump-bottle.jpg" alt="" loading="lazy" aria-hidden="true" />
-                  <img src="assets/products/amber-bottle.jpg" alt="" loading="lazy" aria-hidden="true" />
-                  <img src="assets/products/blank-bottles.jpg" alt="" loading="lazy" aria-hidden="true" />
-                </div>
-              </div>
-              <div class="product-lane is-reverse">
-                <span data-i18n="product.lane.devices">Smart devices</span>
-                <div class="product-track">
+                  <figcaption data-i18n="product.beauty">Beauty bottle</figcaption>
+                </figure>
+                <figure class="case-product case-product-device">
                   <img src="assets/products/imou-3.png" alt="" loading="lazy" />
+                  <figcaption data-i18n="product.lane.devices">Smart devices</figcaption>
+                </figure>
+                <figure class="case-product case-product-device">
                   <img src="assets/products/imou-6.png" alt="" loading="lazy" />
-                  <img src="assets/products/imou-7.png" alt="" loading="lazy" />
-                  <img src="assets/products/imou-10.png" alt="" loading="lazy" />
-                  <img src="assets/products/imou-3.png" alt="" loading="lazy" aria-hidden="true" />
-                  <img src="assets/products/imou-6.png" alt="" loading="lazy" aria-hidden="true" />
-                  <img src="assets/products/imou-7.png" alt="" loading="lazy" aria-hidden="true" />
-                  <img src="assets/products/imou-10.png" alt="" loading="lazy" aria-hidden="true" />
-                </div>
-              </div>
-              <div class="product-lane">
-                <span data-i18n="product.lane.packaging">Packaging & lifestyle</span>
-                <div class="product-track">
+                  <figcaption data-i18n="product.device">Commerce packaging</figcaption>
+                </figure>
+                <figure class="case-product">
                   <img src="assets/products/black-box.jpg" alt="" loading="lazy" />
-                  <img src="assets/products/white-boxes.jpg" alt="" loading="lazy" />
+                  <figcaption data-i18n="product.lane.packaging">Packaging & lifestyle</figcaption>
+                </figure>
+                <figure class="case-product">
                   <img src="assets/products/canvas-pouch.jpg" alt="" loading="lazy" />
-                  <img src="assets/products/black-box.jpg" alt="" loading="lazy" aria-hidden="true" />
-                  <img src="assets/products/white-boxes.jpg" alt="" loading="lazy" aria-hidden="true" />
-                  <img src="assets/products/canvas-pouch.jpg" alt="" loading="lazy" aria-hidden="true" />
-                </div>
+                  <figcaption data-i18n="product.food">Food pouch</figcaption>
+                </figure>
+                <figure class="case-product">
+                  <img src="assets/products/white-boxes.jpg" alt="" loading="lazy" />
+                  <figcaption data-i18n="product.lifestyle">Premium packaging</figcaption>
+                </figure>
+                <figure class="case-product">
+                  <img src="assets/products/blank-bottles.jpg" alt="" loading="lazy" />
+                  <figcaption data-i18n="product.personal">Personal care</figcaption>
+                </figure>
+                <figure class="case-product" aria-hidden="true">
+                  <img src="assets/products/pump-bottle.jpg" alt="" loading="lazy" />
+                  <figcaption>Beauty & personal care</figcaption>
+                </figure>
+                <figure class="case-product case-product-device" aria-hidden="true">
+                  <img src="assets/products/imou-7.png" alt="" loading="lazy" />
+                  <figcaption>Smart devices</figcaption>
+                </figure>
+                <figure class="case-product" aria-hidden="true">
+                  <img src="assets/products/black-box.jpg" alt="" loading="lazy" />
+                  <figcaption>Packaging & lifestyle</figcaption>
+                </figure>
+                <figure class="case-product case-product-device" aria-hidden="true">
+                  <img src="assets/products/imou-10.png" alt="" loading="lazy" />
+                  <figcaption>Commerce packaging</figcaption>
+                </figure>
               </div>
             </div>
           </div>
@@ -473,22 +502,42 @@
 
       <section class="view-panel contact-view" id="contact" data-view="contact" aria-label="Contact" hidden>
         <section class="section contact">
-          <div>
+          <div class="contact-copy">
             <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
             <h2 data-i18n="contact.title">Ready to plan your Southeast Asia growth system?</h2>
             <p data-i18n="contact.copy">
               Tell us your target market, category, and launch timeline. We will help shape a localized operating plan.
             </p>
+            <div class="contact-signal-row" aria-label="Contact scope">
+              <span data-i18n="contact.signal.strategy">Market strategy</span>
+              <span data-i18n="contact.signal.creators">Creator activation</span>
+              <span data-i18n="contact.signal.commerce">Commerce operations</span>
+            </div>
           </div>
-          <div class="contact-panel">
-            <a class="contact-link" href="mailto:postmaster@louder-creative.com">
-              <span data-i18n="contact.emailLabel">Email</span>
-              <strong>postmaster@louder-creative.com</strong>
-            </a>
-            <a class="contact-link" href="https://www.louder-creative.com/">
-              <span data-i18n="contact.domainLabel">Website</span>
-              <strong>www.louder-creative.com</strong>
-            </a>
+          <div class="contact-panel" aria-label="Contact methods">
+            <div class="contact-panel-header">
+              <span data-i18n="contact.findUs">Reach us at</span>
+              <strong>Louder Creative</strong>
+            </div>
+            <div class="contact-method-grid">
+              <a class="contact-link contact-link-primary" href="mailto:postmaster@louder-creative.com">
+                <span data-i18n="contact.emailLabel">Email</span>
+                <strong>postmaster@louder-creative.com</strong>
+              </a>
+              <a class="contact-link" href="https://www.louder-creative.com/">
+                <span data-i18n="contact.domainLabel">Website</span>
+                <strong>www.louder-creative.com</strong>
+              </a>
+            </div>
+            <div class="contact-channel-strip" aria-label="Operating channels">
+              <span>TikTok Shop</span>
+              <span>Shopee</span>
+              <span>Lazada</span>
+              <span>Meta</span>
+            </div>
+            <p class="contact-note" data-i18n="contact.note">
+              Share a short brief by email and we will reply with the right next step.
+            </p>
           </div>
         </section>
       </section>
