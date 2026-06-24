@@ -1102,14 +1102,20 @@ label {
 
 .product-detail {
   position: relative;
+  display: grid;
+  min-height: clamp(520px, 34vw, 590px);
+  align-content: start;
+  justify-items: start;
   overflow: hidden;
-  border: 1px solid rgba(255, 210, 31, 0.2);
+  border: 0;
   border-radius: var(--radius);
   padding: clamp(20px, 2vw, 30px);
   background:
-    linear-gradient(132deg, rgba(255, 210, 31, 0.12), transparent 34% 100%),
-    rgba(255, 255, 255, 0.055);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+    linear-gradient(132deg, rgba(255, 210, 31, 0.04), transparent 32% 100%),
+    rgba(255, 255, 255, 0.035);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+    0 24px 70px rgba(0, 0, 0, 0.32);
 }
 
 .product-detail::before {
@@ -1128,72 +1134,63 @@ label {
   position: relative;
 }
 
-.product-counter {
-  display: inline-flex;
-  min-height: 30px;
-  align-items: center;
-  border: 1px solid rgba(255, 210, 31, 0.34);
-  border-radius: 999px;
-  color: var(--yellow);
-  font-size: 0.78rem;
-  font-weight: 900;
-  padding: 0 12px;
-}
-
-.product-counter,
 .product-detail h3,
 .product-detail p {
   will-change: transform, opacity;
 }
 
-.product-detail.is-rolling-up .product-counter,
 .product-detail.is-rolling-up h3,
 .product-detail.is-rolling-up p {
   animation: productRollUp 360ms var(--ease);
 }
 
-.product-detail.is-rolling-down .product-counter,
 .product-detail.is-rolling-down h3,
 .product-detail.is-rolling-down p {
   animation: productRollDown 360ms var(--ease);
 }
 
 .product-detail h3 {
-  margin-top: 24px;
+  display: flex;
+  min-height: clamp(120px, 8.6vw, 176px);
+  align-items: center;
+  margin-top: 4px;
   color: var(--white);
-  font-size: clamp(2rem, 3.5vw, 4rem);
+  font-size: clamp(2.2rem, 3vw, 3.75rem);
   font-weight: 930;
   line-height: 0.95;
 }
 
 .product-detail p {
   max-width: 640px;
+  min-height: 84px;
   margin-top: 18px;
   font-size: clamp(1rem, 1.05vw, 1.18rem);
 }
 
 .product-wheel {
+  --wheel-item-height: 64px;
   position: relative;
-  display: grid;
-  gap: 6px;
+  display: block;
+  width: min(520px, 100%);
+  height: 250px;
   max-width: 480px;
-  margin-top: 26px;
-  padding: 12px 0 12px 20px;
+  margin-top: 30px;
+  padding: 0;
   overflow: hidden;
-  border-left: 1px solid rgba(255, 210, 31, 0.32);
-  mask-image: linear-gradient(180deg, transparent 0, #000 12%, #000 88%, transparent 100%);
+  border-left: 0;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0, #000 18%, #000 82%, rgba(0, 0, 0, 0.16) 100%);
   will-change: transform;
 }
 
 .product-wheel::before {
   position: absolute;
   top: 50%;
-  left: 8px;
+  left: 4px;
   width: 4px;
-  height: 42px;
+  height: 46px;
   border-radius: 999px;
-  background: var(--yellow);
-  box-shadow: 0 0 26px rgba(255, 210, 31, 0.58);
+  background: rgba(255, 210, 31, 0.88);
+  box-shadow: 0 0 18px rgba(255, 210, 31, 0.42);
   content: "";
   transform: translateY(-50%);
 }
@@ -1208,22 +1205,27 @@ label {
 
 .product-wheel button {
   display: flex;
-  width: min(360px, 100%);
-  min-height: 40px;
+  position: absolute;
+  z-index: var(--wheel-z, 1);
+  top: 50%;
+  left: 26px;
+  width: min(390px, calc(100% - 42px));
+  height: var(--wheel-item-height);
   align-items: center;
   border: 1px solid transparent;
   border-radius: 8px;
   background: transparent;
   color: rgba(255, 255, 255, 0.58);
   cursor: pointer;
-  font-size: 0.82rem;
-  font-weight: 880;
+  font-size: clamp(0.86rem, 0.95vw, 1rem);
+  font-weight: 900;
   letter-spacing: 0;
   opacity: var(--wheel-opacity, 0.55);
   padding: 0 14px;
   text-align: left;
   text-transform: uppercase;
-  transform: translateX(var(--wheel-x, 0)) scale(var(--wheel-scale, 1));
+  transform: translateX(var(--wheel-x, 0)) translateY(calc(-50% + var(--wheel-y, 0px))) scale(var(--wheel-scale, 1));
+  transform-origin: left center;
   transition:
     border-color 160ms ease,
     background 160ms ease,
@@ -1237,14 +1239,11 @@ label {
 }
 
 .product-wheel button.is-distant {
-  --wheel-opacity: 0.28;
+  pointer-events: none;
 }
 
 .product-wheel button:hover,
 .product-wheel button.is-active {
-  --wheel-opacity: 1;
-  --wheel-scale: 1.04;
-  --wheel-x: 18px;
   border-color: rgba(255, 210, 31, 0.54);
   background: rgba(255, 210, 31, 0.16);
   color: var(--white);
@@ -1832,12 +1831,6 @@ label {
     object-fit: contain;
     border-radius: 6px;
     background: #101010;
-  }
-
-  .product-mobile-card span {
-    color: var(--yellow);
-    font-size: 0.78rem;
-    font-weight: 900;
   }
 
   .product-mobile-card h3 {

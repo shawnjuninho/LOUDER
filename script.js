@@ -507,7 +507,6 @@ const leadStatus = document.querySelector("[data-lead-status]");
 const productShowcase = document.querySelector("[data-product-showcase]");
 const productCube = document.querySelector("[data-product-cube]");
 const productDetail = document.querySelector(".product-detail");
-const productCounter = document.querySelector("[data-product-counter]");
 const productTitle = document.querySelector("[data-product-title]");
 const productCopy = document.querySelector("[data-product-copy]");
 const productFaces = document.querySelectorAll("[data-product-face]");
@@ -525,8 +524,6 @@ let productFrameRequested = false;
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
 const lerp = (start, end, progress) => start + (end - start) * progress;
-
-const formatProductCounter = (index) => `${String(index + 1).padStart(2, "0")} / ${String(productCategories.length).padStart(2, "0")}`;
 
 const readStoredLanguage = () => {
   try {
@@ -608,8 +605,18 @@ const triggerProductWheelMotion = (direction) => {
 const updateProductWheel = (nextIndex) => {
   productJumpButtons.forEach((button) => {
     const buttonIndex = Number(button.dataset.productJump);
-    const distance = Math.abs(buttonIndex - nextIndex);
+    const signedDistance = buttonIndex - nextIndex;
+    const distance = Math.abs(signedDistance);
     const isActive = buttonIndex === nextIndex;
+    const wheelScale = distance === 0 ? 1.2 : distance === 1 ? 0.76 : distance === 2 ? 0.62 : 0.52;
+    const wheelOpacity = distance === 0 ? 1 : distance === 1 ? 0.52 : distance === 2 ? 0.28 : 0.16;
+    const wheelX = distance === 0 ? 18 : distance === 1 ? 5 : 0;
+
+    button.style.setProperty("--wheel-y", `${signedDistance * 78}px`);
+    button.style.setProperty("--wheel-scale", String(wheelScale));
+    button.style.setProperty("--wheel-opacity", String(wheelOpacity));
+    button.style.setProperty("--wheel-x", `${wheelX}px`);
+    button.style.setProperty("--wheel-z", String(10 - distance));
     button.classList.toggle("is-active", isActive);
     button.classList.toggle("is-adjacent", !isActive && distance === 1);
     button.classList.toggle("is-distant", distance > 1);
@@ -624,10 +631,6 @@ const setProductContent = (index) => {
 
   triggerProductWheelMotion(direction);
   activeProductIndex = nextIndex;
-
-  if (productCounter) {
-    productCounter.textContent = formatProductCounter(nextIndex);
-  }
 
   if (productTitle) {
     productTitle.dataset.i18n = category.titleKey;

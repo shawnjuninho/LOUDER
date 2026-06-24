@@ -28,7 +28,8 @@
       "Youpik-style dark contact cards",
       "realistic product visuals",
       "realistic full-color team portraits",
-      "transparent logo assets that preserve the original PNG pixels and type"
+      "transparent logo assets that preserve the original PNG pixels and type",
+      "dark-surface logo derivatives for black UI areas"
     ],
     "avoid": [
       "cartoon avatars",
