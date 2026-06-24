@@ -682,6 +682,82 @@ label {
   animation: tickerSlide 16s linear infinite;
 }
 
+.platform-strip {
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px;
+}
+
+.platform-strip .platform-logo {
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px 10px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow:
+    inset 0 0 0 1px rgba(5, 6, 8, 0.08),
+    0 12px 36px rgba(5, 6, 8, 0.08);
+  color: var(--ink);
+  text-transform: none;
+}
+
+.platform-logo svg {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+}
+
+.platform-logo strong {
+  color: rgba(5, 6, 8, 0.82);
+  font-size: 0.82rem;
+  line-height: 1;
+}
+
+.platform-logo svg path {
+  fill: currentColor;
+}
+
+.platform-shopee svg path,
+.platform-line svg path:last-child {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+
+.platform-youtube svg path:last-child,
+.platform-lazada svg path:nth-child(2),
+.platform-lazada svg path:nth-child(3) {
+  fill: rgba(255, 255, 255, 0.92);
+}
+
+.platform-strip .platform-tiktok {
+  color: #111111;
+}
+
+.platform-strip .platform-shopee {
+  color: #ee4d2d;
+}
+
+.platform-strip .platform-lazada {
+  color: #1a2e8f;
+}
+
+.platform-strip .platform-meta {
+  color: #0866ff;
+}
+
+.platform-strip .platform-youtube {
+  color: #ff0033;
+}
+
+.platform-strip .platform-line {
+  color: #06c755;
+}
+
 .consult-card {
   position: relative;
   grid-column: 2;
