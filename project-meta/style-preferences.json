@@ -1,28 +1,30 @@
 {
   "brand": "Louder Creative",
-  "lastUpdated": "2026-05-22",
+  "lastUpdated": "2026-06-24",
   "defaultLanguage": "en",
   "supportedLanguages": ["en", "ms", "th", "zh"],
   "targetMarkets": ["Thailand", "Malaysia", "Vietnam", "Singapore", "Southeast Asia"],
   "visualDirection": {
     "keywords": [
-      "black and white modern minimal",
+      "black and yellow modern technology",
       "futuristic commerce interface",
-      "cool glassmorphism",
+      "dark premium cards",
       "realistic commercial photography",
       "premium technology",
       "global growth operations"
     ],
     "mustUse": [
       "large confident typography",
-      "black-white contrast with clean white space",
-      "transparent glass panels over cool gray systems",
+      "black and dark gray base with Louder yellow accents",
+      "deep panels and restrained metallic lines",
       "wide desktop layouts around 1700-1750px on 1920px displays",
       "soft boundaryless sections with obvious borders only for functional windows",
       "centered and constrained heading/copy blocks for text-heavy sections",
       "subtle grid systems",
-      "scan light effects",
-      "motion layers",
+      "yellow scan light effects",
+      "scroll-driven motion layers",
+      "sticky 3D product cube for the Work section",
+      "Youpik-style dark contact cards",
       "realistic product visuals",
       "realistic full-color team portraits"
     ],
@@ -33,12 +35,13 @@
       "early personal-blog connection-line backgrounds",
       "real brand-logo walls as the main case visual",
       "single-hue purple or beige themes",
-      "heavy text stacking without media"
+      "heavy text stacking without media",
+      "white rectangular logo backgrounds on dark surfaces"
     ],
     "palette": {
-      "core": ["ink black", "optic white", "cool gray", "glass cyan"],
-      "accent": ["Louder yellow"],
-      "usage": "Use black, white, and cool gray as the base. Add controlled accent colors such as cyan, Louder yellow, rose, and small electric highlights; do not make human portraits monochrome."
+      "core": ["ink black", "deep graphite", "optic white"],
+      "accent": ["Louder yellow", "small platform brand colors"],
+      "usage": "Use black and deep gray as the dominant base. Use Louder yellow for CTAs, active states, lines, scan effects, and interaction highlights. Keep platform logos in recognizable brand colors where useful; avoid returning to a cyan-led theme."
     }
   },
   "contentRules": {

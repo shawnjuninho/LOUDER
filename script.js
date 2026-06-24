@@ -13,9 +13,6 @@ const translations = {
     "hero.primary": "Let's talk",
     "hero.secondary": "What we do",
     "hero.scroll": "Scroll to explore",
-    "hero.loop.localize": "Localize",
-    "hero.loop.launch": "Launch",
-    "hero.loop.scale": "Scale",
     "lead.eyebrow": "Free Consultation",
     "lead.title": "Tell us what you want to build overseas.",
     "lead.copy": "Share your target service and contact details. We will shape the next step with the right operator.",
@@ -69,12 +66,34 @@ const translations = {
     "work.eyebrow": "Work",
     "work.title": "Market-ready categories in motion.",
     "work.copy": "A visual overview of consumer categories we can localize, seed, operate, and scale across Southeast Asia.",
-    "product.lane.beauty": "Beauty & personal care",
-    "product.beauty": "Beauty bottle",
-    "product.lane.devices": "Smart devices",
-    "product.lane.packaging": "Packaging & lifestyle",
-    "product.food": "Food pouch",
-    "product.lifestyle": "Premium packaging",
+    "product.beautyPersonal.title": "Beauty & Personal Care",
+    "product.beautyPersonal.short": "Beauty",
+    "product.beautyPersonal.copy":
+      "Launch routines, creator proofs, and commerce assets for skincare, makeup, and personal care lines.",
+    "product.womenwear.title": "Womenwear",
+    "product.womenwear.short": "Womenwear",
+    "product.womenwear.copy":
+      "Localized outfits, seasonal drops, creator styling, and store operations for women's fashion brands.",
+    "product.lifestyle.title": "Lifestyle",
+    "product.lifestyle.short": "Lifestyle",
+    "product.lifestyle.copy":
+      "Everyday goods positioned through local routines, creator scenarios, and repeatable content systems.",
+    "product.fashionJewelry.title": "Fashion Accessories & Jewelry",
+    "product.fashionJewelry.short": "Accessories",
+    "product.fashionJewelry.copy":
+      "Creator-led styling, product seeding, and conversion stories for accessories, jewelry, and small fashion goods.",
+    "product.petSupplies.title": "Pet Supplies",
+    "product.petSupplies.short": "Pet",
+    "product.petSupplies.copy":
+      "Trust-building content, practical usage scenes, and local commerce support for pet care and pet lifestyle products.",
+    "product.maternityBaby.title": "Maternity & Baby",
+    "product.maternityBaby.short": "Baby",
+    "product.maternityBaby.copy":
+      "Safety-aware localization, parent creator matching, and commerce flows for maternity and baby categories.",
+    "product.smartDevices.title": "Smart Devices & IT",
+    "product.smartDevices.short": "Smart IT",
+    "product.smartDevices.copy":
+      "Demo-led content, technical benefit translation, and conversion planning for smart devices and IT products.",
     "why.eyebrow": "Why Louder",
     "why.title": "The next wave of overseas growth is local, creator-led, and commerce-aware.",
     "why.copy":
@@ -90,10 +109,16 @@ const translations = {
     "contact.title": "Your new Southeast Asia ambition starts here.",
     "contact.copy":
       "Tell us your target market, category, and launch timeline. We will help shape a localized operating plan.",
-    "contact.findUs": "Reach us at",
-    "contact.emailLabel": "Email",
-    "contact.domainLabel": "Website",
-    "contact.note": "Share a short brief by email and we will reply with the right next step.",
+    "contact.creator.title": "Creator Cooperation",
+    "contact.creator.copy": "For creator sourcing, seeding, content review, and KOC/KOL campaign coordination.",
+    "contact.brand.title": "Brand Partnership",
+    "contact.brand.copy": "For brand launch planning, market entry strategy, creator mix, and localized operating plans.",
+    "contact.business.title": "Business Cooperation",
+    "contact.business.copy": "For platform collaboration, commercial opportunities, and cross-market business discussions.",
+    "contact.copyEmail": "Copy",
+    "contact.copied": "Copied",
+    "contact.copyFailed": "Use mail",
+    "contact.general": "General inbox",
     "footer.copy": "Thailand, Malaysia, Vietnam, and Southeast Asia growth operations.",
     "menu.open": "Open menu",
     "menu.close": "Close menu",
@@ -112,9 +137,6 @@ const translations = {
     "hero.primary": "Mari berbincang",
     "hero.secondary": "Apa kami lakukan",
     "hero.scroll": "Tatal untuk lihat",
-    "hero.loop.localize": "Setempatkan",
-    "hero.loop.launch": "Lancarkan",
-    "hero.loop.scale": "Skalakan",
     "lead.eyebrow": "Konsultasi Percuma",
     "lead.title": "Beritahu kami apa yang ingin anda bina di luar negara.",
     "lead.copy": "Kongsi servis sasaran dan maklumat kontak. Kami akan bentuk langkah seterusnya dengan operator yang sesuai.",
@@ -168,12 +190,27 @@ const translations = {
     "work.eyebrow": "Kerja",
     "work.title": "Kategori siap pasaran dalam gerakan.",
     "work.copy": "Paparan visual kategori pengguna yang boleh kami setempatkan, seed, operasi, dan skala di Asia Tenggara.",
-    "product.lane.beauty": "Kecantikan & penjagaan diri",
-    "product.beauty": "Botol kecantikan",
-    "product.lane.devices": "Peranti pintar",
-    "product.lane.packaging": "Pembungkusan & gaya hidup",
-    "product.food": "Pek makanan",
-    "product.lifestyle": "Pembungkusan premium",
+    "product.beautyPersonal.title": "Kecantikan & Penjagaan Diri",
+    "product.beautyPersonal.short": "Kecantikan",
+    "product.beautyPersonal.copy": "Rutin pelancaran, bukti kreator, dan aset dagang untuk penjagaan kulit, mekap, dan penjagaan diri.",
+    "product.womenwear.title": "Pakaian Wanita",
+    "product.womenwear.short": "Pakaian",
+    "product.womenwear.copy": "Padanan tempatan, drop bermusim, styling kreator, dan operasi kedai untuk jenama fesyen wanita.",
+    "product.lifestyle.title": "Gaya Hidup",
+    "product.lifestyle.short": "Gaya hidup",
+    "product.lifestyle.copy": "Produk harian diposisikan melalui rutin tempatan, senario kreator, dan sistem kandungan berulang.",
+    "product.fashionJewelry.title": "Aksesori Fesyen & Barang Kemas",
+    "product.fashionJewelry.short": "Aksesori",
+    "product.fashionJewelry.copy": "Styling kreator, seeding produk, dan cerita penukaran untuk aksesori, barang kemas, dan produk fesyen kecil.",
+    "product.petSupplies.title": "Bekalan Haiwan Peliharaan",
+    "product.petSupplies.short": "Haiwan",
+    "product.petSupplies.copy": "Kandungan bina kepercayaan, situasi penggunaan praktikal, dan sokongan dagang tempatan untuk produk haiwan.",
+    "product.maternityBaby.title": "Ibu & Bayi",
+    "product.maternityBaby.short": "Bayi",
+    "product.maternityBaby.copy": "Lokalisasi peka keselamatan, padanan kreator ibu bapa, dan aliran dagang untuk kategori ibu dan bayi.",
+    "product.smartDevices.title": "Peranti Pintar & IT",
+    "product.smartDevices.short": "Smart IT",
+    "product.smartDevices.copy": "Kandungan demo, terjemahan manfaat teknikal, dan perancangan konversi untuk peranti pintar dan produk IT.",
     "why.eyebrow": "Kenapa Louder",
     "why.title": "Gelombang pertumbuhan luar negara seterusnya ialah tempatan, dipacu kreator dan peka dagang.",
     "why.copy": "Louder Creative menghubungkan kajian pasaran, kreator tempatan, pelaksanaan kempen, dan semakan prestasi dalam satu rentak operasi.",
@@ -186,10 +223,16 @@ const translations = {
     "contact.eyebrow": "Hubungi",
     "contact.title": "Ambisi Asia Tenggara baharu anda bermula di sini.",
     "contact.copy": "Beritahu kami pasaran sasaran, kategori, dan garis masa pelancaran anda. Kami akan membantu membentuk pelan operasi setempat.",
-    "contact.findUs": "Hubungi kami di",
-    "contact.emailLabel": "E-mel",
-    "contact.domainLabel": "Laman web",
-    "contact.note": "Kongsi brief ringkas melalui e-mel dan kami akan balas dengan langkah seterusnya yang sesuai.",
+    "contact.creator.title": "Kerjasama Kreator",
+    "contact.creator.copy": "Untuk pencarian kreator, seeding, semakan kandungan, dan koordinasi kempen KOC/KOL.",
+    "contact.brand.title": "Kerjasama Jenama",
+    "contact.brand.copy": "Untuk pelan pelancaran jenama, strategi masuk pasaran, gabungan kreator, dan operasi setempat.",
+    "contact.business.title": "Kerjasama Bisnes",
+    "contact.business.copy": "Untuk kerjasama platform, peluang komersial, dan perbincangan perniagaan rentas pasaran.",
+    "contact.copyEmail": "Salin",
+    "contact.copied": "Disalin",
+    "contact.copyFailed": "E-mel",
+    "contact.general": "Peti masuk umum",
     "footer.copy": "Operasi pertumbuhan Thailand, Malaysia, Vietnam dan Asia Tenggara.",
     "menu.open": "Buka menu",
     "menu.close": "Tutup menu",
@@ -208,9 +251,6 @@ const translations = {
     "hero.primary": "คุยกับเรา",
     "hero.secondary": "บริการของเรา",
     "hero.scroll": "เลื่อนเพื่อดูต่อ",
-    "hero.loop.localize": "Localize",
-    "hero.loop.launch": "Launch",
-    "hero.loop.scale": "Scale",
     "lead.eyebrow": "ปรึกษาฟรี",
     "lead.title": "บอกเราว่าคุณอยากสร้างอะไรในต่างประเทศ",
     "lead.copy": "แชร์บริการเป้าหมายและข้อมูลติดต่อ เราจะช่วยวางขั้นตอนถัดไปกับผู้ดูแลที่เหมาะสม",
@@ -234,7 +274,8 @@ const translations = {
     "lead.statusMailFallback": "กำลังเปิดแอปอีเมลเพื่อไม่ให้คำขอหายไป",
     "lead.statusError": "มีบางอย่างผิดพลาด โปรดอีเมล postmaster@louder-creative.com",
     "intro.kicker": "ปฏิบัติการเติบโต SEA",
-    "intro.copy": "เราเป็นพาร์ตเนอร์ด้านการตลาดข้ามพรมแดนและการพาณิชย์ที่ช่วยแบรนด์จีนปรับให้เข้ากับท้องถิ่น โปรโมต ขาย และเติบโตในไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้",
+    "intro.copy":
+      "เราเป็นพาร์ตเนอร์ด้านการตลาดข้ามพรมแดนและการพาณิชย์ที่ช่วยแบรนด์จีนปรับให้เข้ากับท้องถิ่น โปรโมต ขาย และเติบโตในไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้",
     "stats.platforms": "แพลตฟอร์มพาร์ตเนอร์",
     "stats.industries": "อุตสาหกรรมที่ให้บริการ",
     "stats.creators": "ทรัพยากรครีเอเตอร์",
@@ -263,12 +304,27 @@ const translations = {
     "work.eyebrow": "ผลงาน",
     "work.title": "หมวดหมู่พร้อมตลาดที่กำลังเคลื่อนไหว",
     "work.copy": "ภาพรวมหมวดสินค้า consumer ที่เราสามารถ localize, seed, operate และ scale ในเอเชียตะวันออกเฉียงใต้",
-    "product.lane.beauty": "ความงามและของใช้ส่วนตัว",
-    "product.beauty": "ขวดบิวตี้",
-    "product.lane.devices": "อุปกรณ์อัจฉริยะ",
-    "product.lane.packaging": "แพ็กเกจจิงและไลฟ์สไตล์",
-    "product.food": "ซองอาหาร",
-    "product.lifestyle": "แพ็กเกจจิงพรีเมียม",
+    "product.beautyPersonal.title": "ความงามและการดูแลส่วนตัว",
+    "product.beautyPersonal.short": "บิวตี้",
+    "product.beautyPersonal.copy": "ระบบเปิดตัว พิสูจน์ด้วยครีเอเตอร์ และสินทรัพย์คอมเมิร์ซสำหรับสกินแคร์ เมกอัพ และของใช้ส่วนตัว",
+    "product.womenwear.title": "เสื้อผ้าผู้หญิง",
+    "product.womenwear.short": "ผู้หญิง",
+    "product.womenwear.copy": "ลุคที่เข้ากับท้องถิ่น ดรอปตามฤดูกาล การสไตลิ่งโดยครีเอเตอร์ และการดูแลร้านสำหรับแบรนด์แฟชั่นหญิง",
+    "product.lifestyle.title": "ไลฟ์สไตล์",
+    "product.lifestyle.short": "ไลฟ์สไตล์",
+    "product.lifestyle.copy": "สินค้าในชีวิตประจำวันถูกวางผ่านรูทีนท้องถิ่น ฉากการใช้ของครีเอเตอร์ และระบบคอนเทนต์ที่ทำซ้ำได้",
+    "product.fashionJewelry.title": "เครื่องประดับแฟชั่นและจิวเวลรี่",
+    "product.fashionJewelry.short": "แอ็กเซสซอรี่",
+    "product.fashionJewelry.copy": "สไตลิ่งโดยครีเอเตอร์ การ seed สินค้า และเรื่องเล่าที่ช่วย conversion สำหรับแอ็กเซสซอรี่ จิวเวลรี่ และสินค้าแฟชั่นขนาดเล็ก",
+    "product.petSupplies.title": "สินค้า pets",
+    "product.petSupplies.short": "Pets",
+    "product.petSupplies.copy": "คอนเทนต์สร้างความเชื่อมั่น ฉากใช้งานจริง และการสนับสนุนคอมเมิร์ซท้องถิ่นสำหรับสินค้า pet care และ pet lifestyle",
+    "product.maternityBaby.title": "แม่และเด็ก",
+    "product.maternityBaby.short": "เด็ก",
+    "product.maternityBaby.copy": "การ localize ที่คำนึงถึงความปลอดภัย การจับคู่ครีเอเตอร์สายพ่อแม่ และ flow คอมเมิร์ซสำหรับหมวดแม่และเด็ก",
+    "product.smartDevices.title": "อุปกรณ์อัจฉริยะและ IT",
+    "product.smartDevices.short": "Smart IT",
+    "product.smartDevices.copy": "คอนเทนต์สาธิต การแปล benefit เชิงเทคนิค และแผน conversion สำหรับอุปกรณ์อัจฉริยะและสินค้า IT",
     "why.eyebrow": "ทำไม Louder",
     "why.title": "การเติบโตต่างประเทศระลอกใหม่ต้องท้องถิ่น นำโดยครีเอเตอร์ และเชื่อมกับคอมเมิร์ซ",
     "why.copy": "Louder Creative เชื่อมงานวิจัยตลาด ครีเอเตอร์ท้องถิ่น การดำเนินแคมเปญ และการรีวิวผลลัพธ์ให้เป็นจังหวะปฏิบัติการเดียว",
@@ -281,10 +337,16 @@ const translations = {
     "contact.eyebrow": "ติดต่อ",
     "contact.title": "ความทะเยอทะยานใหม่ในเอเชียตะวันออกเฉียงใต้เริ่มที่นี่",
     "contact.copy": "บอกตลาดเป้าหมาย หมวดหมู่สินค้า และกำหนดการเปิดตัวของคุณ เราจะช่วยออกแบบแผนปฏิบัติการท้องถิ่น",
-    "contact.findUs": "ติดต่อเราได้ที่",
-    "contact.emailLabel": "อีเมล",
-    "contact.domainLabel": "เว็บไซต์",
-    "contact.note": "ส่งบรีฟสั้น ๆ ทางอีเมล แล้วเราจะตอบกลับพร้อมขั้นตอนถัดไปที่เหมาะสม",
+    "contact.creator.title": "Creator Cooperation",
+    "contact.creator.copy": "สำหรับ sourcing ครีเอเตอร์, seeding, ตรวจคอนเทนต์ และประสานแคมเปญ KOC/KOL",
+    "contact.brand.title": "Brand Partnership",
+    "contact.brand.copy": "สำหรับวางแผนเปิดตัวแบรนด์ กลยุทธ์เข้าสู่ตลาด creator mix และแผนปฏิบัติการท้องถิ่น",
+    "contact.business.title": "Business Cooperation",
+    "contact.business.copy": "สำหรับความร่วมมือแพลตฟอร์ม โอกาสเชิงพาณิชย์ และการพูดคุยธุรกิจข้ามตลาด",
+    "contact.copyEmail": "คัดลอก",
+    "contact.copied": "คัดลอกแล้ว",
+    "contact.copyFailed": "ใช้อีเมล",
+    "contact.general": "อีเมลทั่วไป",
     "footer.copy": "บริการปฏิบัติการเติบโตในไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้",
     "menu.open": "เปิดเมนู",
     "menu.close": "ปิดเมนู",
@@ -303,9 +365,6 @@ const translations = {
     "hero.primary": "聊聊项目",
     "hero.secondary": "查看服务",
     "hero.scroll": "继续探索",
-    "hero.loop.localize": "本地化",
-    "hero.loop.launch": "启动",
-    "hero.loop.scale": "放大",
     "lead.eyebrow": "免费咨询",
     "lead.title": "告诉我们你想在海外做什么。",
     "lead.copy": "留下你需要的服务和联系方式，我们会匹配合适的负责人沟通下一步。",
@@ -358,12 +417,27 @@ const translations = {
     "work.eyebrow": "案例",
     "work.title": "面向市场的产品品类动态展示。",
     "work.copy": "以可视化方式呈现我们可在东南亚本地化、种草、运营和放大的消费品类。",
-    "product.lane.beauty": "美妆与个护",
-    "product.beauty": "美妆瓶身",
-    "product.lane.devices": "智能硬件",
-    "product.lane.packaging": "包装与生活方式",
-    "product.food": "食品软袋",
-    "product.lifestyle": "高级包装",
+    "product.beautyPersonal.title": "Beauty & Personal Care",
+    "product.beautyPersonal.short": "美妆个护",
+    "product.beautyPersonal.copy": "为护肤、彩妆和个护产品搭建上线节奏、达人背书与电商转化素材。",
+    "product.womenwear.title": "Womenwear",
+    "product.womenwear.short": "女装",
+    "product.womenwear.copy": "围绕女装品牌做本地化穿搭、季节上新、达人搭配内容与店铺运营。",
+    "product.lifestyle.title": "Lifestyle",
+    "product.lifestyle.short": "生活方式",
+    "product.lifestyle.copy": "用本地生活场景、达人内容和可复制内容系统承接日用与生活方式产品。",
+    "product.fashionJewelry.title": "Fashion Accessories & Jewelry",
+    "product.fashionJewelry.short": "配饰珠宝",
+    "product.fashionJewelry.copy": "为配饰、珠宝和小型时尚单品设计达人种草、产品 seeding 与转化叙事。",
+    "product.petSupplies.title": "Pet Supplies",
+    "product.petSupplies.short": "宠物用品",
+    "product.petSupplies.copy": "通过信任型内容、真实使用场景和本地电商承接宠物护理与宠物生活方式产品。",
+    "product.maternityBaby.title": "Maternity & Baby",
+    "product.maternityBaby.short": "母婴",
+    "product.maternityBaby.copy": "围绕安全感、本地表达、亲子达人匹配与电商路径承接母婴品类。",
+    "product.smartDevices.title": "Smart Devices & IT",
+    "product.smartDevices.short": "智能 IT",
+    "product.smartDevices.copy": "用演示型内容、技术卖点翻译和转化规划承接智能设备与 IT 产品。",
     "why.eyebrow": "为什么选择 Louder",
     "why.title": "下一波海外增长，需要本地化、达人驱动，并且和电商转化打通。",
     "why.copy": "Louder Creative 把市场研究、本地达人、活动执行与效果复盘连接成同一套运营节奏。",
@@ -376,10 +450,16 @@ const translations = {
     "contact.eyebrow": "联系",
     "contact.title": "你的下一段东南亚增长，从这里开始。",
     "contact.copy": "告诉我们你的目标市场、品类与上线节奏，我们会协助制定本地化运营方案。",
-    "contact.findUs": "联系方式",
-    "contact.emailLabel": "邮箱",
-    "contact.domainLabel": "官网",
-    "contact.note": "请通过邮件发送简短需求，我们会回复适合的下一步方案。",
+    "contact.creator.title": "Creator Cooperation",
+    "contact.creator.copy": "适合达人招募、产品 seeding、内容审核与 KOC/KOL 活动协调。",
+    "contact.brand.title": "Brand Partnership",
+    "contact.brand.copy": "适合品牌启动规划、市场进入策略、达人组合与本地化运营方案。",
+    "contact.business.title": "Business Cooperation",
+    "contact.business.copy": "适合平台合作、商业机会与跨市场业务合作沟通。",
+    "contact.copyEmail": "复制",
+    "contact.copied": "已复制",
+    "contact.copyFailed": "发邮件",
+    "contact.general": "通用邮箱",
     "footer.copy": "泰国、马来西亚、越南与东南亚增长运营服务。",
     "menu.open": "打开菜单",
     "menu.close": "关闭菜单",
@@ -400,6 +480,26 @@ const languageMeta = {
   zh: { label: "中文", flagClass: "flag-cn" },
 };
 
+const productCategories = [
+  { titleKey: "product.beautyPersonal.title", copyKey: "product.beautyPersonal.copy" },
+  { titleKey: "product.womenwear.title", copyKey: "product.womenwear.copy" },
+  { titleKey: "product.lifestyle.title", copyKey: "product.lifestyle.copy" },
+  { titleKey: "product.fashionJewelry.title", copyKey: "product.fashionJewelry.copy" },
+  { titleKey: "product.petSupplies.title", copyKey: "product.petSupplies.copy" },
+  { titleKey: "product.maternityBaby.title", copyKey: "product.maternityBaby.copy" },
+  { titleKey: "product.smartDevices.title", copyKey: "product.smartDevices.copy" },
+];
+
+const cubeAngles = [
+  { x: -14, y: 0 },
+  { x: -14, y: -90 },
+  { x: -14, y: -180 },
+  { x: -14, y: -270 },
+  { x: -104, y: -360 },
+  { x: 76, y: -360 },
+  { x: -14, y: -405 },
+];
+
 const header = document.querySelector("[data-header]");
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.querySelector("[data-mobile-nav]");
@@ -419,6 +519,27 @@ const leadConfig = {
 };
 const leadForm = document.querySelector("[data-lead-form]");
 const leadStatus = document.querySelector("[data-lead-status]");
+const productShowcase = document.querySelector("[data-product-showcase]");
+const productCube = document.querySelector("[data-product-cube]");
+const productCounter = document.querySelector("[data-product-counter]");
+const productTitle = document.querySelector("[data-product-title]");
+const productCopy = document.querySelector("[data-product-copy]");
+const productFaces = document.querySelectorAll("[data-product-face]");
+const productJumpButtons = document.querySelectorAll("[data-product-jump]");
+const copyEmailButtons = document.querySelectorAll("[data-copy-email]");
+const reduceMotionMedia = window.matchMedia("(prefers-reduced-motion: reduce)");
+const desktopProductMedia = window.matchMedia("(min-width: 901px)");
+
+let activeProductIndex = 0;
+let productSectionStart = 0;
+let productScrollRange = 1;
+let productFrameRequested = false;
+
+const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+const lerp = (start, end, progress) => start + (end - start) * progress;
+
+const formatProductCounter = (index) => `${String(index + 1).padStart(2, "0")} / ${String(productCategories.length).padStart(2, "0")}`;
 
 const readStoredLanguage = () => {
   try {
@@ -432,7 +553,7 @@ const writeStoredLanguage = (language) => {
   try {
     window.localStorage.setItem("louder-language", language);
   } catch (error) {
-    // Some embedded or privacy-restricted contexts block storage; the page still needs to run.
+    // Storage can be blocked in embedded contexts; the page still runs without it.
   }
 };
 
@@ -474,6 +595,96 @@ const closeLanguageMenu = () => {
   languageTrigger.setAttribute("aria-expanded", "false");
 };
 
+const shouldUseProductMotion = () => Boolean(productShowcase && productCube && desktopProductMedia.matches && !reduceMotionMedia.matches);
+
+const setCubeAngle = (angle) => {
+  if (!productCube || !angle) return;
+  productCube.style.setProperty("--cube-rotate-x", `${angle.x}deg`);
+  productCube.style.setProperty("--cube-rotate-y", `${angle.y}deg`);
+};
+
+const setProductContent = (index) => {
+  const nextIndex = clamp(index, 0, productCategories.length - 1);
+  const category = productCategories[nextIndex];
+  activeProductIndex = nextIndex;
+
+  if (productCounter) {
+    productCounter.textContent = formatProductCounter(nextIndex);
+  }
+
+  if (productTitle) {
+    productTitle.dataset.i18n = category.titleKey;
+    productTitle.textContent = getDictionaryText(category.titleKey);
+  }
+
+  if (productCopy) {
+    productCopy.dataset.i18n = category.copyKey;
+    productCopy.textContent = getDictionaryText(category.copyKey);
+  }
+
+  productFaces.forEach((face) => {
+    face.classList.toggle("is-active", Number(face.dataset.productFace) === nextIndex);
+  });
+
+  productJumpButtons.forEach((button) => {
+    button.classList.toggle("is-active", Number(button.dataset.productJump) === nextIndex);
+  });
+};
+
+const measureProductShowcase = () => {
+  if (!productShowcase) return;
+  const rect = productShowcase.getBoundingClientRect();
+  productSectionStart = window.scrollY + rect.top;
+  productScrollRange = Math.max(1, productShowcase.offsetHeight - window.innerHeight);
+};
+
+const updateProductFromScroll = () => {
+  productFrameRequested = false;
+  if (!shouldUseProductMotion()) {
+    setCubeAngle(cubeAngles[activeProductIndex]);
+    return;
+  }
+
+  const progress = clamp((window.scrollY - productSectionStart) / productScrollRange, 0, 1);
+  const exactIndex = progress * (productCategories.length - 1);
+  const lowerIndex = Math.floor(exactIndex);
+  const upperIndex = Math.min(productCategories.length - 1, lowerIndex + 1);
+  const localProgress = exactIndex - lowerIndex;
+  const lowerAngle = cubeAngles[lowerIndex];
+  const upperAngle = cubeAngles[upperIndex];
+  const nextAngle = {
+    x: lerp(lowerAngle.x, upperAngle.x, localProgress),
+    y: lerp(lowerAngle.y, upperAngle.y, localProgress),
+  };
+  const nextIndex = clamp(Math.round(exactIndex), 0, productCategories.length - 1);
+
+  setCubeAngle(nextAngle);
+  if (nextIndex !== activeProductIndex) {
+    setProductContent(nextIndex);
+  }
+};
+
+const requestProductUpdate = () => {
+  if (productFrameRequested) return;
+  productFrameRequested = true;
+  window.requestAnimationFrame(updateProductFromScroll);
+};
+
+const jumpToProduct = (index) => {
+  const nextIndex = clamp(index, 0, productCategories.length - 1);
+  if (!productShowcase || !shouldUseProductMotion()) {
+    setProductContent(nextIndex);
+    setCubeAngle(cubeAngles[nextIndex]);
+    return;
+  }
+
+  const progress = nextIndex / Math.max(1, productCategories.length - 1);
+  window.scrollTo({
+    top: productSectionStart + productScrollRange * progress,
+    behavior: "smooth",
+  });
+};
+
 const setLanguage = (language) => {
   const dictionary = translations[language] || translations.en;
   document.documentElement.lang = languageCodes[language] || "en";
@@ -507,6 +718,7 @@ const setLanguage = (language) => {
 
   const isMenuOpen = document.body.classList.contains("menu-open");
   menuToggle?.setAttribute("aria-label", dictionary[isMenuOpen ? "menu.close" : "menu.open"]);
+  setProductContent(activeProductIndex);
   writeStoredLanguage(language);
 };
 
@@ -593,14 +805,40 @@ const createLeadEmailLink = (payload) => {
 };
 
 setLanguage(getPreferredLanguage());
+setCubeAngle(cubeAngles[0]);
 updateHeader();
+measureProductShowcase();
+updateProductFromScroll();
 
 if (window.location.hash) {
   scrollToInitialHash();
 }
 
-window.addEventListener("scroll", updateHeader, { passive: true });
-window.addEventListener("load", scrollToInitialHash);
+window.addEventListener("scroll", () => {
+  updateHeader();
+  requestProductUpdate();
+}, { passive: true });
+
+window.addEventListener("resize", () => {
+  measureProductShowcase();
+  requestProductUpdate();
+});
+
+reduceMotionMedia.addEventListener?.("change", () => {
+  measureProductShowcase();
+  requestProductUpdate();
+});
+
+desktopProductMedia.addEventListener?.("change", () => {
+  measureProductShowcase();
+  requestProductUpdate();
+});
+
+window.addEventListener("load", () => {
+  measureProductShowcase();
+  updateProductFromScroll();
+  scrollToInitialHash();
+});
 window.addEventListener("pageshow", scrollToInitialHash);
 window.addEventListener("hashchange", scrollToInitialHash);
 
@@ -635,6 +873,10 @@ navLinks.forEach((link) => {
       history.pushState(null, "", href);
       setActiveNav(href.replace("#", ""));
       closeMenu();
+      window.setTimeout(() => {
+        measureProductShowcase();
+        requestProductUpdate();
+      }, 260);
     }
   });
 });
@@ -651,6 +893,34 @@ consultScrollLinks.forEach((link) => {
         firstField?.focus();
       }
     }, 360);
+  });
+});
+
+productJumpButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    jumpToProduct(Number(button.dataset.productJump) || 0);
+  });
+});
+
+copyEmailButtons.forEach((button) => {
+  button.addEventListener("click", async () => {
+    const email = button.dataset.copyEmail || "";
+    const originalText = getDictionaryText("contact.copyEmail");
+    try {
+      await navigator.clipboard.writeText(email);
+      button.textContent = getDictionaryText("contact.copied");
+      button.classList.add("is-copied");
+      window.setTimeout(() => {
+        button.textContent = originalText;
+        button.classList.remove("is-copied");
+      }, 1800);
+    } catch (error) {
+      button.textContent = getDictionaryText("contact.copyFailed");
+      window.location.href = `mailto:${email}`;
+      window.setTimeout(() => {
+        button.textContent = originalText;
+      }, 1800);
+    }
   });
 });
 
