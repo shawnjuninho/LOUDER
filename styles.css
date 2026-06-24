@@ -1140,6 +1140,24 @@ label {
   padding: 0 12px;
 }
 
+.product-counter,
+.product-detail h3,
+.product-detail p {
+  will-change: transform, opacity;
+}
+
+.product-detail.is-rolling-up .product-counter,
+.product-detail.is-rolling-up h3,
+.product-detail.is-rolling-up p {
+  animation: productRollUp 360ms var(--ease);
+}
+
+.product-detail.is-rolling-down .product-counter,
+.product-detail.is-rolling-down h3,
+.product-detail.is-rolling-down p {
+  animation: productRollDown 360ms var(--ease);
+}
+
 .product-detail h3 {
   margin-top: 24px;
   color: var(--white);
@@ -1154,34 +1172,130 @@ label {
   font-size: clamp(1rem, 1.05vw, 1.18rem);
 }
 
-.product-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 24px;
+.product-wheel {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  max-width: 480px;
+  margin-top: 26px;
+  padding: 12px 0 12px 20px;
+  overflow: hidden;
+  border-left: 1px solid rgba(255, 210, 31, 0.32);
+  mask-image: linear-gradient(180deg, transparent 0, #000 12%, #000 88%, transparent 100%);
+  will-change: transform;
 }
 
-.product-tabs button {
-  min-height: 38px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+.product-wheel::before {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  width: 4px;
+  height: 42px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.72);
+  background: var(--yellow);
+  box-shadow: 0 0 26px rgba(255, 210, 31, 0.58);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.product-wheel.is-rolling-up {
+  animation: productWheelUp 360ms var(--ease);
+}
+
+.product-wheel.is-rolling-down {
+  animation: productWheelDown 360ms var(--ease);
+}
+
+.product-wheel button {
+  display: flex;
+  width: min(360px, 100%);
+  min-height: 40px;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.58);
   cursor: pointer;
-  font-size: 0.78rem;
-  font-weight: 820;
-  padding: 0 13px;
+  font-size: 0.82rem;
+  font-weight: 880;
+  letter-spacing: 0;
+  opacity: var(--wheel-opacity, 0.55);
+  padding: 0 14px;
+  text-align: left;
+  text-transform: uppercase;
+  transform: translateX(var(--wheel-x, 0)) scale(var(--wheel-scale, 1));
   transition:
     border-color 160ms ease,
     background 160ms ease,
-    color 160ms ease;
+    color 160ms ease,
+    opacity 200ms ease,
+    transform 240ms var(--ease);
 }
 
-.product-tabs button:hover,
-.product-tabs button.is-active {
-  border-color: rgba(255, 210, 31, 0.46);
+.product-wheel button.is-adjacent {
+  --wheel-opacity: 0.76;
+}
+
+.product-wheel button.is-distant {
+  --wheel-opacity: 0.28;
+}
+
+.product-wheel button:hover,
+.product-wheel button.is-active {
+  --wheel-opacity: 1;
+  --wheel-scale: 1.04;
+  --wheel-x: 18px;
+  border-color: rgba(255, 210, 31, 0.54);
   background: rgba(255, 210, 31, 0.16);
   color: var(--white);
+}
+
+@keyframes productRollUp {
+  from {
+    opacity: 0.22;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes productRollDown {
+  from {
+    opacity: 0.22;
+    transform: translateY(-28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes productWheelUp {
+  from {
+    opacity: 0.58;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes productWheelDown {
+  from {
+    opacity: 0.58;
+    transform: translateY(-18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .cube-stage {
@@ -1191,18 +1305,16 @@ label {
   min-height: clamp(360px, 35vw, 500px);
   place-items: center;
   perspective: 1400px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius);
-  background:
-    linear-gradient(110deg, rgba(255, 210, 31, 0.12) 0 13%, transparent 13% 56%, rgba(255, 255, 255, 0.08) 56% 64%, transparent 64%),
-    rgba(255, 255, 255, 0.035);
-  box-shadow: 0 30px 92px rgba(0, 0, 0, 0.38);
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .cube-grid {
   position: absolute;
-  inset: 0;
+  inset: -10%;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
     linear-gradient(0deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
@@ -1240,11 +1352,11 @@ label {
   border: 1px solid rgba(255, 210, 31, 0.22);
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02)),
-    #0e0e0e;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.015)),
+    rgba(14, 14, 14, 0.98);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
   backface-visibility: hidden;
-  opacity: 0.38;
+  opacity: 0.5;
   transition:
     opacity 260ms ease,
     filter 260ms ease;
@@ -1267,7 +1379,9 @@ label {
   width: 78%;
   height: 70%;
   object-fit: contain;
+  opacity: 0.48;
   filter: saturate(1.05) contrast(1.08) drop-shadow(0 28px 34px rgba(0, 0, 0, 0.5));
+  transition: opacity 260ms ease, filter 260ms ease;
 }
 
 .cube-face figcaption {
@@ -1285,6 +1399,10 @@ label {
 
 .cube-face.is-active {
   filter: saturate(1.08);
+  opacity: 1;
+}
+
+.cube-face.is-active img {
   opacity: 1;
 }
 
@@ -1310,10 +1428,6 @@ label {
 
 .cube-face-bottom {
   transform: rotateX(-90deg) translateZ(calc(var(--cube-size) / 2));
-}
-
-.cube-face-float {
-  transform: rotateY(45deg) translateZ(calc(var(--cube-size) / 2)) translateX(calc(var(--cube-size) * 0.12));
 }
 
 .product-mobile-list {
@@ -1429,22 +1543,18 @@ label {
   position: relative;
 }
 
-.contact-icon {
-  display: grid;
-  width: 46px;
-  height: 46px;
-  place-items: center;
-  border-radius: 7px;
-  color: #050505;
-  background: linear-gradient(135deg, var(--yellow), var(--yellow-strong));
-  font-weight: 930;
-}
-
 .contact-card h3 {
-  margin-top: 46px;
+  display: flex;
+  min-height: 92px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
   color: var(--white);
-  font-size: clamp(1.55rem, 1.9vw, 2.15rem);
-  line-height: 1.02;
+  font-family: "Segoe Script", "Brush Script MT", "Lucida Handwriting", "Trebuchet MS", cursive;
+  font-size: clamp(1.7rem, 2.25vw, 2.6rem);
+  font-weight: 700;
+  line-height: 1.08;
+  text-align: center;
 }
 
 .contact-card p {
@@ -1470,7 +1580,10 @@ label {
 }
 
 .email-action button {
-  min-height: 34px;
+  display: grid;
+  width: 40px;
+  min-height: 40px;
+  place-items: center;
   border: 1px solid rgba(255, 210, 31, 0.34);
   border-radius: 999px;
   background: rgba(255, 210, 31, 0.12);
@@ -1478,7 +1591,17 @@ label {
   cursor: pointer;
   font-size: 0.74rem;
   font-weight: 860;
-  padding: 0 12px;
+  padding: 0;
+}
+
+.email-action button svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
 }
 
 .email-action button.is-copied {

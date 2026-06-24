@@ -54,13 +54,13 @@ const translations = {
     "services.store.copy": "Local store setup, product listing optimization, campaign operations, and ongoing store support.",
     "services.live.title": "Live Commerce",
     "services.live.copy": "Local livestream execution, creator coordination, run-of-show design, and conversion optimization.",
-    "packages.package1.title": "Package 1",
+    "packages.package1.title": "Pack I",
     "packages.package1.type": "30 KOCs - 1k-100k followers",
     "packages.package1.copy": "TikTok review short-video production for early creator testing.",
-    "packages.package2.title": "Package 2",
+    "packages.package2.title": "Pack II",
     "packages.package2.type": "100 KOCs - 1k-100k followers",
     "packages.package2.copy": "Broader TikTok review distribution for stronger content coverage.",
-    "packages.package3.title": "Package 3",
+    "packages.package3.title": "Pack III",
     "packages.package3.type": "50 KOLs - 10k-100k followers",
     "packages.package3.copy": "Higher-impact TikTok review campaigns with mid-tier creator reach.",
     "work.eyebrow": "Work",
@@ -90,10 +90,6 @@ const translations = {
     "product.maternityBaby.short": "Baby",
     "product.maternityBaby.copy":
       "Safety-aware localization, parent creator matching, and commerce flows for maternity and baby categories.",
-    "product.smartDevices.title": "Smart Devices & IT",
-    "product.smartDevices.short": "Smart IT",
-    "product.smartDevices.copy":
-      "Demo-led content, technical benefit translation, and conversion planning for smart devices and IT products.",
     "why.eyebrow": "Why Louder",
     "why.title": "The next wave of overseas growth is local, creator-led, and commerce-aware.",
     "why.copy":
@@ -178,13 +174,13 @@ const translations = {
     "services.store.copy": "Persediaan kedai tempatan, pengoptimuman senarai produk, operasi kempen, dan sokongan berterusan.",
     "services.live.title": "Dagang Siaran Langsung",
     "services.live.copy": "Pelaksanaan livestream tempatan, koordinasi kreator, reka aliran siaran, dan pengoptimuman penukaran.",
-    "packages.package1.title": "Package 1",
+    "packages.package1.title": "Pack I",
     "packages.package1.type": "30 KOC - 1k-100k pengikut",
     "packages.package1.copy": "Produksi video ulasan pendek TikTok untuk ujian kreator awal.",
-    "packages.package2.title": "Package 2",
+    "packages.package2.title": "Pack II",
     "packages.package2.type": "100 KOC - 1k-100k pengikut",
     "packages.package2.copy": "Edaran ulasan TikTok lebih luas untuk liputan kandungan yang lebih kuat.",
-    "packages.package3.title": "Package 3",
+    "packages.package3.title": "Pack III",
     "packages.package3.type": "50 KOL - 10k-100k pengikut",
     "packages.package3.copy": "Kempen ulasan TikTok berimpak lebih tinggi dengan jangkauan kreator pertengahan.",
     "work.eyebrow": "Kerja",
@@ -208,9 +204,6 @@ const translations = {
     "product.maternityBaby.title": "Ibu & Bayi",
     "product.maternityBaby.short": "Bayi",
     "product.maternityBaby.copy": "Lokalisasi peka keselamatan, padanan kreator ibu bapa, dan aliran dagang untuk kategori ibu dan bayi.",
-    "product.smartDevices.title": "Peranti Pintar & IT",
-    "product.smartDevices.short": "Smart IT",
-    "product.smartDevices.copy": "Kandungan demo, terjemahan manfaat teknikal, dan perancangan konversi untuk peranti pintar dan produk IT.",
     "why.eyebrow": "Kenapa Louder",
     "why.title": "Gelombang pertumbuhan luar negara seterusnya ialah tempatan, dipacu kreator dan peka dagang.",
     "why.copy": "Louder Creative menghubungkan kajian pasaran, kreator tempatan, pelaksanaan kempen, dan semakan prestasi dalam satu rentak operasi.",
@@ -292,13 +285,13 @@ const translations = {
     "services.store.copy": "ตั้งค่าร้านค้า ปรับรายการสินค้า ดำเนินแคมเปญ และสนับสนุนร้านอย่างต่อเนื่อง",
     "services.live.title": "ไลฟ์คอมเมิร์ซ",
     "services.live.copy": "ดำเนินไลฟ์ท้องถิ่น ประสานครีเอเตอร์ ออกแบบรันออฟโชว์ และเพิ่ม conversion",
-    "packages.package1.title": "Package 1",
+    "packages.package1.title": "Pack I",
     "packages.package1.type": "30 KOC - ผู้ติดตาม 1k-100k",
     "packages.package1.copy": "ผลิตวิดีโอรีวิวสั้นบน TikTok สำหรับทดสอบครีเอเตอร์ระยะแรก",
-    "packages.package2.title": "Package 2",
+    "packages.package2.title": "Pack II",
     "packages.package2.type": "100 KOC - ผู้ติดตาม 1k-100k",
     "packages.package2.copy": "กระจายรีวิว TikTok ในวงกว้างเพื่อเพิ่มการครอบคลุมคอนเทนต์",
-    "packages.package3.title": "Package 3",
+    "packages.package3.title": "Pack III",
     "packages.package3.type": "50 KOL - ผู้ติดตาม 10k-100k",
     "packages.package3.copy": "แคมเปญรีวิว TikTok ที่มีผลกระทบสูงขึ้นด้วยครีเอเตอร์ระดับกลาง",
     "work.eyebrow": "ผลงาน",
@@ -322,9 +315,6 @@ const translations = {
     "product.maternityBaby.title": "แม่และเด็ก",
     "product.maternityBaby.short": "เด็ก",
     "product.maternityBaby.copy": "การ localize ที่คำนึงถึงความปลอดภัย การจับคู่ครีเอเตอร์สายพ่อแม่ และ flow คอมเมิร์ซสำหรับหมวดแม่และเด็ก",
-    "product.smartDevices.title": "อุปกรณ์อัจฉริยะและ IT",
-    "product.smartDevices.short": "Smart IT",
-    "product.smartDevices.copy": "คอนเทนต์สาธิต การแปล benefit เชิงเทคนิค และแผน conversion สำหรับอุปกรณ์อัจฉริยะและสินค้า IT",
     "why.eyebrow": "ทำไม Louder",
     "why.title": "การเติบโตต่างประเทศระลอกใหม่ต้องท้องถิ่น นำโดยครีเอเตอร์ และเชื่อมกับคอมเมิร์ซ",
     "why.copy": "Louder Creative เชื่อมงานวิจัยตลาด ครีเอเตอร์ท้องถิ่น การดำเนินแคมเปญ และการรีวิวผลลัพธ์ให้เป็นจังหวะปฏิบัติการเดียว",
@@ -405,13 +395,13 @@ const translations = {
     "services.store.copy": "本地电商店铺搭建、商品上架优化、营销活动与持续运营支持。",
     "services.live.title": "直播电商",
     "services.live.copy": "本地直播执行、达人协调、直播流程设计与销售转化优化。",
-    "packages.package1.title": "Package 1",
+    "packages.package1.title": "Pack I",
     "packages.package1.type": "30 位 KOC - 粉丝量 1k-100k",
     "packages.package1.copy": "用于 TikTok 测评短视频制作，适合早期达人测试。",
-    "packages.package2.title": "Package 2",
+    "packages.package2.title": "Pack II",
     "packages.package2.type": "100 位 KOC - 粉丝量 1k-100k",
     "packages.package2.copy": "适合更大规模 TikTok 测评分发，提升内容覆盖。",
-    "packages.package3.title": "Package 3",
+    "packages.package3.title": "Pack III",
     "packages.package3.type": "50 位 KOL - 粉丝量 10k-100k",
     "packages.package3.copy": "适合更高影响力 TikTok 测评投放。",
     "work.eyebrow": "案例",
@@ -435,9 +425,6 @@ const translations = {
     "product.maternityBaby.title": "Maternity & Baby",
     "product.maternityBaby.short": "母婴",
     "product.maternityBaby.copy": "围绕安全感、本地表达、亲子达人匹配与电商路径承接母婴品类。",
-    "product.smartDevices.title": "Smart Devices & IT",
-    "product.smartDevices.short": "智能 IT",
-    "product.smartDevices.copy": "用演示型内容、技术卖点翻译和转化规划承接智能设备与 IT 产品。",
     "why.eyebrow": "为什么选择 Louder",
     "why.title": "下一波海外增长，需要本地化、达人驱动，并且和电商转化打通。",
     "why.copy": "Louder Creative 把市场研究、本地达人、活动执行与效果复盘连接成同一套运营节奏。",
@@ -487,7 +474,6 @@ const productCategories = [
   { titleKey: "product.fashionJewelry.title", copyKey: "product.fashionJewelry.copy" },
   { titleKey: "product.petSupplies.title", copyKey: "product.petSupplies.copy" },
   { titleKey: "product.maternityBaby.title", copyKey: "product.maternityBaby.copy" },
-  { titleKey: "product.smartDevices.title", copyKey: "product.smartDevices.copy" },
 ];
 
 const cubeAngles = [
@@ -497,7 +483,6 @@ const cubeAngles = [
   { x: -14, y: -270 },
   { x: -104, y: -360 },
   { x: 76, y: -360 },
-  { x: -14, y: -405 },
 ];
 
 const header = document.querySelector("[data-header]");
@@ -521,11 +506,13 @@ const leadForm = document.querySelector("[data-lead-form]");
 const leadStatus = document.querySelector("[data-lead-status]");
 const productShowcase = document.querySelector("[data-product-showcase]");
 const productCube = document.querySelector("[data-product-cube]");
+const productDetail = document.querySelector(".product-detail");
 const productCounter = document.querySelector("[data-product-counter]");
 const productTitle = document.querySelector("[data-product-title]");
 const productCopy = document.querySelector("[data-product-copy]");
 const productFaces = document.querySelectorAll("[data-product-face]");
 const productJumpButtons = document.querySelectorAll("[data-product-jump]");
+const productWheel = document.querySelector("[data-product-wheel]");
 const copyEmailButtons = document.querySelectorAll("[data-copy-email]");
 const reduceMotionMedia = window.matchMedia("(prefers-reduced-motion: reduce)");
 const desktopProductMedia = window.matchMedia("(min-width: 901px)");
@@ -603,9 +590,39 @@ const setCubeAngle = (angle) => {
   productCube.style.setProperty("--cube-rotate-y", `${angle.y}deg`);
 };
 
+const triggerProductWheelMotion = (direction) => {
+  if (!direction || reduceMotionMedia.matches) return;
+  const directionClass = direction > 0 ? "is-rolling-up" : "is-rolling-down";
+  const rollingClasses = ["is-rolling-up", "is-rolling-down"];
+  productDetail?.classList.remove(...rollingClasses);
+  productWheel?.classList.remove(...rollingClasses);
+  void productDetail?.offsetWidth;
+  productDetail?.classList.add(directionClass);
+  productWheel?.classList.add(directionClass);
+  window.setTimeout(() => {
+    productDetail?.classList.remove(directionClass);
+    productWheel?.classList.remove(directionClass);
+  }, 380);
+};
+
+const updateProductWheel = (nextIndex) => {
+  productJumpButtons.forEach((button) => {
+    const buttonIndex = Number(button.dataset.productJump);
+    const distance = Math.abs(buttonIndex - nextIndex);
+    const isActive = buttonIndex === nextIndex;
+    button.classList.toggle("is-active", isActive);
+    button.classList.toggle("is-adjacent", !isActive && distance === 1);
+    button.classList.toggle("is-distant", distance > 1);
+    button.setAttribute("aria-current", isActive ? "true" : "false");
+  });
+};
+
 const setProductContent = (index) => {
   const nextIndex = clamp(index, 0, productCategories.length - 1);
   const category = productCategories[nextIndex];
+  const direction = nextIndex === activeProductIndex ? 0 : nextIndex > activeProductIndex ? 1 : -1;
+
+  triggerProductWheelMotion(direction);
   activeProductIndex = nextIndex;
 
   if (productCounter) {
@@ -626,9 +643,7 @@ const setProductContent = (index) => {
     face.classList.toggle("is-active", Number(face.dataset.productFace) === nextIndex);
   });
 
-  productJumpButtons.forEach((button) => {
-    button.classList.toggle("is-active", Number(button.dataset.productJump) === nextIndex);
-  });
+  updateProductWheel(nextIndex);
 };
 
 const measureProductShowcase = () => {
@@ -701,6 +716,14 @@ const setLanguage = (language) => {
     const key = element.dataset.i18nPlaceholder;
     if (key && dictionary[key]) {
       element.setAttribute("placeholder", dictionary[key]);
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    const key = element.dataset.i18nAriaLabel;
+    if (key && dictionary[key]) {
+      element.setAttribute("aria-label", dictionary[key]);
+      element.setAttribute("title", dictionary[key]);
     }
   });
 
@@ -905,20 +928,28 @@ productJumpButtons.forEach((button) => {
 copyEmailButtons.forEach((button) => {
   button.addEventListener("click", async () => {
     const email = button.dataset.copyEmail || "";
-    const originalText = getDictionaryText("contact.copyEmail");
+    const originalLabel = getDictionaryText("contact.copyEmail");
+    const setCopyButtonLabel = (key) => {
+      const label = getDictionaryText(key);
+      button.setAttribute("aria-label", label);
+      button.setAttribute("title", label);
+    };
+
     try {
       await navigator.clipboard.writeText(email);
-      button.textContent = getDictionaryText("contact.copied");
+      setCopyButtonLabel("contact.copied");
       button.classList.add("is-copied");
       window.setTimeout(() => {
-        button.textContent = originalText;
+        button.setAttribute("aria-label", originalLabel);
+        button.setAttribute("title", originalLabel);
         button.classList.remove("is-copied");
       }, 1800);
     } catch (error) {
-      button.textContent = getDictionaryText("contact.copyFailed");
+      setCopyButtonLabel("contact.copyFailed");
       window.location.href = `mailto:${email}`;
       window.setTimeout(() => {
-        button.textContent = originalText;
+        button.setAttribute("aria-label", originalLabel);
+        button.setAttribute("title", originalLabel);
       }, 1800);
     }
   });

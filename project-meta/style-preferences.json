@@ -23,10 +23,12 @@
       "subtle grid systems",
       "yellow scan light effects",
       "scroll-driven motion layers",
-      "sticky 3D product cube for the Work section",
+      "sticky six-face 3D product cube for the Work section",
+      "vertical wheel motion for Work category detail changes",
       "Youpik-style dark contact cards",
       "realistic product visuals",
-      "realistic full-color team portraits"
+      "realistic full-color team portraits",
+      "transparent logo assets that preserve the original PNG pixels and type"
     ],
     "avoid": [
       "cartoon avatars",
@@ -36,7 +38,8 @@
       "real brand-logo walls as the main case visual",
       "single-hue purple or beige themes",
       "heavy text stacking without media",
-      "white rectangular logo backgrounds on dark surfaces"
+      "white rectangular logo backgrounds on dark surfaces",
+      "recreating the logo typography with web text or substitute fonts"
     ],
     "palette": {
       "core": ["ink black", "deep graphite", "optic white"],
