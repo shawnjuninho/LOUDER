@@ -694,7 +694,7 @@ label {
 }
 
 .lead-form input,
-.lead-form select,
+.service-dropdown-trigger,
 .lead-form textarea {
   width: 100%;
   min-height: 40px;
@@ -710,10 +710,6 @@ label {
     background 160ms ease;
 }
 
-.lead-form select {
-  color-scheme: dark;
-}
-
 .lead-form textarea {
   min-height: 66px;
   padding-top: 12px;
@@ -726,11 +722,99 @@ label {
 }
 
 .lead-form input:focus,
-.lead-form select:focus,
+.service-dropdown-trigger:focus,
+.service-dropdown.is-open .service-dropdown-trigger,
 .lead-form textarea:focus {
   border-color: rgba(255, 210, 31, 0.7);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 0 4px rgba(255, 210, 31, 0.14);
+}
+
+.service-dropdown {
+  position: relative;
+  z-index: 5;
+}
+
+.service-dropdown.is-open {
+  z-index: 20;
+}
+
+.service-dropdown-trigger {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18px;
+  gap: 12px;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+}
+
+.service-dropdown-trigger svg {
+  width: 18px;
+  height: 18px;
+  color: var(--white);
+  transition: transform 160ms ease;
+}
+
+.service-dropdown-trigger svg path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.3;
+}
+
+.service-dropdown.is-open .service-dropdown-trigger svg {
+  transform: rotate(180deg);
+}
+
+.service-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  left: 0;
+  max-height: 252px;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 210, 31, 0.42);
+  border-radius: 7px;
+  background:
+    linear-gradient(118deg, rgba(255, 255, 255, 0.06) 0 14%, transparent 14% 58%, rgba(255, 210, 31, 0.08) 58% 70%, transparent 70%),
+    #111111;
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.52), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  padding: 6px;
+}
+
+.service-dropdown-menu[hidden] {
+  display: none;
+}
+
+.service-dropdown-menu button {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 11px 12px;
+  color: rgba(255, 255, 255, 0.76);
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.service-dropdown-menu button:hover,
+.service-dropdown-menu button:focus,
+.service-dropdown-menu button.is-active {
+  color: var(--white);
+  background: rgba(255, 210, 31, 0.16);
+  outline: none;
+}
+
+.service-dropdown-menu button[aria-selected="true"] {
+  color: var(--yellow);
+}
+
+.service-dropdown.is-invalid .service-dropdown-trigger {
+  border-color: rgba(255, 77, 141, 0.72);
+  box-shadow: 0 0 0 4px rgba(255, 77, 141, 0.12);
 }
 
 .lead-submit {
@@ -767,8 +851,8 @@ label {
 
 .intro-line {
   display: grid;
-  grid-template-columns: 0.28fr 1fr;
-  gap: clamp(22px, 4vw, 72px);
+  grid-template-columns: minmax(170px, 0.16fr) minmax(0, 1fr);
+  gap: clamp(22px, 3vw, 54px);
   align-items: start;
   border-top: 1px solid var(--line);
   padding-top: 24px;
@@ -782,11 +866,11 @@ label {
 }
 
 .intro-line p {
-  max-width: 1180px;
+  max-width: 1560px;
   color: var(--white);
-  font-size: clamp(2.25rem, 4.6vw, 5.4rem);
+  font-size: clamp(2.2rem, 4.1vw, 4.85rem);
   font-weight: 900;
-  line-height: 0.98;
+  line-height: 0.94;
 }
 
 .stat-grid {
@@ -1528,10 +1612,9 @@ label {
   justify-content: center;
   margin-top: 4px;
   color: var(--white);
-  font-family: "Segoe Script", "Brush Script MT", "Lucida Handwriting", "Trebuchet MS", cursive;
-  font-size: clamp(1.7rem, 2.25vw, 2.6rem);
-  font-weight: 700;
-  line-height: 1.08;
+  font-size: clamp(1.55rem, 2vw, 2.25rem);
+  font-weight: 900;
+  line-height: 1.05;
   text-align: center;
 }
 

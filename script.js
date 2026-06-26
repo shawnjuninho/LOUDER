@@ -35,6 +35,7 @@ const translations = {
     "lead.statusSuccess": "Thanks. We received your request and will reply soon.",
     "lead.statusMailFallback": "Opening your email app so the request is not lost.",
     "lead.statusError": "Something went wrong. Please email postmaster@louder-creative.com.",
+    "lead.statusServiceRequired": "Please choose a service.",
     "intro.kicker": "SEA growth operations",
     "intro.copy":
       "We are a cross-border marketing and commercialization partner focused on helping Chinese brands localize, promote, sell, and scale in Thailand, Malaysia, Vietnam, and Southeast Asia",
@@ -155,6 +156,7 @@ const translations = {
     "lead.statusSuccess": "Terima kasih. Kami menerima permintaan anda dan akan membalas segera.",
     "lead.statusMailFallback": "Membuka aplikasi e-mel supaya permintaan tidak hilang.",
     "lead.statusError": "Ada ralat. Sila e-mel postmaster@louder-creative.com.",
+    "lead.statusServiceRequired": "Sila pilih servis.",
     "intro.kicker": "Operasi pertumbuhan SEA",
     "intro.copy":
       "Kami ialah rakan pemasaran rentas sempadan dan komersialisasi yang membantu jenama China menyesuaikan diri, mempromosi, menjual, dan berkembang di Thailand, Malaysia, Vietnam serta Asia Tenggara",
@@ -266,6 +268,7 @@ const translations = {
     "lead.statusSuccess": "ขอบคุณ เราได้รับคำขอแล้วและจะตอบกลับเร็ว ๆ นี้",
     "lead.statusMailFallback": "กำลังเปิดแอปอีเมลเพื่อไม่ให้คำขอหายไป",
     "lead.statusError": "มีบางอย่างผิดพลาด โปรดอีเมล postmaster@louder-creative.com",
+    "lead.statusServiceRequired": "โปรดเลือกบริการ",
     "intro.kicker": "ปฏิบัติการเติบโต SEA",
     "intro.copy":
       "เราเป็นพาร์ตเนอร์ด้านการตลาดข้ามพรมแดนและการพาณิชย์ที่ช่วยแบรนด์จีนปรับให้เข้ากับท้องถิ่น โปรโมต ขาย และเติบโตในไทย มาเลเซีย เวียดนาม และเอเชียตะวันออกเฉียงใต้",
@@ -377,6 +380,7 @@ const translations = {
     "lead.statusSuccess": "谢谢，我们已收到你的需求，会尽快回复。",
     "lead.statusMailFallback": "正在打开邮件应用，避免你的需求丢失。",
     "lead.statusError": "提交出现问题，请邮件联系 postmaster@louder-creative.com。",
+    "lead.statusServiceRequired": "请选择一项服务。",
     "intro.kicker": "东南亚增长运营",
     "intro.copy": "我们是跨境营销与商业化伙伴，帮助中国品牌在泰国、马来西亚、越南与东南亚市场完成本地化、推广、销售与规模化增长",
     "stats.platforms": "合作平台",
@@ -504,6 +508,12 @@ const leadConfig = {
 };
 const leadForm = document.querySelector("[data-lead-form]");
 const leadStatus = document.querySelector("[data-lead-status]");
+const serviceDropdown = document.querySelector("[data-service-dropdown]");
+const serviceTrigger = document.querySelector("[data-service-trigger]");
+const serviceSelected = document.querySelector("[data-service-selected]");
+const serviceValue = document.querySelector("[data-service-value]");
+const serviceOptions = document.querySelector("[data-service-options]");
+const serviceOptionButtons = document.querySelectorAll("[data-service-option]");
 const productShowcase = document.querySelector("[data-product-showcase]");
 const productCube = document.querySelector("[data-product-cube]");
 const productDetail = document.querySelector(".product-detail");
@@ -553,7 +563,7 @@ const getDictionaryText = (key) => {
 
 const setLeadStatus = (key, state = "") => {
   if (!leadStatus) return;
-  leadStatus.textContent = getDictionaryText(key);
+  leadStatus.textContent = key ? getDictionaryText(key) : "";
   leadStatus.classList.toggle("is-success", state === "success");
   leadStatus.classList.toggle("is-error", state === "error");
 };
@@ -577,6 +587,92 @@ const closeLanguageMenu = () => {
   if (!languageOptions || !languageTrigger) return;
   languageOptions.hidden = true;
   languageTrigger.setAttribute("aria-expanded", "false");
+};
+
+const getServiceButtons = () => Array.from(serviceOptionButtons);
+
+const getSelectedServiceButton = () => {
+  const buttons = getServiceButtons();
+  return buttons.find((button) => button.dataset.value === serviceValue?.value) || null;
+};
+
+const closeServiceDropdown = ({ focusTrigger = false } = {}) => {
+  if (!serviceDropdown || !serviceOptions || !serviceTrigger) return;
+  serviceOptions.hidden = true;
+  serviceDropdown.classList.remove("is-open");
+  serviceTrigger.setAttribute("aria-expanded", "false");
+  if (focusTrigger) serviceTrigger.focus();
+};
+
+const openServiceDropdown = ({ focusOption = false } = {}) => {
+  if (!serviceDropdown || !serviceOptions || !serviceTrigger) return;
+  serviceOptions.hidden = false;
+  serviceDropdown.classList.add("is-open");
+  serviceTrigger.setAttribute("aria-expanded", "true");
+  if (focusOption) {
+    window.requestAnimationFrame(() => (getSelectedServiceButton() || getServiceButtons()[0])?.focus());
+  }
+};
+
+const syncServiceSelectedText = (button) => {
+  if (!button || !serviceSelected) return;
+  serviceSelected.dataset.i18n = button.dataset.i18n || "lead.servicePlaceholder";
+  serviceSelected.textContent = button.textContent.trim();
+};
+
+const selectServiceOption = (button, { focusTrigger = true } = {}) => {
+  if (!button || !serviceValue || !serviceTrigger || !serviceDropdown) return;
+  serviceValue.value = button.dataset.value || "";
+  syncServiceSelectedText(button);
+  serviceOptionButtons.forEach((option) => {
+    const isSelected = option === button;
+    option.classList.toggle("is-active", isSelected);
+    option.setAttribute("aria-selected", String(isSelected));
+  });
+  serviceDropdown.classList.remove("is-invalid");
+  serviceTrigger.removeAttribute("aria-invalid");
+  setLeadStatus("");
+  closeServiceDropdown({ focusTrigger });
+};
+
+const resetServiceDropdown = () => {
+  if (serviceValue) serviceValue.value = "";
+  if (serviceSelected) {
+    serviceSelected.dataset.i18n = "lead.servicePlaceholder";
+    serviceSelected.textContent = getDictionaryText("lead.servicePlaceholder");
+  }
+  serviceOptionButtons.forEach((button) => {
+    button.classList.remove("is-active");
+    button.setAttribute("aria-selected", "false");
+  });
+  serviceDropdown?.classList.remove("is-invalid");
+  serviceTrigger?.removeAttribute("aria-invalid");
+  closeServiceDropdown();
+};
+
+const validateServiceDropdown = () => {
+  if (!serviceDropdown || !serviceTrigger || serviceValue?.value) return true;
+  serviceDropdown.classList.add("is-invalid");
+  serviceTrigger.setAttribute("aria-invalid", "true");
+  setLeadStatus("lead.statusServiceRequired", "error");
+  openServiceDropdown({ focusOption: true });
+  return false;
+};
+
+const focusServiceOptionByOffset = (offset) => {
+  const buttons = getServiceButtons();
+  if (!buttons.length) return;
+  const currentIndex = buttons.indexOf(document.activeElement);
+  const selectedIndex = buttons.indexOf(getSelectedServiceButton());
+  const baseIndex = currentIndex >= 0
+    ? currentIndex
+    : selectedIndex >= 0
+      ? selectedIndex
+      : offset > 0
+        ? -1
+        : buttons.length;
+  const nextIndex = clamp(baseIndex + offset, 0, buttons.length - 1);
+  buttons[nextIndex].focus();
 };
 
 const shouldUseProductMotion = () => Boolean(productShowcase && productCube && desktopProductMedia.matches && !reduceMotionMedia.matches);
@@ -882,6 +978,64 @@ languageOptionButtons.forEach((button) => {
   });
 });
 
+serviceTrigger?.addEventListener("click", () => {
+  const shouldOpen = serviceOptions?.hidden !== false;
+  if (shouldOpen) {
+    openServiceDropdown();
+  } else {
+    closeServiceDropdown();
+  }
+});
+
+serviceDropdown?.addEventListener("keydown", (event) => {
+  const isOpen = serviceOptions?.hidden === false;
+  if (event.key === "Escape") {
+    event.preventDefault();
+    closeServiceDropdown({ focusTrigger: true });
+    return;
+  }
+
+  if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+    event.preventDefault();
+    if (!isOpen) {
+      openServiceDropdown({ focusOption: true });
+      return;
+    }
+    focusServiceOptionByOffset(event.key === "ArrowDown" ? 1 : -1);
+    return;
+  }
+
+  if (event.key === "Home" && isOpen) {
+    event.preventDefault();
+    getServiceButtons()[0]?.focus();
+    return;
+  }
+
+  if (event.key === "End" && isOpen) {
+    event.preventDefault();
+    const buttons = getServiceButtons();
+    buttons[buttons.length - 1]?.focus();
+    return;
+  }
+
+  if ((event.key === "Enter" || event.key === " ") && event.target instanceof Element && event.target.matches("[data-service-option]")) {
+    event.preventDefault();
+    selectServiceOption(event.target);
+    return;
+  }
+
+  if ((event.key === "Enter" || event.key === " ") && event.target === serviceTrigger) {
+    event.preventDefault();
+    openServiceDropdown({ focusOption: true });
+  }
+});
+
+serviceOptionButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    selectServiceOption(button);
+  });
+});
+
 menuToggle?.addEventListener("click", () => {
   const isOpen = document.body.classList.toggle("menu-open");
   const language = document.documentElement.dataset.language || "en";
@@ -912,7 +1066,7 @@ consultScrollLinks.forEach((link) => {
     event.preventDefault();
     leadForm?.scrollIntoView({ behavior: "smooth", block: "center" });
     window.setTimeout(() => {
-      const firstField = leadForm?.querySelector("select, input, textarea");
+      const firstField = leadForm?.querySelector("[data-service-trigger], input:not([type='hidden']), textarea");
       try {
         firstField?.focus({ preventScroll: true });
       } catch (error) {
@@ -962,6 +1116,7 @@ window.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeMenu();
     closeLanguageMenu();
+    closeServiceDropdown();
   }
 });
 
@@ -969,11 +1124,19 @@ document.addEventListener("click", (event) => {
   if (event.target instanceof Element && !event.target.closest("[data-language-menu]")) {
     closeLanguageMenu();
   }
+  if (event.target instanceof Element && !event.target.closest("[data-service-dropdown]")) {
+    closeServiceDropdown();
+  }
+});
+
+leadForm?.addEventListener("reset", () => {
+  window.setTimeout(resetServiceDropdown, 0);
 });
 
 leadForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
 
+  if (!validateServiceDropdown()) return;
   if (!leadForm.reportValidity()) return;
 
   const payload = buildLeadPayload(leadForm);

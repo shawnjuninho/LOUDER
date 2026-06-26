@@ -121,15 +121,23 @@
           <form class="lead-form" data-lead-form>
             <label>
               <span data-i18n="lead.serviceLabel">Desired service</span>
-              <select name="service" required>
-                <option value="" data-i18n="lead.servicePlaceholder">Choose a service</option>
-                <option value="Market Entry Strategy" data-i18n="lead.service.market">Market Entry Strategy</option>
-                <option value="KOC/KOL Marketing" data-i18n="lead.service.kol">KOC/KOL Marketing</option>
-                <option value="Content Planning" data-i18n="lead.service.content">Content Planning</option>
-                <option value="E-commerce Operations" data-i18n="lead.service.commerce">E-commerce Operations</option>
-                <option value="Live Commerce" data-i18n="lead.service.live">Live Commerce</option>
-                <option value="Full Launch Plan" data-i18n="lead.service.launch">Full Launch Plan</option>
-              </select>
+              <div class="service-dropdown" data-service-dropdown>
+                <input type="hidden" name="service" data-service-value />
+                <button class="service-dropdown-trigger" type="button" data-service-trigger aria-haspopup="listbox" aria-expanded="false">
+                  <span data-service-selected data-i18n="lead.servicePlaceholder">Choose a service</span>
+                  <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="service-dropdown-menu" data-service-options role="listbox" hidden>
+                  <button type="button" role="option" data-service-option data-value="Market Entry Strategy" data-i18n="lead.service.market" aria-selected="false">Market Entry Strategy</button>
+                  <button type="button" role="option" data-service-option data-value="KOC/KOL Marketing" data-i18n="lead.service.kol" aria-selected="false">KOC/KOL Marketing</button>
+                  <button type="button" role="option" data-service-option data-value="Content Planning" data-i18n="lead.service.content" aria-selected="false">Content Planning</button>
+                  <button type="button" role="option" data-service-option data-value="E-commerce Operations" data-i18n="lead.service.commerce" aria-selected="false">E-commerce Operations</button>
+                  <button type="button" role="option" data-service-option data-value="Live Commerce" data-i18n="lead.service.live" aria-selected="false">Live Commerce</button>
+                  <button type="button" role="option" data-service-option data-value="Full Launch Plan" data-i18n="lead.service.launch" aria-selected="false">Full Launch Plan</button>
+                </div>
+              </div>
             </label>
             <label>
               <span data-i18n="lead.marketLabel">Target market</span>
