@@ -29,6 +29,7 @@
 }
 
 html {
+  font-size: 80%;
   overflow-x: clip;
   scroll-behavior: smooth;
 }
@@ -847,23 +848,26 @@ label {
   gap: 18px;
 }
 
-.stat-platform-card strong {
+.stat-card-top > strong {
   margin-bottom: 18px;
 }
 
 .platform-strip {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .platform-strip .platform-logo {
   display: inline-flex;
-  min-height: 44px;
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
   min-width: 0;
   align-items: center;
-  gap: 8px;
-  padding: 8px 10px;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 7px;
   background: rgba(255, 255, 255, 0.07);
@@ -871,18 +875,21 @@ label {
 }
 
 .platform-logo svg {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   flex: 0 0 auto;
 }
 
 .platform-logo strong {
-  min-width: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
   overflow: hidden;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.75rem;
-  line-height: 1.1;
-  text-overflow: ellipsis;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 
@@ -1377,7 +1384,7 @@ label {
 .cube-face img {
   width: 78%;
   height: 70%;
-  object-fit: contain;
+  object-fit: cover;
   opacity: 0.48;
   filter: saturate(1.05) contrast(1.08) drop-shadow(0 28px 34px rgba(0, 0, 0, 0.5));
   transition: opacity 260ms ease, filter 260ms ease;
@@ -1828,7 +1835,7 @@ label {
   .product-mobile-card img {
     width: 100%;
     height: 220px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 6px;
     background: #101010;
   }
@@ -1882,9 +1889,19 @@ label {
   }
 
   .hero {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
     padding-top: 112px;
     padding-bottom: 54px;
     gap: 28px;
+    overflow: hidden;
+  }
+
+  .hero-copy-block,
+  .hero h1 {
+    width: calc(100vw - 24px);
+    min-width: 0;
+    max-width: calc(100vw - 24px);
   }
 
   .hero::before {
@@ -1914,16 +1931,35 @@ label {
   }
 
   .hero h1 {
-    font-size: clamp(3rem, 14vw, 4rem);
-    line-height: 0.92;
+    width: min(100%, 10.5ch);
+    font-size: clamp(2rem, 9.5vw, 2.65rem);
+    line-height: 0.96;
+  }
+
+  .hero h1 span {
+    display: block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
   }
 
   .hero-copy {
+    display: block;
+    width: min(320px, calc(100vw - 24px));
+    max-width: min(320px, calc(100vw - 24px));
     font-size: 1rem;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .hero-actions {
+    width: min(320px, calc(100vw - 24px));
+    max-width: min(320px, calc(100vw - 24px));
   }
 
   .button {
     width: 100%;
+    max-width: 100%;
   }
 
   .consult-card {
