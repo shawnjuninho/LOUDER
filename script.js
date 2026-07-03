@@ -465,10 +465,10 @@ const languageCodes = {
 };
 
 const languageMeta = {
-  en: { label: "English", flagClass: "flag-us" },
-  ms: { label: "Bahasa Melayu", flagClass: "flag-my" },
-  th: { label: "ไทย", flagClass: "flag-th" },
-  zh: { label: "中文", flagClass: "flag-cn" },
+  en: { label: "English", flagSrc: "assets/flags/us.svg" },
+  ms: { label: "Bahasa Melayu", flagSrc: "assets/flags/my.svg" },
+  th: { label: "ไทย", flagSrc: "assets/flags/th.svg" },
+  zh: { label: "中文", flagSrc: "assets/flags/cn.svg" },
 };
 
 const productCategories = [
@@ -496,7 +496,7 @@ const languageTrigger = document.querySelector("[data-language-trigger]");
 const languageOptions = document.querySelector("[data-language-options]");
 const languageOptionButtons = document.querySelectorAll("[data-lang-option]");
 const currentLanguageLabel = document.querySelector("[data-current-language]");
-const currentLanguageFlag = languageTrigger?.querySelector(".flag");
+const currentLanguageFlag = languageTrigger?.querySelector("[data-current-flag]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 const navSections = document.querySelectorAll("[data-nav-section]");
 const revealElements = document.querySelectorAll("[data-reveal]");
@@ -831,7 +831,7 @@ const setLanguage = (language) => {
   }
 
   if (currentLanguageFlag && languageMeta[language]) {
-    currentLanguageFlag.className = `flag ${languageMeta[language].flagClass}`;
+    currentLanguageFlag.setAttribute("src", languageMeta[language].flagSrc);
   }
 
   languageOptionButtons.forEach((button) => {

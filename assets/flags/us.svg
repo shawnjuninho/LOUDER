@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7410 3900" role="img" aria-label="United States flag">
+  <path fill="#b22234" d="M0 0h7410v3900H0z"/>
+  <path stroke="#fff" stroke-width="300" d="M0 450h7410M0 1050h7410M0 1650h7410M0 2250h7410M0 2850h7410M0 3450h7410"/>
+  <path fill="#3c3b6e" d="M0 0h2964v2100H0z"/>
+  <defs>
+    <path id="star" d="M0-110 24.7-34 104.6-34 40 13 64.7 89 0 42-64.7 89-40 13-104.6-34-24.7-34z"/>
+  </defs>
+  <g fill="#fff">
+    <use href="#star" x="247" y="210"/>
+    <use href="#star" x="741" y="210"/>
+    <use href="#star" x="1235" y="210"/>
+    <use href="#star" x="1729" y="210"/>
+    <use href="#star" x="2223" y="210"/>
+    <use href="#star" x="2717" y="210"/>
+    <use href="#star" x="494" y="420"/>
+    <use href="#star" x="988" y="420"/>
+    <use href="#star" x="1482" y="420"/>
+    <use href="#star" x="1976" y="420"/>
+    <use href="#star" x="2470" y="420"/>
+    <use href="#star" x="247" y="630"/>
+    <use href="#star" x="741" y="630"/>
+    <use href="#star" x="1235" y="630"/>
+    <use href="#star" x="1729" y="630"/>
+    <use href="#star" x="2223" y="630"/>
+    <use href="#star" x="2717" y="630"/>
+    <use href="#star" x="494" y="840"/>
+    <use href="#star" x="988" y="840"/>
+    <use href="#star" x="1482" y="840"/>
+    <use href="#star" x="1976" y="840"/>
+    <use href="#star" x="2470" y="840"/>
+    <use href="#star" x="247" y="1050"/>
+    <use href="#star" x="741" y="1050"/>
+    <use href="#star" x="1235" y="1050"/>
+    <use href="#star" x="1729" y="1050"/>
+    <use href="#star" x="2223" y="1050"/>
+    <use href="#star" x="2717" y="1050"/>
+    <use href="#star" x="494" y="1260"/>
+    <use href="#star" x="988" y="1260"/>
+    <use href="#star" x="1482" y="1260"/>
+    <use href="#star" x="1976" y="1260"/>
+    <use href="#star" x="2470" y="1260"/>
+    <use href="#star" x="247" y="1470"/>
+    <use href="#star" x="741" y="1470"/>
+    <use href="#star" x="1235" y="1470"/>
+    <use href="#star" x="1729" y="1470"/>
+    <use href="#star" x="2223" y="1470"/>
+    <use href="#star" x="2717" y="1470"/>
+    <use href="#star" x="494" y="1680"/>
+    <use href="#star" x="988" y="1680"/>
+    <use href="#star" x="1482" y="1680"/>
+    <use href="#star" x="1976" y="1680"/>
+    <use href="#star" x="2470" y="1680"/>
+    <use href="#star" x="247" y="1890"/>
+    <use href="#star" x="741" y="1890"/>
+    <use href="#star" x="1235" y="1890"/>
+    <use href="#star" x="1729" y="1890"/>
+    <use href="#star" x="2223" y="1890"/>
+    <use href="#star" x="2717" y="1890"/>
+  </g>
+</svg>

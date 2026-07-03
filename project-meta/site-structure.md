@@ -4,7 +4,7 @@ The current deployment entry stays at the repository root so GitHub Pages and Ve
 
 - `index.html`, `styles.css`, `script.js`: public single-page website shell, black/yellow visual system, language switching, lead form, scroll navigation, product cube interaction, and copy-to-clipboard contact actions.
 - `api/`: Vercel serverless functions.
-- `assets/`: public assets that are allowed to ship with the site. `assets/louder/` contains locally stored Pexels replacement imagery and source notes, `assets/platforms/` contains transparent platform marks, and `assets/services/` contains user-supplied service-row imagery.
+- `assets/`: public assets that are allowed to ship with the site. `assets/louder/` contains locally stored Pexels replacement imagery and source notes, `assets/platforms/` contains transparent platform marks, `assets/flags/` contains formal SVG flags for the language switcher, and `assets/services/` contains user-supplied service-row imagery.
 - `404.html`: static noindex fallback page for GitHub Pages and other static hosts.
 - `project-meta/`: git-tracked project notes, style preferences, structure notes, and follow-up tasks.
 - `workspace-local/`: ignored local-only workspace for reference PDFs, discarded assets, captured source HTML, and preview screenshots.
