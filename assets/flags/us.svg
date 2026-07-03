@@ -1,60 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7410 3900" role="img" aria-label="United States flag">
-  <path fill="#b22234" d="M0 0h7410v3900H0z"/>
-  <path stroke="#fff" stroke-width="300" d="M0 450h7410M0 1050h7410M0 1650h7410M0 2250h7410M0 2850h7410M0 3450h7410"/>
-  <path fill="#3c3b6e" d="M0 0h2964v2100H0z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1235 650" role="img" aria-label="United States flag">
+  <path fill="#fff" d="M0 0h1235v650H0z"/>
+  <path fill="#b31942" d="M0 0h1235v50H0zM0 100h1235v50H0zM0 200h1235v50H0zM0 300h1235v50H0zM0 400h1235v50H0zM0 500h1235v50H0zM0 600h1235v50H0z"/>
+  <path fill="#0a3161" d="M0 0h494v350H0z"/>
   <defs>
-    <path id="star" d="M0-110 24.7-34 104.6-34 40 13 64.7 89 0 42-64.7 89-40 13-104.6-34-24.7-34z"/>
+    <path id="star" d="M0-1 .2245-.309 .9511-.309 .3633.118 .5878.809 0 .382 -.5878.809 -.3633.118 -.9511-.309 -.2245-.309z"/>
   </defs>
   <g fill="#fff">
-    <use href="#star" x="247" y="210"/>
-    <use href="#star" x="741" y="210"/>
-    <use href="#star" x="1235" y="210"/>
-    <use href="#star" x="1729" y="210"/>
-    <use href="#star" x="2223" y="210"/>
-    <use href="#star" x="2717" y="210"/>
-    <use href="#star" x="494" y="420"/>
-    <use href="#star" x="988" y="420"/>
-    <use href="#star" x="1482" y="420"/>
-    <use href="#star" x="1976" y="420"/>
-    <use href="#star" x="2470" y="420"/>
-    <use href="#star" x="247" y="630"/>
-    <use href="#star" x="741" y="630"/>
-    <use href="#star" x="1235" y="630"/>
-    <use href="#star" x="1729" y="630"/>
-    <use href="#star" x="2223" y="630"/>
-    <use href="#star" x="2717" y="630"/>
-    <use href="#star" x="494" y="840"/>
-    <use href="#star" x="988" y="840"/>
-    <use href="#star" x="1482" y="840"/>
-    <use href="#star" x="1976" y="840"/>
-    <use href="#star" x="2470" y="840"/>
-    <use href="#star" x="247" y="1050"/>
-    <use href="#star" x="741" y="1050"/>
-    <use href="#star" x="1235" y="1050"/>
-    <use href="#star" x="1729" y="1050"/>
-    <use href="#star" x="2223" y="1050"/>
-    <use href="#star" x="2717" y="1050"/>
-    <use href="#star" x="494" y="1260"/>
-    <use href="#star" x="988" y="1260"/>
-    <use href="#star" x="1482" y="1260"/>
-    <use href="#star" x="1976" y="1260"/>
-    <use href="#star" x="2470" y="1260"/>
-    <use href="#star" x="247" y="1470"/>
-    <use href="#star" x="741" y="1470"/>
-    <use href="#star" x="1235" y="1470"/>
-    <use href="#star" x="1729" y="1470"/>
-    <use href="#star" x="2223" y="1470"/>
-    <use href="#star" x="2717" y="1470"/>
-    <use href="#star" x="494" y="1680"/>
-    <use href="#star" x="988" y="1680"/>
-    <use href="#star" x="1482" y="1680"/>
-    <use href="#star" x="1976" y="1680"/>
-    <use href="#star" x="2470" y="1680"/>
-    <use href="#star" x="247" y="1890"/>
-    <use href="#star" x="741" y="1890"/>
-    <use href="#star" x="1235" y="1890"/>
-    <use href="#star" x="1729" y="1890"/>
-    <use href="#star" x="2223" y="1890"/>
-    <use href="#star" x="2717" y="1890"/>
+    <use href="#star" transform="translate(41.167 35) scale(20)"/>
+    <use href="#star" transform="translate(123.5 35) scale(20)"/>
+    <use href="#star" transform="translate(205.833 35) scale(20)"/>
+    <use href="#star" transform="translate(288.167 35) scale(20)"/>
+    <use href="#star" transform="translate(370.5 35) scale(20)"/>
+    <use href="#star" transform="translate(452.833 35) scale(20)"/>
+    <use href="#star" transform="translate(82.333 70) scale(20)"/>
+    <use href="#star" transform="translate(164.667 70) scale(20)"/>
+    <use href="#star" transform="translate(247 70) scale(20)"/>
+    <use href="#star" transform="translate(329.333 70) scale(20)"/>
+    <use href="#star" transform="translate(411.667 70) scale(20)"/>
+    <use href="#star" transform="translate(41.167 105) scale(20)"/>
+    <use href="#star" transform="translate(123.5 105) scale(20)"/>
+    <use href="#star" transform="translate(205.833 105) scale(20)"/>
+    <use href="#star" transform="translate(288.167 105) scale(20)"/>
+    <use href="#star" transform="translate(370.5 105) scale(20)"/>
+    <use href="#star" transform="translate(452.833 105) scale(20)"/>
+    <use href="#star" transform="translate(82.333 140) scale(20)"/>
+    <use href="#star" transform="translate(164.667 140) scale(20)"/>
+    <use href="#star" transform="translate(247 140) scale(20)"/>
+    <use href="#star" transform="translate(329.333 140) scale(20)"/>
+    <use href="#star" transform="translate(411.667 140) scale(20)"/>
+    <use href="#star" transform="translate(41.167 175) scale(20)"/>
+    <use href="#star" transform="translate(123.5 175) scale(20)"/>
+    <use href="#star" transform="translate(205.833 175) scale(20)"/>
+    <use href="#star" transform="translate(288.167 175) scale(20)"/>
+    <use href="#star" transform="translate(370.5 175) scale(20)"/>
+    <use href="#star" transform="translate(452.833 175) scale(20)"/>
+    <use href="#star" transform="translate(82.333 210) scale(20)"/>
+    <use href="#star" transform="translate(164.667 210) scale(20)"/>
+    <use href="#star" transform="translate(247 210) scale(20)"/>
+    <use href="#star" transform="translate(329.333 210) scale(20)"/>
+    <use href="#star" transform="translate(411.667 210) scale(20)"/>
+    <use href="#star" transform="translate(41.167 245) scale(20)"/>
+    <use href="#star" transform="translate(123.5 245) scale(20)"/>
+    <use href="#star" transform="translate(205.833 245) scale(20)"/>
+    <use href="#star" transform="translate(288.167 245) scale(20)"/>
+    <use href="#star" transform="translate(370.5 245) scale(20)"/>
+    <use href="#star" transform="translate(452.833 245) scale(20)"/>
+    <use href="#star" transform="translate(82.333 280) scale(20)"/>
+    <use href="#star" transform="translate(164.667 280) scale(20)"/>
+    <use href="#star" transform="translate(247 280) scale(20)"/>
+    <use href="#star" transform="translate(329.333 280) scale(20)"/>
+    <use href="#star" transform="translate(411.667 280) scale(20)"/>
+    <use href="#star" transform="translate(41.167 315) scale(20)"/>
+    <use href="#star" transform="translate(123.5 315) scale(20)"/>
+    <use href="#star" transform="translate(205.833 315) scale(20)"/>
+    <use href="#star" transform="translate(288.167 315) scale(20)"/>
+    <use href="#star" transform="translate(370.5 315) scale(20)"/>
+    <use href="#star" transform="translate(452.833 315) scale(20)"/>
   </g>
 </svg>
